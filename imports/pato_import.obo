@@ -1,0 +1,12 @@
+format-version: 1.2
+data-version: radont/releases/2019-05-24/imports/pato_import.owl
+ontology: radont/imports/pato_import
+
+[Term]
+id: PATO:0000001
+name: quality
+namespace: quality
+alt_id: PATO:0000072
+def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities" [PATOC:GVG]
+synonym: "trait" EXACT []
+
