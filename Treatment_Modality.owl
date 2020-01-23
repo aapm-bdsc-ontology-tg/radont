@@ -1,0 +1,455 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/markp/ontologies/2019/6/MDE#"
+     xml:base="http://www.semanticweb.org/markp/ontologies/2019/6/MDE"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:oboInOwl1="ttp://www.geneontology.org/formats/oboInOwl#"
+     xmlns:Treatment_Modality="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2019-02-02/ro.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-02-21/bfo.owl"/>
+        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000091 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000091"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001018 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001018"/>
+    
+
+
+    <!-- http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#inheres_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#inheres_in"/>
+    
+
+
+    <!-- http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#part_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#part_of"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_continuant -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_continuant">
+        <rdfs:comment>BFO continuant</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_disposition -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_disposition">
+        <rdfs:comment>BFO disposition</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_generically_dependent_continuant -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_generically_dependent_continuant">
+        <rdfs:comment>BFO generically dependent continuant</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_object -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_object">
+        <rdfs:comment>BFO object</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_object_aggregrate -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_object_aggregrate">
+        <rdfs:comment>BFO object aggregate</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_process -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_process">
+        <rdfs:comment>BFO process</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_process_boundary -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_process_boundary">
+        <rdfs:comment>BFO process boundary</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_site -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_site">
+        <rdfs:comment>BFO: site
+child of continuant fiat boundary
+      child of immaterial entity
+            child of independent continuant</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#neutrons -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#neutrons">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#ionizing_radiations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#quality -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#quality">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020#specifically_dependent_continuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000020#specifically_dependent_continuant -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020#specifically_dependent_continuant"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011#planned_process -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011#planned_process">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_process"/>
+        <rdfs:comment>&apos;Plan&apos; includes a future direction sense. That can be problematic if plans are changed during their execution. There are however implicit contingencies for protocols that an agent has in his mind that can be considered part of the plan, even if the agent didn&apos;t have them in mind before. Therefore, a planned process can diverge from what the agent would have said the plan was before executing it, by adjusting to problems encountered during execution (e.g. choosing another reagent with equivalent properties, if the originally planned one has run out.)
+
+We are only considering successfully completed planned processes. A plan may be modified, and details added during execution. For a given planned process, the associated realized plan specification is the one encompassing all changes made during execution. This means that all processes in which an agent acts towards achieving some objectives is a planned process.
+
+This can be mapped to OBI_0000011 &quot;planned process&quot;</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000112#therapeutic_procedure -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000112#therapeutic_procedure">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011#planned_process"/>
+        <rdfs:comment>http://purl.obolibrary.org/obo/OGMS_0000112
+
+A treatment whose completion is hypothesized by a health care provider to eliminate a disorder or to alleviate the signs and symptoms of a disorder or pathological process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000116#radiation_therapy_procedure -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000116#radiation_therapy_procedure">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000112#therapeutic_procedure"/>
+        <rdfs:comment>Jonathan dispenses with &quot;therapeutic procedure&quot; and makes &quot;radiation_therapy_procedure&quot; a child of &quot;planned_process&quot;
+
+Can use OGMS definition:
+http://purl.obolibrary.org/obo/OGMS_0000116
+A therapeutic procedure  that uses radiation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#MeV_x-rays -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#MeV_x-rays">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#ionizing_radiations"/>
+        <rdfs:comment xml:lang="en">This type of radiation is produced by bremsstrahlung where the electrons have an energy greater than approximately 0.5 MeV.  This type of radiation is most often used for radiation therapeutic purposes since it has greater penetration through the body than do lower energy (keV x-rays) x-rays.
+
+Note: If this exists in another BFO ontology, we can substitute that class.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#be_absorbed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#be_absorbed">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_disposition"/>
+        <rdfs:comment xml:lang="en">The disposition is an integral part of some objects such as radiation.  It is a realizable entity that is such that if it ceased to exist, its bearer would be changed.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#electrons -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#electrons">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#ionizing_radiations"/>
+        <rdfs:comment xml:lang="en">This type of radiation is a fundamental particle with a charge of -1 and a mass of 0.511 MeV.  Typical values of the energies used for therapeutic purposes lie between 6 and 20 MeV.  When produced, the radiation beam is monoenergetic.  Electrons undergo many scattering events in the body before they lose all of there energy and stop.  Typical depths of penetration in the body are 1 - 5 cm.
+
+Note: If this exists in another BFO ontology, we can substitute that class.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#gamma_rays -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#gamma_rays">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#ionizing_radiations"/>
+        <rdfs:comment xml:lang="en">This type of radiation is a photon that is emitted from the nucleus of an atom that undergoes some sort of decay.  Gamma rays are monoenergetic, although it is typical for a given type of nucleus to undergo different types of decay and/or transitions to a range of energy levels; this results in a set of energies that are characteristic of a given isotopic source.  The energies range from the keV region to MeV region.  Their interactions with tissue are identical to x-rays of the same energy since both types of radiation are photons.
+
+This type of radiation can be used for external beam radiation therapy (where the source of radiation is outside the body) or brachytherapy (where the source is placed within the body).
+
+Note: If this exists in another BFO ontology, we can substitute that class.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#ionizing_radiations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#ionizing_radiations">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_continuant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#inheres_in"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#radiation_source"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Radiation emitted from a radiation therapy source can be of several different types.  Each type has a unique set of physical characteristics, such as charge and mass.  In addition, they fall into different classes of particles, such as boson and lepton, in addition to other classifications.
+
+In this ontology, the focus is on those characteristics that affect how the radiation is produced, how it interacts with matter, and the radiobiological effects.
+
+SNOMED does have classes but they are somewhat confused.  &quot;Ionizing radiation&quot; is a child of radiation, but so is &quot;electromagnetic radiation&quot; which has as a child &quot;ionizing electromagnetic radiation&quot;.  Both have same URI http://purl.bioontology.org/ontology/SNOMEDCT/312255008
+Under each of these classes, there is the same child &quot;gamma radiation&quot;</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#keV_x-rays -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#keV_x-rays">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#ionizing_radiations"/>
+        <rdfs:comment xml:lang="en">This type of radiation is produced by means of bremmstrahlung where the electrons have an energy less than approximately 500 keV.  Additionally, there are often x-rays produced by atomic transitions, such as K-edge x-rays.  This type of radiation is most often used for imaging due to the differential absorption of the x-rays by different parts of the body.  In radiation therapy, these images are used to devise a treatment plan and also to localize the target region when setting up for therapy.  
+
+This type is sometimes used for cancers located in the skin or close to the surface since it is rapidly attenuated in the body.
+
+Note: If this exists in another BFO ontology, we can substitute that class.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#protons -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#protons">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#ionizing_radiations"/>
+        <rdfs:comment xml:lang="en">This type of radiation is a particle with charge of +1 and a mass of 938 MeV.  (This is much greater than the mass of an electron).  They are produced in large accelerators, e.g. cyclotrons.  The radiation beams are monoenergetic and, for therapeutic purposes, the range is approximately 100 to 250 MeV.  The large mass of this type of radiation makes it more difficult to accelerate them to the desired energy and to steer them to the patient; this results in some practical difficulties when using them in a medical environment.  
+
+Protons undergo many collisions in which they lose energy but, unlike electrons, their trajectories are little affected.  The absorption of energy from a beam of protons exhibits a &quot;Bragg peak&quot;, which means that as they penetrate the body, the energy absorbed per distance is relatively constant (&quot;plateau&quot;) until they have lost nearly all of there energy, at which point the absorbed energy per distance rises sharply until all the energy is absorbed, the proton stops and no energy is absorbed at greater depths (&quot;Bragg peak&quot;).
+
+Note: If this exists in another BFO ontology, we can substitute that class.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#radiation_source -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#radiation_source">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_object_aggregrate"/>
+        <rdfs:comment xml:lang="en">In radiation therapy, there are several types of radiation that are produced in a variety of ways, e.g. radioactive source, linear accelerator, cyclotron.  In general, these sources are complex devices that have parts used to help generate the radiation and/or control its intensity and direction.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#radiation_spectrum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#radiation_spectrum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#inheres_in"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#ionizing_radiations"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#inheres_in"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#radiation_source"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A radiation source emits energy; this radiatiive energy is characterized by a spectrum.  A spectrum can be thought of as a histogram of the relative intensities of each energy quanta that makes up the spectrum.  The energies may be continuous, e.g. bremsstrahlung radiation, or discrete, e.g. gamma emissions.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#radiation_therapy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#radiation_therapy">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000116#radiation_therapy_procedure"/>
+        <rdfs:comment>This entity is a subclass of bfo:process (BFO_0000015).  It has boundaries &apos;rt startdate&apos; and &apos;rt enddate&apos;</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#rt_startdate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#rt_startdate">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_process_boundary"/>
+        <rdfs:comment>This entity is a subclass of BFO:&apos;process boundary&apos; (BFO_0000035)
+
+This is the point in time when the radiation therapy process begins.  When instantiated, it has the type xsd:dateTime</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#therapy_prescription -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#therapy_prescription">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_generically_dependent_continuant"/>
+        <rdfs:comment xml:lang="en">This entity is a template for the set of goals, constraints and processes that define the prescription for radiation therapy.  It can be concretized as a vector of values within a database or as plan for the production of a 3D dose distribution.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#&apos;clinical_target_volume&apos; -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#&apos;clinical_target_volume&apos;">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#&apos;target_volume&apos;"/>
+        <rdfs:comment>This entity is that part of the tissue that is to be irradiated that contains is considered to contain microscopic disease, i.e. a region where clinical experience and biological reasoning indicate a high probability of tumor presence even though there are no direct means of observing such a presence.  It contains the gross tumor volume.
+
+(See the parent class &apos;target volume&apos; for more details regarding the sourcing of this.)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#&apos;gross_tumor_volume&apos; -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#&apos;gross_tumor_volume&apos;">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#&apos;target_volume&apos;"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001018"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#&apos;clinical_target_volume&apos;"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>This entity is that part of the tissue that is to be irradiated that contains the demonstrated (clinically, pathologically, imaging) presence of tumor cells.  
+
+(See the parent class &apos;target volume&apos; for more details regarding the sourcing of this.)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#&apos;planning_target_volume&apos; -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#&apos;planning_target_volume&apos;">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#&apos;target_volume&apos;"/>
+        <rdfs:comment>This entity is that part of the tissue that is to be irradiated that accounts for uncertainty in the location of the gross and clinical target volumes within the frame of reference of the irradiation field. It contains the &apos;gross tumor volume&apos; and the &apos;clinical target volume&apos;. This uncertainty is due to movement of the target volume relative to the anatomy of the patient (for example, the prostate position is influenced by bowel and rectal filling) and uncertainty in setting up the external anatomy of the patient.  It is expected that the dimensions are such that for every radiation treatment session, the gross tumor volume and the clinical target volume will lie within the radiation field.
+
+(See the parent class &apos;target volume&apos; for more details regarding the sourcing of this.)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#&apos;rt_enddate&apos; -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#&apos;rt_enddate&apos;">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_process_boundary"/>
+        <rdfs:comment>This entity is a subclass of BFO:&apos;process boundary&apos; (BFO_0000035)
+
+This is the point in time when the radiation therapy process ends.  When instantiated, it has the type xsd:dateTime</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#&apos;target_volume&apos; -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#&apos;target_volume&apos;">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_site"/>
+        <rdfs:comment>The &apos;target volume&apos; is that part of the body that contains the tissue (including the tumor) that is intended to be irradiated.  There are a number of different concepts that need to be considered in defining this volume, and these are explicitly laid out in subclasses of this class.
+
+This entity has been made a subclass of the entity BFO:&apos;site&apos;, BFO_0000029
+
+The original reference for these elements is:
+T Landberg et al, ICRU Report 62, &quot;Prescribing, Recording and Reporting Photon Beam Therapy&quot;, https://doi.org/10.1093/jicru/os32.1.Report62</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#CTV_of_Prostate_patient_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#CTV_of_Prostate_patient_1">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_continuant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#&apos;clinical_target_volume&apos;"/>
+        <obo:RO_0001018 rdf:resource="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#CTV_of_Prostate_patient_1"/>
+        <Treatment_Modality:part_of rdf:resource="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#Prostate_patient_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#GTV_of_Prostate_patient_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#GTV_of_Prostate_patient_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#&apos;gross_tumor_volume&apos;"/>
+        <Treatment_Modality:part_of rdf:resource="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#Prostate_patient_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#Prostate_patient_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#Prostate_patient_1">
+        <rdfs:comment>individual patient with prostate cancer for whom MDE values apply.</rdfs:comment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
