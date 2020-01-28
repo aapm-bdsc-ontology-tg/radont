@@ -1,28 +1,114 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/markp/ontologies/2019/6/MDE#"
-     xml:base="http://www.semanticweb.org/markp/ontologies/2019/6/MDE"
-     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:cito="http://purl.org/spar/cito/"
-     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:oboInOwl1="ttp://www.geneontology.org/formats/oboInOwl#"
-     xmlns:Treatment_Modality="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:wot="http://xmlns.com/wot/0.1/"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+<rdf:RDF xmlns="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#"
+     xml:base="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#">
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
+     xmlns:metadata="http://data.bioontology.org/metadata/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:oboInOwl1="ttp://www.geneontology.org/formats/oboInOwl#"
+     xmlns:Treatment_Modality="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality">
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2019-02-02/ro.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-02-21/bfo.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2019-02-02/ro.owl"/>
         <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://data.bioontology.org/metadata/treeView -->
+
+    <owl:AnnotationProperty rdf:about="http://data.bioontology.org/metadata/treeView"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi/charge -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi/charge"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi/formula -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi/formula"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi/inchi -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi/inchi"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi/inchikey -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi/inchikey"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi/mass -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi/mass"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi/monoisotopicmass -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi/monoisotopicmass"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi/smiles -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi/smiles"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasSynonymType -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasSynonymType"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation"/>
     
 
 
@@ -136,6 +222,597 @@ child of continuant fiat boundary
       child of immaterial entity
             child of independent continuant</rdfs:comment>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_10545 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_10545">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36338"/>
+        <metadata:treeView rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36338"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elementary particle not affected by the strong force having a spin 1/2, a negative elementary charge and a rest mass of 0.000548579903(13) u, or 0.51099906(15) MeV.</obo:IAO_0000115>
+        <chebi:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1</chebi:charge>
+        <chebi:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.000548579903</chebi:mass>
+        <chebi:monoisotopicmass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.0</chebi:monoisotopicmass>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KEGG:C05359</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:21614077</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Electron</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electron</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elektron</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta(-)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta-particle</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e(-)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e-</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">negatron</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:10545</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electron</rdfs:label>
+        <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:10545</skos:notation>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10545"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:21614077</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Europe PMC</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10545"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e(-)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UniProt</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10545"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e-</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KEGG_COMPOUND</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10545"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">negatron</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10545"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electron</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10545"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electron</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#IUPAC_NAME"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10545"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electron</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KEGG_COMPOUND</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10545"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elektron</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10545"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10545"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta(-)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10545"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta-particle</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10545"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_15378 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_15378"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_24636 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24636">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_15378"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33253"/>
+        <metadata:treeView rdf:resource="http://purl.obolibrary.org/obo/CHEBI_15378"/>
+        <metadata:treeView rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33253"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nuclear particle of charge number +1, spin 1/2 and rest mass of 1.007276470(12) u.</obo:IAO_0000115>
+        <chebi:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+1</chebi:charge>
+        <chebi:formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[1H]</chebi:formula>
+        <chebi:inchi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InChI=1S/p+1/i/hH</chebi:inchi>
+        <chebi:inchikey rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPRLSGONYQIRFK-FTGQXOHASA-N</chebi:inchikey>
+        <chebi:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.007</chebi:mass>
+        <chebi:monoisotopicmass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.00728</chebi:monoisotopicmass>
+        <chebi:smiles rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[1H+]</chebi:smiles>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAS:12408-02-5</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KEGG:C00080</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protium(1+)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proton</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(1)1H(+)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(1)H(+)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p(+)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:24636</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proton</rdfs:label>
+        <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:24636</skos:notation>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24636"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAS:12408-02-5</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChemIDplus</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24636"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAS:12408-02-5</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIST Chemistry WebBook</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24636"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protium(1+)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#IUPAC_NAME"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24636"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proton</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24636"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proton</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#IUPAC_NAME"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24636"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(1)1H(+)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24636"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(1)H(+)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24636"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24636"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p(+)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_25585 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25585"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_27594 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27594">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25585"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33306"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33937"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <metadata:treeView rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25585"/>
+        <metadata:treeView rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33306"/>
+        <chebi:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</chebi:charge>
+        <chebi:formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C</chebi:formula>
+        <chebi:inchi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InChI=1S/C</chebi:inchi>
+        <chebi:inchikey rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OKTJSMMVPCPJKN-UHFFFAOYSA-N</chebi:inchikey>
+        <chebi:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12.01070</chebi:mass>
+        <chebi:monoisotopicmass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12.00000</chebi:monoisotopicmass>
+        <chebi:smiles rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[C]</chebi:smiles>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:23009</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:3399</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAS:7440-44-0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KEGG:C06265</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WebElements:C</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbon</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6C</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carbon</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kohlenstoff</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbon</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbone</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbonium</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbono</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:27594</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbon atom</rdfs:label>
+        <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:27594</skos:notation>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27594"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAS:7440-44-0</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChemIDplus</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27594"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAS:7440-44-0</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KEGG COMPOUND</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27594"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbon</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#IUPAC_NAME"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27594"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6C</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27594"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27594"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KEGG_COMPOUND</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27594"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carbon</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KEGG_COMPOUND</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27594"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kohlenstoff</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27594"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbon</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27594"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbone</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27594"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbonium</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27594"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbono</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_30212 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30212">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36341"/>
+        <metadata:treeView rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36341"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Particle of zero charge, zero rest mass, spin quantum number 1, energy hnu and momentum hnu/c (h is the Planck constant, nu the frequency of radiation and c the speed of light), carrier of electromagnetic force.</obo:IAO_0000115>
+        <chebi:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</chebi:charge>
+        <chebi:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.0</chebi:mass>
+        <chebi:monoisotopicmass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.0</chebi:monoisotopicmass>
+        <chebi:smiles rdf:datatype="http://www.w3.org/2001/XMLSchema#string">*</chebi:smiles>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:10581</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:14383</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KEGG:C00205</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photon</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lichtquant</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Light</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">foton</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gamma</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hnu</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">light quantum</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:30212</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photon</rdfs:label>
+        <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:30212</skos:notation>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30212"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photon</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#IUPAC_NAME"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30212"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lichtquant</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30212"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Light</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KEGG_COMPOUND</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30212"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">foton</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30212"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gamma</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30212"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hnu</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30212"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hnu</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UniProt</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30212"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">light quantum</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_30216 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30216">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33316"/>
+        <metadata:treeView rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33252"/>
+        <metadata:treeView rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33316"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleus of the (4)He atom.</obo:IAO_0000115>
+        <chebi:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+2</chebi:charge>
+        <chebi:formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[4He]</chebi:formula>
+        <chebi:inchi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InChI=1S/He/q+2/i1+0</chebi:inchi>
+        <chebi:inchikey rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBDSXVIYZYSRII-IGMARMGPSA-N</chebi:inchikey>
+        <chebi:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.002</chebi:mass>
+        <chebi:monoisotopicmass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.00151</chebi:monoisotopicmass>
+        <chebi:smiles rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[4He++]</chebi:smiles>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gmelin:53474</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha-particle</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">helium-4(2+)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(4)He(2+)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:30216</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha-particle</rdfs:label>
+        <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:30216</skos:notation>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30216"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gmelin:53474</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gmelin</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30216"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha-particle</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30216"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha-particle</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#IUPAC_NAME"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30216"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">helium-4(2+)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#IUPAC_NAME"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30216"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(4)He(2+)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30216"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_30222 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30222">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33253"/>
+        <metadata:treeView rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33253"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nuclear particle of zero charge, spin 1/2 and rest mass of 1.008664904(14) u.</obo:IAO_0000115>
+        <chebi:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</chebi:charge>
+        <chebi:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.008664904</chebi:mass>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neutron</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(1)0n</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:30222</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neutron</rdfs:label>
+        <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:30222</skos:notation>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30222"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neutron</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30222"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neutron</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#IUPAC_NAME"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30222"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(1)0n</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30222"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_30225 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30225">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36338"/>
+        <metadata:treeView rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36338"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elementary particle not affected by the strong force having a spin 1/2, a positive elementary charge and a rest mass of 0.000548579903(13) u, or 0.51099906(15) MeV.</obo:IAO_0000115>
+        <chebi:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+1</chebi:charge>
+        <chebi:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.0</chebi:mass>
+        <chebi:monoisotopicmass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.0</chebi:monoisotopicmass>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positron</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta(+)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e(+)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:30225</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positron</rdfs:label>
+        <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:30225</skos:notation>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30225"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positron</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#IUPAC_NAME"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30225"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta(+)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30225"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e(+)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33252 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33252"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33253 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33253"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33306 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33306"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33316 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33316"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33937 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33937"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_36338 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36338"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_36341 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36341"/>
     
 
 
@@ -428,7 +1105,7 @@ T Landberg et al, ICRU Report 62, &quot;Prescribing, Recording and Reporting Pho
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_continuant"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#&apos;clinical_target_volume&apos;"/>
         <obo:RO_0001018 rdf:resource="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#CTV_of_Prostate_patient_1"/>
-        <Treatment_Modality:part_of rdf:resource="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#Prostate_patient_1"/>
+        <part_of rdf:resource="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#Prostate_patient_1"/>
     </owl:NamedIndividual>
     
 
@@ -437,7 +1114,7 @@ T Landberg et al, ICRU Report 62, &quot;Prescribing, Recording and Reporting Pho
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#GTV_of_Prostate_patient_1">
         <rdf:type rdf:resource="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#&apos;gross_tumor_volume&apos;"/>
-        <Treatment_Modality:part_of rdf:resource="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#Prostate_patient_1"/>
+        <part_of rdf:resource="http://www.semanticweb.org/markp/ontologies/2019/6/Treatment_Modality#Prostate_patient_1"/>
     </owl:NamedIndividual>
     
 
@@ -451,5 +1128,5 @@ T Landberg et al, ICRU Report 62, &quot;Prescribing, Recording and Reporting Pho
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
