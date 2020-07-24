@@ -22,7 +22,7 @@ if $1
 then
     terms=$1
 else
-    terms=radont-terms.txt
+    terms=../radont-terms.txt
     printf "No input filename specifed, so trying $terms\n"
 fi
 
