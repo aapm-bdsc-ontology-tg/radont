@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.org/rto-draft#"
      xml:base="http://purl.org/rto-draft"
-     xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.org/rto-draft"/>
     
 
@@ -884,6 +884,15 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#occurent_part_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#occurent_part_of">
+        <obo:IAO_0000115>p occurent_part_of q. This is a primitive relation of parthood, holding independently of time, between prcoess instances when one is a subprocess of the other.  For example, this tumor&apos;s growth occurent_part_of Mary&apos;s life.</obo:IAO_0000115>
+        <rdfs:comment>From Arp book in Chapter &quot;The Ontology of Relations&quot;, p 135.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1006,17 +1015,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000602>(iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002] </obo:IAO_0000602>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">independent continuant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000005 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000005">
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000115 xml:lang="en">A continuant  that is either dependent on one or other independent continuant  bearers or inheres in or is borne by other entities.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">obsolete dependent continuant</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1235,35 +1233,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CHEBI_10545 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_10545">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36338"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elementary particle not affected by the strong force having a spin 1/2, a negative elementary charge and a rest mass of 0.000548579903(13) u, or 0.51099906(15) MeV.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-        <chebi:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1</chebi:charge>
-        <chebi:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.000548579903</chebi:mass>
-        <chebi:monoisotopicmass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.0</chebi:monoisotopicmass>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KEGG:C05359</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:21614077</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Electron</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electron</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elektron</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta(-)</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta-particle</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e(-)</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e-</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">negatron</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:10545</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electron</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CHEBI_23367 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_23367">
@@ -1398,26 +1367,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:30216</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha-particle</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_30225 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30225">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36338"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elementary particle not affected by the strong force having a spin 1/2, a positive elementary charge and a rest mass of 0.000548579903(13) u, or 0.51099906(15) MeV.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-        <chebi:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+1</chebi:charge>
-        <chebi:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.0</chebi:mass>
-        <chebi:monoisotopicmass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.0</chebi:monoisotopicmass>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positron</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta(+)</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e(+)</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:30225</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positron</rdfs:label>
     </owl:Class>
     
 
@@ -1638,38 +1587,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CHEBI_36338 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36338">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33233"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36340"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lepton is a fermion that does not experience the strong force (strong interaction). The term is derived from the Greek lambdaepsilonpitauomicronsigma (small, thin).</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leptons</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:36338</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lepton</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_36340 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36340">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36342"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Particle of half-integer spin quantum number following Fermi-Dirac statistics. Fermions are named after Enrico Fermi.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fermion</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fermions</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:36340</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fermion</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CHEBI_36341 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36341">
@@ -1689,6 +1606,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/CHEBI_36342 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36342">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A particle smaller than an atom.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Subatomic_particle</oboInOwl:hasDbXref>
@@ -1754,6 +1672,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI_0000142</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:comment>In Ontobee, &quot;information content entity&quot; is listed as IAO_0000030 [MHP 10/28/20]</rdfs:comment>
         <rdfs:label xml:lang="en">information content entity</rdfs:label>
     </owl:Class>
     
@@ -1954,25 +1873,13 @@ In the examples above, a reagent is an operational component of a device, but th
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000070"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000071"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#radiation_patient_positioning:radont_nnnn"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000078"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000060"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1999,28 +1906,259 @@ In the examples above, a reagent is an operational component of a device, but th
     
 
 
-    <!-- http://purl.org/rto-draft#RADONT_0000059 -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#site -->
 
-    <owl:Class rdf:about="http://purl.org/rto-draft#RADONT_0000059">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#site">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#Inverse_planned_specification:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#Inverse_planned_specification:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000078"/>
+        <obo:IAO_0000115>A plan specification that involved the use of &quot;inverse planning&quot;, i.e. use of optimization algorithms and plan objectives to determine (some of) the radiation delivery device settings. [MHP 12/15/20]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#action_specification:IAO_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#action_specification:IAO_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <obo:IAO_0000115>A directive information entity that describes an action the bearer will take.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#clinical_target_volume:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#clinical_target_volume:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#target_volume:radont_nnnn"/>
+        <obo:IAO_0000115>A region of the body that contains the gross tumor volume (GTV) plus added areas which hold microscopic (?)/non-imageable disease that is intended to be treated during the radiation therapy procedure.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#datum_label:IAO00000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#datum_label:IAO00000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115>A label is a symbol that is part of some other datum and is used to either partially define the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#dose_specification:Jonathan -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#dose_specification:Jonathan">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#action_specification:IAO_0000007"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#forward_planned_specification:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#forward_planned_specification:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000078"/>
+        <obo:IAO_0000115>A plan specification that was devised by relying on experience and heuristics and/or trial-and-errors in order to determine [some of] the radiation delivery device settings. [12/15/20]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#fraction_delivery_plan_specification:Jonathan -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#fraction_delivery_plan_specification:Jonathan">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#action_specification:IAO_0000007"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#fractional_radiation_dose_objective:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#fractional_radiation_dose_objective:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#radiation_therapy_dose_objective:radont_nnnn"/>
+        <obo:IAO_0000115>The radiation dose that is delivered in a single session to a given target volume.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#gross_tumor_volume:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#gross_tumor_volume:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#target_volume:radont_nnnn"/>
+        <obo:IAO_0000115>The region of the body containing disease that can be imaged using medical imaging procedures, and/or determined by physical examination and/or determined by surgical exploration. [MHP 9/1/20]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#measurement_unit_label:IAO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#measurement_unit_label:IAO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#datum_label:IAO00000009"/>
+        <obo:IAO_0000115>A measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#objective_specification:IAO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#objective_specification:IAO_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <obo:IAO_0000115>A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#patient_role:OBI_0000144 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#patient_role:OBI_0000144">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#planning_target_volume:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#planning_target_volume:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#target_volume:radont_nnnn"/>
+        <obo:IAO_0000115>A region of the body that contains the the gross tumor volume (GTV) and the clinical target volume (CTV) plus a margin for potential or expected patient motion resulting in misalignment of the radiation therapy beam and the intended region of the body (GTV, CTV).  [MHP 9/1/20]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#radiation_dose_unit:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#radiation_dose_unit:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#measurement_unit_label:IAO_0000003"/>
+        <obo:IAO_0000115>Unit of ionizing energy deposited per mass.  Typical values are 1 Gray [Gy] = 1 Joule/kilogram and 1 centiGray [cGy] = 1/100 of 1 Gy. [MHP 10/12/20]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#radiation_therapy_beam:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#radiation_therapy_beam:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000116"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#radiation_beam:radont_nnnn"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000065"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/rto-draft#RADONT_0000060"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A planned process that delivers radiation to some part of a patient&apos;s body.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Note: this always part of some radiation therapy procedure?
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/rto-draft#RADONT_0000061"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/rto-draft#collimator:radont_nnnn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/rto-draft#spectrum:radont_nnnn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A configuration of the elements that comprise a radiation therapy device whose function is to deliver a planned amount of radiation to a particular patient. [MHP 9/1/20]</obo:IAO_0000115>
+        <rdfs:comment>Meeting of 9/2/20: General discussion led to conclusion that this is a bad class.  Should probably be deleted.
+
+Some examples of radiation therapy beam:
+     - a 6 MV x-ray beam modulated by a 30 degree wedge with the gantry angle of 90 degrees, collimator rotation of 0 degrees, and planned dose to the isocenter of 100 cGy.
+     - a 10 MV x-ray beam collimated using a mulitleaf collimator in a set of steps (segments) of a given shape and monitor units with a gantry angle of 15 degrees, collimator angle of 20 degrees on a given linear accelerator.
+[MHP 9/1/20]</rdfs:comment>
+    </owl:Class>
+    
 
 
-Mark&apos;s proposed definition -- 1:n possible sessions of delivery of radiation that, taken together, constitute a radiation therapy procedure.</rdfs:comment>
-        <rdfs:label xml:lang="en">radiation therapy session</rdfs:label>
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#radiation_therapy_dose_objective:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#radiation_therapy_dose_objective:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#objective_specification:IAO_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#target_volume:radont_nnnn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The planned dose to be delivered to the region of the body in which the cancer (or relevant benign disease) is located.  It is understood that this is a summary statistic and that not all parts of the target volume will receive this dose.  
+
+This is distinguished from radiation_absorbed_dose which is a an explicit physics measurement of the energy absorbed in a small volume.  
+
+[MHP 10/12/20]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#radiation_therapy_fraction_dose:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#radiation_therapy_fraction_dose:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#radiation_absorbed_dose:radont_nnnn"/>
+        <obo:IAO_0000115>The absorbed dose that is delivered in a single radiation therapy session.  The number of sessions for a given radiation therapy treatment can vary from 1 to n.  Therefore, the fraction_dose equalst the total_dose divided by the number of sessions. [MHP 10/29/20]</obo:IAO_0000115>
+        <rdfs:comment>This is the value that is referred to in the prescription and treatment plan.  However, it is conceptually different since it is the actualization of the planned  fractional dose.  Also, by having both the fractional_dose_objective and fraction_dose allows one to account for changes in prescription or situations where the intended dose was not actually delivered. [MHP 10/29/20]</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#radiation_therapy_total_dose:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#radiation_therapy_total_dose:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#radiation_absorbed_dose:radont_nnnn"/>
+        <obo:IAO_0000115>The absorbed dose that is the total amount of dose that was delivered as part of a radiation therapy process. [MHP 10/29/20]</obo:IAO_0000115>
+        <rdfs:comment>This is the value that is referred to in the prescription and treatment plan.  However, it is conceptually different since it is the actualization of the planned dose.  Also, by having both the total_dose_objective and total_dose allows one to account for changes in prescription or situations where the intended dose was not actually delivered. [MHP 10/29/20]</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#rt_end_date:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#rt_end_date:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#zero-dimensional_temporal_region:BFO_0000148"/>
+        <obo:IAO_0000115>The calendar date of the end of a radiation therapy procedure.
+[MHP 10/12/20]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#rt_start_date:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#rt_start_date:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#zero-dimensional_temporal_region:BFO_0000148"/>
+        <obo:IAO_0000115>The calendar date of the beginning of a radiation therapy procedure.
+[MHP 10/12/20]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#target_volume:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#target_volume:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#site"/>
+        <obo:IAO_0000115>A region of the body that contains disease that is to be irradiated during a radiation therapy procedure [MHP 9/1/20]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#total_radiation_dose_objective:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#total_radiation_dose_objective:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#radiation_therapy_dose_objective:radont_nnnn"/>
+        <obo:IAO_0000115>The total radiation dose to a particular target volume that is to be delivered in a radiation therapy procedure.  It should be the sum of the fractional_radiation dose.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2055,7 +2193,7 @@ Mark&apos;s proposed definition -- 1:n possible sessions of delivery of radiatio
                 <owl:onClass rdf:resource="http://purl.org/rto-draft#radiation_dosimeter:radont_nnnn"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A device that is used in the process of delivering radiation therapy to a patient.  It consists of multiple parts, the minimum being a radiation emission device.  Other possible parts are radiation monitors, radiation collimators, patient positioning and immobilization devices.  [MP 8/4/20]</rdfs:comment>
+        <obo:IAO_0000115 xml:lang="en">A device that is used in the process of delivering radiation therapy to a patient.  It consists of multiple parts, the minimum being a radiation emission device.  Other possible parts are radiation monitors, radiation collimators, patient positioning and immobilization devices.  [MP 8/4/20]</obo:IAO_0000115>
         <rdfs:label xml:lang="en">radiation therapy device</rdfs:label>
     </owl:Class>
     
@@ -2108,7 +2246,8 @@ Mark&apos;s proposed definition -- 1:n possible sessions of delivery of radiatio
 
     <owl:Class rdf:about="http://purl.org/rto-draft#RADONT_0000064">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#external_beam_therapy:radont_nnnn"/>
-        <obo:IAO_0000115 xml:lang="en">A radiation therapy procedure in which radiation is delivered using multiple beams, each of which is composed of an individual set of segments, each of which has a unique 2 dimensional shape, intensity, radiation dose and particle type</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A radiation therapy procedure in which radiation is delivered using multiple beams, each of which is composed of an individual set of segments, each of which has a unique 2 dimensional shape, intensity, radiation dose and particle type.
+Such a procedure can only be realized by means of an inverse planning process (from poll of physicists) [MHP 9/1/20]</obo:IAO_0000115>
         <rdfs:label xml:lang="en">intensity modulated radiation therapy</rdfs:label>
     </owl:Class>
     
@@ -2131,12 +2270,6 @@ Mark&apos;s proposed definition -- 1:n possible sessions of delivery of radiatio
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000059"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000068"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2144,6 +2277,12 @@ Mark&apos;s proposed definition -- 1:n possible sessions of delivery of radiatio
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000069"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#radiation_therapy_session:RADONT_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">radiation therapy course</rdfs:label>
@@ -2155,6 +2294,8 @@ Mark&apos;s proposed definition -- 1:n possible sessions of delivery of radiatio
 
     <owl:Class rdf:about="http://purl.org/rto-draft#RADONT_0000068">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115>The process of determining the model of the patient&apos;s body that is to be used.  The devices and measurements necessary for the radiation patient positioning (radont_nnnn) process are determined and constructed.
+[MHP 9/2/20]</obo:IAO_0000115>
         <rdfs:label xml:lang="en">radiation therapy simulation</rdfs:label>
     </owl:Class>
     
@@ -2164,25 +2305,16 @@ Mark&apos;s proposed definition -- 1:n possible sessions of delivery of radiatio
 
     <owl:Class rdf:about="http://purl.org/rto-draft#RADONT_0000069">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115>The process of deciding the means of treating the patient and using software to calculate critical parameters.  The calculations are carried out using a model of radiation transport and a model of the patient&apos;s body and disease. [MHP 9/2/20]</obo:IAO_0000115>
+        <rdfs:comment>Examples:
+    - the choice of 3d conformal RT, the use of a commercial radiation treatment planning system (RTPS) to determine the  machine parameters such as gantry angle, collimator configuration, etc.  Once the parameters are set, a model of radiation transport is used to calculate the dose throughout a model of the patient&apos;s body.
+
+    - the choice of intensity modulated radiation therapy.  Similar to the previous example but in this case there are the additional steps of determining optimization objectives and using an algorithm to find the machine parameters that best meet those objectives.
+
+The model of the patient&apos;s body can be crude, such as representing the tissues as a single material and using one axial outline to represent all other planes of the body.  It can also be very sophisticated using merged images from multiple imaging sources with tissue inhomogeneities adequately represented.
+
+[MHP 9/2/20]</rdfs:comment>
         <rdfs:label xml:lang="en">radiation therapy planning</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rto-draft#RADONT_0000070 -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#RADONT_0000070">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <rdfs:label xml:lang="en">patient positioning for radiation therapy</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rto-draft#RADONT_0000071 -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#RADONT_0000071">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <rdfs:label xml:lang="en">patient immobilization for radiation therapy</rdfs:label>
     </owl:Class>
     
 
@@ -2200,6 +2332,13 @@ Mark&apos;s proposed definition -- 1:n possible sessions of delivery of radiatio
 
     <owl:Class rdf:about="http://purl.org/rto-draft#RADONT_0000078">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#radiation_therapy_prescription:radont_nnnn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>More commonly called a &quot;radiation therapy plan&quot;.  Such an entity consists of a list of actualizable elements, e.g. radiation beam angle, particle energy, etc.  It also consists of a computed distribution of radiation doses in a particular human body.  That is, it uses the values of the list of elements and the physics of radiation transport to produce a planned set of doses at points throughout the body of a particular patient.  [MHP 9/1/20]</obo:IAO_0000115>
         <rdfs:label xml:lang="en">radiation therapy plan specification</rdfs:label>
     </owl:Class>
     
@@ -2232,11 +2371,121 @@ Mark&apos;s proposed definition -- 1:n possible sessions of delivery of radiatio
     
 
 
+    <!-- http://purl.org/rto-draft#high_dose_rate_brachytherapy -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#high_dose_rate_brachytherapy">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#brachytherapy:radont_nnnn"/>
+        <obo:IAO_0000115>Brachytherapy process in which the radiation is delivered in very short (on the order of minutes) time frame.  This may be repeated in mulitple sessions (fractions).  [MHP 11/24/20]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#interstitial_permanent_brachytherapy -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#interstitial_permanent_brachytherapy">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#brachytherapy:radont_nnnn"/>
+        <obo:IAO_0000115>Low dose rate brachytherapy method in which encapsulated isotopic sources are placed within (or nearby) the tumor tissue and left there for the remainder of the patient&apos;s life. [MHP 11/24/20]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#interstitial_temporary_brachytherapy -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#interstitial_temporary_brachytherapy">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#brachytherapy:radont_nnnn"/>
+        <obo:IAO_0000115>Brachytherapy method in which an encapsulated source or sources is placed within the tumor tissue.  This can be used with either high dose rate or low dose rate brachytherapy.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#intracavitary_temporary_brachytherapy -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#intracavitary_temporary_brachytherapy">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#brachytherapy:radont_nnnn"/>
+        <obo:IAO_0000115>Brachytherapy method in which an encapsulated source is placed within a body cavity that penetrates or is surrounded by tumor tissue.  It can be used with either high dose rate or low dose rate therapy.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#low_dose_rate_brachytherapy -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#low_dose_rate_brachytherapy">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#brachytherapy:radont_nnnn"/>
+        <obo:IAO_0000115>Brachytherapy process in which the radiation is delivered slowly (over the course of many hours or several days). [MHP 11/24/20]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#passive_scattering -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#passive_scattering">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#particle_beam_radiation_therapy:radont_nnnn"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#hadron:CHEBI_36344"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Particle therapy in which the beam is broadened to cover the entire treatment volume and is shaped laterally by the means of collimators. [MHP 11/24/20]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#scanning_beam_intensity_modulated -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#scanning_beam_intensity_modulated">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#particle_beam_radiation_therapy:radont_nnnn"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#hadron:CHEBI_36344"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Particle therapy in which a relatively small width (~ 1 cm) beam is magnetically scanned horizontally and vertically to cover the treatment volume.  Intensity modulation is achieved by the time  the beam hovers at one spot. [MHP 11/24/20]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#2D_radiation_therapy -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#2D_radiation_therapy">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#external_beam_therapy:radont_nnnn"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#begin_radiation_therapy_process:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#begin_radiation_therapy_process:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#process_boundary:OBO_0000035"/>
+        <obo:IAO_0000115>&quot;For purposes of recording, the point in time that signifies the beginning of a radiation therapy treatment process.  For most purposes, merely the date is sufficient but strictly speaking there is a moment in time, denoted perhaps by the OIS time-date-stamp on treatment delivery, when it begins. [MHP 11/10/20]&quot;</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rto-draft#brachytherapy:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#brachytherapy:radont_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000116"/>
         <rdfs:comment>The procedure by which a radiation treatment is delivered using one or more sealed radioactive isotopic sources that is inserted into the body. [MP 8/10/20]</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#bremmstrahlung:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#bremmstrahlung:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#x-ray:radonc_nnnn"/>
+        <obo:IAO_0000115>An x-ray resulting from the slowing down of an energetic electron due to its interaction with an atom. [MHP 12/7/20]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#clinical_data_item:OGMS_0000123 -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#clinical_data_item:OGMS_0000123">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#data_item:IAO_0000027"/>
+        <obo:IAO_0000115>A data item that is about a patient and is the specified output of a health care process assay or diagnostic process</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2251,7 +2500,25 @@ Mark&apos;s proposed definition -- 1:n possible sessions of delivery of radiatio
                 <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000060"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>A device used by a radiation therapy device to limit the 2D spatial extent of a collection of subatomic particles produced by a radiation emission device. [MP 8/4/20]</rdfs:comment>
+        <obo:IAO_0000115>A device used by a radiation therapy device to limit the 2D spatial extent of a collection of subatomic particles produced by a radiation emission device. [MP 8/4/20]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#data_item:IAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#data_item:IAO_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115>An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#diagnosis:OGMS_0000073 -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#diagnosis:OGMS_0000073">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#clinical_data_item:OGMS_0000123"/>
+        <obo:IAO_0000115>The representation of a conclusion of a diagnostic process.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2266,7 +2533,16 @@ Mark&apos;s proposed definition -- 1:n possible sessions of delivery of radiatio
                 <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#radiation_beam:radont_nnnn"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Dose rate inheres in a beam of radiation and is a measure of the amount of dose delivered per time.  [MP 8/10/20]</rdfs:comment>
+        <obo:IAO_0000115>Dose rate inheres in a beam of radiation and is a measure of the amount of dose delivered per time.  [MP 8/10/20]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#end_radiation_therapy_process:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#end_radiation_therapy_process:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#process_boundary:OBO_0000035"/>
+        <obo:IAO_0000115>&quot;For purposes of recording, the point in time that signifies the end of a radiation therapy treatment process.  For most purposes, merely the date is sufficient but strictly speaking there is a moment in time, denoted perhaps by the OIS time-date-stamp on treatment delivery, when it ends. [MHP 11/10/20]&quot;&quot;</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2278,28 +2554,51 @@ Mark&apos;s proposed definition -- 1:n possible sessions of delivery of radiatio
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000060"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#radiation_therapy_beam:radont_nnnn"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000061"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#patient_positioner:radont_nnnn"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#radiation_beam:radont_nnnn"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>This is a form of radiation therapy in which the radiation source is external to and some distance from the patient&apos;s body, cf. brachytherapy, and the radiation is delivered in one or more radont:radiation_beams.  Instances can be distinguished by the type and energy of the particle beam, the radiation positioning device, dose rate, the positioning of the patient.  [MP 8/10/20]</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#gamma:radonc_nnnn -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#gamma:radonc_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30212"/>
+        <obo:IAO_0000115>A photon that is released during a  nuclear process in which the nucleus changes states. [MHP 12/7/20]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#hadron:CHEBI_36344 -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#hadron:CHEBI_36344">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36342"/>
+        <obo:IAO_0000115>a subatomic particle which experiences the strong force.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#history:BFO_0000182 -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#history:BFO_0000182">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#intent:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#intent:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#objective_specification:IAO_0000005"/>
+        <obo:IAO_0000115>The overall goal of the radiation therapy process, e.g. curative, palliative.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2322,6 +2621,14 @@ Mark&apos;s proposed definition -- 1:n possible sessions of delivery of radiatio
     
 
 
+    <!-- http://purl.org/rto-draft#measurement_datum:IAO_0000109 -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#measurement_datum:IAO_0000109">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#data_item:IAO_0000027"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rto-draft#measurement_device:OBI_0000832 -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#measurement_device:OBI_0000832">
@@ -2331,10 +2638,43 @@ Mark&apos;s proposed definition -- 1:n possible sessions of delivery of radiatio
     
 
 
+    <!-- http://purl.org/rto-draft#neutron:CHEBI_30222 -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#neutron:CHEBI_30222">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#hadron:CHEBI_36344"/>
+        <obo:IAO_0000115>Nuclear particle of zero charge, spin 1/2 and rest mass of 1.008664904(14) u.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rto-draft#object_aggregate:BFO0000027 -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#object_aggregate:BFO0000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#one-dimensional_temporal_region:BFO_0000038 -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#one-dimensional_temporal_region:BFO_0000038">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#temporal_region:OBO_0000008"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#particle_beam_radiation_therapy:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#particle_beam_radiation_therapy:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#external_beam_therapy:radont_nnnn"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/rto-draft#hadron:CHEBI_36344"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A type of external beam therapy that uses beams of charged particles, e.g. protons and heavier ions.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2349,7 +2689,24 @@ Mark&apos;s proposed definition -- 1:n possible sessions of delivery of radiatio
                 <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000060"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>A device that is part of a radiation therapy device that is used to support and position  the patient with respect to the radiation field used to treat the patient.  [MP 8/4/20]</rdfs:comment>
+        <obo:IAO_0000115>A device that is part of a radiation therapy device that is used to support and position  the patient with respect to the radiation field used to treat the patient.  [MP 8/4/20]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#process_boundary:OBO_0000035 -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#process_boundary:OBO_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#proton:CHEBI_24636 -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#proton:CHEBI_24636">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#hadron:CHEBI_36344"/>
+        <obo:IAO_0000115>Nuclear particle of charge number +1, spin 1/2 and rest mass of 1.007276470(12) u.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2357,15 +2714,25 @@ Mark&apos;s proposed definition -- 1:n possible sessions of delivery of radiatio
     <!-- http://purl.org/rto-draft#radiation_absorbed_dose:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#radiation_absorbed_dose:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#scalar_measurement_datum:IAO_0000032"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#radiation_beam:radont_nnnn"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>The amount of energy that is transferred from a collection of subatomic particles to some material object. [MP 8/4/20]
-[Note, I originally classified this as a &quot;quality&quot; but disposition seems a bit closer--up for debate. MP]</rdfs:comment>
+        <obo:IAO_0000115>The amount of energy that is transferred from a collection of subatomic particles to some material object. [MP 8/4/20]</obo:IAO_0000115>
+        <rdfs:comment>Updated Rationale [MHP 12/9/20]
+Group discussion led to the conclusion that the overall structure of the ontology is simpler, yet still intellectually coherent, by moving this class from &quot;disposition&quot; to a measurement artifact.  We clarified that although radiation_absorbed_dose can be a direct measurement, e.g. calorimetry, we also consider that we measure the dose by measuring the linac monitor units or the brachy time.
+
+Rationale for this subclass (from Arp):  [MHP 10/28/20]
+&quot;A realizable entity is thus defined as a specifically dependent continuant that has at least one independent continuant entity as its bearer, and whose instances canbe realized (...) in associated processes of specific correlated types in which the bearer participate.
+   Examples of realizable entity include...., the disposition of a portion of blood to coagulate, the disposition of a portion of metal to conduct electricity...&quot;
+
+and a few pages later:
+&quot;A disposition is a realizable entity in virtue of which a process of a certain kind occurs (or can occur) in the independent continuant in which the disposition inheres.  This process is called the realization of the disposition.  The trigger might consist in the objects being placed in a certain external influence...&quot;
+
+In my thinking the independent continuant is the collection of fundamental particles (x-rays, protons, electrons) that when encountering a material object, penetrate it and deposit energy.</rdfs:comment>
     </owl:Class>
     
 
@@ -2374,7 +2741,17 @@ Mark&apos;s proposed definition -- 1:n possible sessions of delivery of radiatio
 
     <owl:Class rdf:about="http://purl.org/rto-draft#radiation_beam:radont_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#object_aggregate:BFO0000027"/>
-        <rdfs:comment>An aggregate of subatomic particles of the same type from a common source (radont:radiation_emission_device).  The source is designed so that the particles travel in a similar direction. [MP 8/4/20]</rdfs:comment>
+        <obo:IAO_0000115>An aggregate of subatomic particles of the same type from a common source (radont:radiation_emission_device).  The source is designed so that the particles travel in a similar direction. [MP 8/4/20]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#radiation_delivery_specification:radonc_nnnn -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#radiation_delivery_specification:radonc_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <obo:IAO_0000115>The specification of the equpment and processes that will result in the delivery of radiation during radiation therapy. [MHP 11/24/20]</obo:IAO_0000115>
+        <rdfs:comment>Alternative term is &quot;technique&quot; [MHP 11/24/20]</rdfs:comment>
     </owl:Class>
     
 
@@ -2383,10 +2760,36 @@ Mark&apos;s proposed definition -- 1:n possible sessions of delivery of radiatio
 
     <owl:Class rdf:about="http://purl.org/rto-draft#radiation_dosimeter:radont_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#measurement_device:OBI_0000832"/>
-        <rdfs:comment>A device that measures an amount of ionizing radiation in units of dose (https://www.nrc.gov/reading-rm/basic-ref/glossary/dose.html) Different physical properties may be measured, e.g. amount of charged collected, but the measurement value must be capable of being calibrated to the basic unit of dose, i.e. Joule/kg.  
+        <obo:IAO_0000115>A device that measures an amount of ionizing radiation in units of dose (https://www.nrc.gov/reading-rm/basic-ref/glossary/dose.html) Different physical properties may be measured, e.g. amount of charged collected, but the measurement value must be capable of being calibrated to the basic unit of dose, i.e. Joule/kg.  
 
 The measurement may be continuous or integrated.  
-[MP 8/4/20]</rdfs:comment>
+[MP 8/4/20]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#radiation_fractionation_plan:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#radiation_fractionation_plan:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <obo:IAO_0000115>The planned distribution of the total radiation dose over time as realized in a series of radiation therapy sessions.  This includes both the fractional amount of radiation per session as well as the temporal arrangement of the sessions. [MHP 10/13/20]</obo:IAO_0000115>
+        <rdfs:comment>Fractionation plan can be complex, e.g. 60 fractions of 120 cGy twice daily to the PTV and 25 fractions of 200 cGy once daily to lymph nodes.  In this case, it might be best to consider these as two different fractionation plans since it deals with two different target volumes.  Fractionation schedules that include a boost is more complicated (and simultaneous integrated boost even more so), since the boost target volume is usually contained within the original target volume. [MHP 10/13/20]</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#radiation_patient_positioning:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#radiation_patient_positioning:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000116"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The process of using appopriate devices and imaging procedures as part of the process of carrying out the radiation therapy plan by aligning the patient&apos;s anatomy with the therapy device.
+[MHP 9/2/20]</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2401,7 +2804,63 @@ The measurement may be continuous or integrated.
                 <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000060"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>A device that is part of a radont:radiation _therapy_device that places the radont:radiation_emission_device relative to the patient in order to deliver the radiation as described by the radiation therapy plan.  Examples are gantries, robotic arms, brachytherapy applicators.  There is no requirement that the radiatioin emission device can move, e.g. Gamma Knife.  [MP 8/10/20]</rdfs:comment>
+        <obo:IAO_0000115>A device that is part of a radont:radiation _therapy_device that places the radont:radiation_emission_device relative to the patient in order to deliver the radiation as described by the radiation therapy plan.  Examples are gantries, robotic arms, brachytherapy applicators.  There is no requirement that the radiatioin emission device can move, e.g. Gamma Knife.  [MP 8/10/20]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#radiation_therapy_prescription:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#radiation_therapy_prescription:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#fractional_radiation_dose_objective:radont_nnnn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#total_radiation_dose_objective:radont_nnnn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A list of objectives, e.g. dose, number of fractions, to be achieved in the radiation therapy process delivered to a particular patient for a particular disease.  It may or may not include instructions for how to deliver the radiation, e.g. IMRT.  It usually includes the type of radiation, e.g. x-rays, electrons, brachytherapy.</obo:IAO_0000115>
+        <rdfs:comment>Did not feel this fits under plan_specification since the definition of that class indicates that actions are specified.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#radiation_therapy_session:RADONT_0000059 -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#radiation_therapy_session:RADONT_0000059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000065"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#occurent_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000116"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A planned process that delivers radiation to some part of a patient&apos;s body that takes part during a constrained period of time and is part of the overall radiation therapy procedure (radont_nnnn).  For fractionated treatments, the overall treatment process contains multiple radiation treatment sessions.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Note: this always part of some radiation therapy procedure? Yes (MP).
+
+
+Mark&apos;s proposed definition -- 1:n possible sessions of delivery of radiation that, taken together, constitute a radiation therapy procedure.</rdfs:comment>
+        <rdfs:label xml:lang="en">radiation therapy session</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#scalar_measurement_datum:IAO_0000032 -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#scalar_measurement_datum:IAO_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#measurement_datum:IAO_0000109"/>
     </owl:Class>
     
 
@@ -2416,17 +2875,25 @@ The measurement may be continuous or integrated.
                 <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#radiation_beam:radont_nnnn"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Spectrum is the distribution of energies of the constituent subatomic particles that constitute a radont:radiation_beam.  
-The spectrum can be a single energy as with gamma rays or particle beam as well as a broad distribution of a range of energies. [MP 8/10/20]</rdfs:comment>
+        <obo:IAO_0000115>Spectrum is the distribution of energies of the constituent subatomic particles that constitute a radont:radiation_beam.  
+The spectrum can be a single energy as with gamma rays or particle beam as well as a broad distribution of a range of energies. [MP 8/10/20]</obo:IAO_0000115>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/rto-draft#surface_brachytherapy:radonc_nnnn -->
+    <!-- http://purl.org/rto-draft#surface_brachytherapy:radont_nnnn -->
 
-    <owl:Class rdf:about="http://purl.org/rto-draft#surface_brachytherapy:radonc_nnnn">
+    <owl:Class rdf:about="http://purl.org/rto-draft#surface_brachytherapy:radont_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#brachytherapy:radont_nnnn"/>
         <rdfs:comment>A form of brachytherapy in which the sources are held in a mold that is shaped to fit the contours of the surface to be treated [instance of radont:radiation_positioning_device}. [MP 8/10/20]</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#temporal_region:OBO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#temporal_region:OBO_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
     </owl:Class>
     
 
@@ -2435,18 +2902,28 @@ The spectrum can be a single energy as with gamma rays or particle beam as well 
 
     <owl:Class rdf:about="http://purl.org/rto-draft#tomotherapy:radont_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#external_beam_therapy:radont_nnnn"/>
+        <obo:IAO_0000115>A form of external beam therapy in which the radiation is delivered sequentially in thin slices along the axis of the body, similar to the way that a CT image is acquired. [MHP 9/1/20]</obo:IAO_0000115>
     </owl:Class>
     
 
 
-    <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
+    <!-- http://purl.org/rto-draft#x-ray:radonc_nnnn -->
 
-    <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Obsolete Class</rdfs:label>
+    <owl:Class rdf:about="http://purl.org/rto-draft#x-ray:radonc_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30212"/>
+        <obo:IAO_0000115>Photon that is emitted during an atomic process. [MHP 12/7/20]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#zero-dimensional_temporal_region:BFO_0000148 -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#zero-dimensional_temporal_region:BFO_0000148">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#temporal_region:OBO_0000008"/>
     </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
