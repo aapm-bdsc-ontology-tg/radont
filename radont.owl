@@ -1233,89 +1233,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CHEBI_23367 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_23367">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular entity</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">entidad molecular</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">entidades moleculares</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">entite moleculaire</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular entities</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molekulare Entitaet</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:23367</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_23906 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_23906">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24867"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36916"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monoatomic cations</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:23906</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monoatomic cation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_24431 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24431">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical entity</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:24431</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_24867 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24867">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24870"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33238"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monoatomic ions</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:24867</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monoatomic ion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_24870 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24870">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A molecular entity having a net electric charge.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ion</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ion</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ionen</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iones</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ions</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:24870</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ion</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CHEBI_30212 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30212">
@@ -1344,55 +1261,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CHEBI_30216 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30216">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33252"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33316"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleus of the (4)He atom.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-        <chebi:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+2</chebi:charge>
-        <chebi:formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[4He]</chebi:formula>
-        <chebi:inchi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InChI=1S/He/q+2/i1+0</chebi:inchi>
-        <chebi:inchikey rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBDSXVIYZYSRII-IGMARMGPSA-N</chebi:inchikey>
-        <chebi:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.002</chebi:mass>
-        <chebi:monoisotopicmass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.00151</chebi:monoisotopicmass>
-        <chebi:smiles rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[4He++]</chebi:smiles>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gmelin:53474</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha-particle</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">helium-4(2+)</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(4)He(2+)</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:30216</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha-particle</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_30412 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30412">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23906"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-        <chebi:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+2</chebi:charge>
-        <chebi:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.00000</chebi:mass>
-        <chebi:smiles rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[*++]</chebi:smiles>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:23856</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:4665</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KEGG:C00572</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Divalent cation</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">divalent inorganic cations</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monoatomic dications</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:30412</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monoatomic dication</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CHEBI_33233 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33233">
@@ -1405,22 +1273,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:33233</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fundamental particle</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_33238 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33238">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33259"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A monoatomic entity is a molecular entity consisting of a single atom.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atomic entity</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monoatomic entities</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:33238</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monoatomic entity</rdfs:label>
     </owl:Class>
     
 
@@ -1448,145 +1300,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CHEBI_33259 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33259">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A molecular entity all atoms of which have the same atomic number.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">homoatomic entity</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">homoatomic molecular entities</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">homoatomic molecular entity</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:33259</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elemental molecular entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_33315 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33315">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33238"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33680"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-        <chebi:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</chebi:charge>
-        <chebi:formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">He</chebi:formula>
-        <chebi:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.003</chebi:mass>
-        <chebi:monoisotopicmass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.00260</chebi:monoisotopicmass>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elemental helium</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:33315</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monoatomic helium</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_33316 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33316">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30412"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33315"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-        <chebi:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+2</chebi:charge>
-        <chebi:formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">He</chebi:formula>
-        <chebi:inchi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InChI=1S/He/q+2</chebi:inchi>
-        <chebi:inchikey rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBDSXVIYZYSRII-UHFFFAOYSA-N</chebi:inchikey>
-        <chebi:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.00260</chebi:mass>
-        <chebi:monoisotopicmass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.00151</chebi:monoisotopicmass>
-        <chebi:smiles rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[He++]</chebi:smiles>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">helium(2+)</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">He(2+)</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:33316</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">helium(2+)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_33579 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33579">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A molecular entity containing one or more atoms from any of groups 1, 2, 13, 14, 15, 16, 17, and 18 of the periodic table.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">main group compounds</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">main group molecular entities</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:33579</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">main group molecular entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_33583 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33583">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33579"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A main group molecular entity containing one or more atoms of any noble gas.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noble gas molecular entity</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noble gas compounds</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noble gas molecular entities</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:33583</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noble gas molecular entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_33674 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33674">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33579"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An s-block molecular entity is a molecular entity containing one or more atoms of an s-block element.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">s-block molecular entity</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">s-block compounds</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">s-block molecular entities</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:33674</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">s-block molecular entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_33679 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33679">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33583"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33674"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">helium molecular entity</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">helium compounds</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">helium molecular entities</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:33679</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">helium molecular entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_33680 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33680">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33679"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:33680</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elemental helium</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CHEBI_36341 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36341">
@@ -1607,6 +1320,13 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36342">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/rto-draft#spectrum:radont_nnnn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A particle smaller than an atom.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Subatomic_particle</oboInOwl:hasDbXref>
@@ -1630,29 +1350,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:36347</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nuclear particle</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_36916 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36916">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24870"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A monoatomic or polyatomic species having one or more elementary charges of the proton.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:23058</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:3473</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KEGG:C01373</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cation</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cation</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kation</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kationen</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cationes</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cations</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:36916</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cation</rdfs:label>
     </owl:Class>
     
 
@@ -1898,10 +1595,62 @@ In the examples above, a reagent is an operational component of a device, but th
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/rto-draft#RADONT_0000075"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/rto-draft#radiation_fractionation_plan:radont_nnnn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/rto-draft#radiation_therapy_prescription:radont_nnnn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A therapeutic procedure that uses radiation.</obo:IAO_0000115>
         <obo:IAO_0000232>creation date: 2018-11-27</obo:IAO_0000232>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+        <rdfs:comment>I added several axioms in light of ASTRO&apos;s most recent declaration of how they are organizing things.  In particular, I added axioms for prescription, image guidance and fractionation.  Since all of these are &quot;continuants&quot;, it seems that the proper property is &quot;has participant&quot;</rdfs:comment>
+        <rdfs:comment>Someone (Jonathan?) put in the axiom &quot;realizes&quot; some plan.  That seems not quite rights since &quot;realizes&quot; needs a disposition as part of the relationship and I don&apos;t see that in our ontology (MP 2/12/21)</rdfs:comment>
         <rdfs:label xml:lang="en">radiation therapy procedure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#MV_planar_imaging -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#MV_planar_imaging">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#planar_imaging:radonc_nnnn"/>
+        <obo:IAO_0000115>A planar_imaging device that uses megavoltage x-rays as the source of radiation and a detector system that records the presence of x-rays that pass through the body.  [MP 2/23/21]</obo:IAO_0000115>
+        <rdfs:comment>MV imaging typically provides poorer image quality of the body than does kV imaging due to the lack of photoelectric scattering.  The main source of imaging contrast is due to differences in physical density.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#cone_beam_CT -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#cone_beam_CT">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#computed_tomography:radont_nnnn"/>
+        <obo:IAO_0000115>A CT device that images a volume of tissue rather than a slice.  The image is reconstructed into tomographic images after the imaging is completed.  [MHP 2/23/21]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#kV_planar_imaging -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#kV_planar_imaging">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#planar_imaging:radonc_nnnn"/>
+        <obo:IAO_0000115>A planar_imaging device that uses kilovoltage x-rays as the source of radiation and a detector system that records the presence of x-rays that pass through the body.  [MP 2/23/21]</obo:IAO_0000115>
+        <rdfs:comment>This is the traditional &apos;x-ray&apos; and provides a shadowgram of x-ray absorptivity.</rdfs:comment>
     </owl:Class>
     
 
@@ -1914,11 +1663,31 @@ In the examples above, a reagent is an operational component of a device, but th
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000019#Inverse_planned_specification:radont_nnnn -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#tomographic_CT -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#Inverse_planned_specification:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000078"/>
-        <obo:IAO_0000115>A plan specification that involved the use of &quot;inverse planning&quot;, i.e. use of optimization algorithms and plan objectives to determine (some of) the radiation delivery device settings. [MHP 12/15/20]</obo:IAO_0000115>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#tomographic_CT">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#computed_tomography:radont_nnnn"/>
+        <obo:IAO_0000115>A CT device the sequentially images a slice of the body and builds up a volume image by concatenating the series of imaged slices. [MP 2/23/21]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#2D_plan_specification -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#2D_plan_specification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#forward_planned_specification:radont_nnn"/>
+        <obo:IAO_0000115>Forward planning that only uses a 2D representation of the contour of the body along the midline of the radiation beam.  [MP 2/23/21]</obo:IAO_0000115>
+        <rdfs:comment>2D planning suffers from two problems: the fact that the volume of tissue is approximated as a cylindrical extension of the midline 2D contour, and radiation transport calculations may not include contribution of scattered dose from outside the 2D slice.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#3D_plan_specification -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#3D_plan_specification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#forward_planned_specification:radont_nnn"/>
+        <obo:IAO_0000115>A forward plan that takes into account the 3D volume of tissue surrounging the irradiation target and also does a 3-dimensional calculation of radiation transport from the radiation device through the body. [MP 2/23/21]</obo:IAO_0000115>
+        <rdfs:comment>3D planning was a technical advance over 2D planning that was made possible by thevolumetric information available from CT and by the improved computing power capable of doing the radiation transport calculations in 3D.  The transport calculations span a range of models from very crude to very sophisticated.</rdfs:comment>
     </owl:Class>
     
 
@@ -1941,6 +1710,15 @@ In the examples above, a reagent is an operational component of a device, but th
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#computed_tomography:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#computed_tomography:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000075"/>
+        <obo:IAO_0000119>A device capable of imaging a tomographic slice of a human body using kilovoltage x-rays.  Commonly known as a CT or CAT scan. [MHP 2/23/21]</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000019#datum_label:IAO00000009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#datum_label:IAO00000009">
@@ -1954,15 +1732,6 @@ In the examples above, a reagent is an operational component of a device, but th
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#dose_specification:Jonathan">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#action_specification:IAO_0000007"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000019#forward_planned_specification:radont_nnnn -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#forward_planned_specification:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000078"/>
-        <obo:IAO_0000115>A plan specification that was devised by relying on experience and heuristics and/or trial-and-errors in order to determine [some of] the radiation delivery device settings. [12/15/20]</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1993,6 +1762,15 @@ In the examples above, a reagent is an operational component of a device, but th
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#magnetic_resonance_imaging:radonc_nnnn -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#magnetic_resonance_imaging:radonc_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000075"/>
+        <obo:IAO_0000115>A device capable of producing an image of the body by applying magnetic fields and measuring the position-specific magnetic susceptibility. Commonly known as MRI. [MP 2/23/21]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000019#measurement_unit_label:IAO_0000003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#measurement_unit_label:IAO_0000003">
@@ -2015,6 +1793,31 @@ In the examples above, a reagent is an operational component of a device, but th
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#patient_role:OBI_0000144">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#photon_beam_radiation_therapy:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#photon_beam_radiation_therapy:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#external_beam_therapy:radont_nnnn"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30212"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A form of external beam radiation therapy that utilizes a beam of photons (x-rays).  [MHP 2/12/21]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#planar_imaging:radonc_nnnn -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#planar_imaging:radonc_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000075"/>
+        <obo:IAO_0000115>A device capable of producing a planar image of the body by passing some type of radiation through the body and recording the differential transmission/scattering/absorption of the radiation on the other side. [MP 2/23/21]</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2183,17 +1986,20 @@ This is distinguished from radiation_absorbed_dose which is a an explicit physic
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.org/rto-draft#RADONT_0000065"/>
+                <owl:onClass rdf:resource="http://purl.org/rto-draft#radiation_dosimeter:radont_nnnn"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.org/rto-draft#radiation_dosimeter:radont_nnnn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/rto-draft#RADONT_0000061"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A device that is used in the process of delivering radiation therapy to a patient.  It consists of multiple parts, the minimum being a radiation emission device.  Other possible parts are radiation monitors, radiation collimators, patient positioning and immobilization devices.  [MP 8/4/20]</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A device that is used in the process of delivering radiation therapy to a patient.  It consists of multiple parts, the minimum being a radiation emission device.  Other possible parts are radiation monitors, radiation collimators, patient positioning and immobilization devices.  [MP 8/4/20]
+
+Alternate definition:
+&quot;In radiation therapy, this is an object that is designed to produce therapeutic radiation and deliver it to the appropriate region of the body in order to treat disease.  It contains the necessary parts to measure the radiation delivered, to obtain input for setting treatment parameters, and for collimating and moving the radiation source relative to the patient&apos;s body. [MP 1/14/21]&quot;</obo:IAO_0000115>
         <rdfs:label xml:lang="en">radiation therapy device</rdfs:label>
     </owl:Class>
     
@@ -2216,6 +2022,13 @@ This is distinguished from radiation_absorbed_dose which is a an explicit physic
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36342"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/rto-draft#RADONT_0000065"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A device which has a function to emit radiation in the form of a type of subatomic particle.  It may be restricted to one type of particle, e.g. electrons or gamma rays, but may also be capable of emitting multiple types, e.g. electrons + x-rays or protons + heavy charged particles.  [MP 8/4/20]</obo:IAO_0000115>
         <rdfs:label xml:lang="en">radiation emission device</rdfs:label>
     </owl:Class>
@@ -2232,31 +2045,35 @@ This is distinguished from radiation_absorbed_dose which is a an explicit physic
     
 
 
-    <!-- http://purl.org/rto-draft#RADONT_0000063 -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#RADONT_0000063">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#external_beam_therapy:radont_nnnn"/>
-        <obo:IAO_0000115 xml:lang="en">A radiation therapy procedure in which radiation is delivered using multiple beams, each of which has a unique 2 dimensional shape, intensity, radiation dose, and particle type.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">3D conformal radiation therapy procedure</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rto-draft#RADONT_0000064 -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#RADONT_0000064">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#external_beam_therapy:radont_nnnn"/>
-        <obo:IAO_0000115 xml:lang="en">A radiation therapy procedure in which radiation is delivered using multiple beams, each of which is composed of an individual set of segments, each of which has a unique 2 dimensional shape, intensity, radiation dose and particle type.
-Such a procedure can only be realized by means of an inverse planning process (from poll of physicists) [MHP 9/1/20]</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">intensity modulated radiation therapy</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/rto-draft#RADONT_0000065 -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#RADONT_0000065">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000061"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000075"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#collimator:radont_nnnn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/rto-draft#radiation_dosimeter:radont_nnnn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">TODO: verify this should be distinct from &apos;radiation emission device&apos;</rdfs:comment>
         <rdfs:label xml:lang="en">radiation source</rdfs:label>
     </owl:Class>
@@ -2380,76 +2197,11 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
     
 
 
-    <!-- http://purl.org/rto-draft#interstitial_permanent_brachytherapy -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#interstitial_permanent_brachytherapy">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#brachytherapy:radont_nnnn"/>
-        <obo:IAO_0000115>Low dose rate brachytherapy method in which encapsulated isotopic sources are placed within (or nearby) the tumor tissue and left there for the remainder of the patient&apos;s life. [MHP 11/24/20]</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rto-draft#interstitial_temporary_brachytherapy -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#interstitial_temporary_brachytherapy">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#brachytherapy:radont_nnnn"/>
-        <obo:IAO_0000115>Brachytherapy method in which an encapsulated source or sources is placed within the tumor tissue.  This can be used with either high dose rate or low dose rate brachytherapy.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rto-draft#intracavitary_temporary_brachytherapy -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#intracavitary_temporary_brachytherapy">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#brachytherapy:radont_nnnn"/>
-        <obo:IAO_0000115>Brachytherapy method in which an encapsulated source is placed within a body cavity that penetrates or is surrounded by tumor tissue.  It can be used with either high dose rate or low dose rate therapy.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/rto-draft#low_dose_rate_brachytherapy -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#low_dose_rate_brachytherapy">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#brachytherapy:radont_nnnn"/>
         <obo:IAO_0000115>Brachytherapy process in which the radiation is delivered slowly (over the course of many hours or several days). [MHP 11/24/20]</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rto-draft#passive_scattering -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#passive_scattering">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#particle_beam_radiation_therapy:radont_nnnn"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#hadron:CHEBI_36344"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>Particle therapy in which the beam is broadened to cover the entire treatment volume and is shaped laterally by the means of collimators. [MHP 11/24/20]</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rto-draft#scanning_beam_intensity_modulated -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#scanning_beam_intensity_modulated">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#particle_beam_radiation_therapy:radont_nnnn"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#hadron:CHEBI_36344"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>Particle therapy in which a relatively small width (~ 1 cm) beam is magnetically scanned horizontally and vertically to cover the treatment volume.  Intensity modulation is achieved by the time  the beam hovers at one spot. [MHP 11/24/20]</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rto-draft#2D_radiation_therapy -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#2D_radiation_therapy">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#external_beam_therapy:radont_nnnn"/>
     </owl:Class>
     
 
@@ -2553,8 +2305,8 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000116"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#radiation_therapy_beam:radont_nnnn"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000075"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2563,7 +2315,23 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
                 <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#patient_positioner:radont_nnnn"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#radiation_therapy_beam:radont_nnnn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>This is a form of radiation therapy in which the radiation source is external to and some distance from the patient&apos;s body, cf. brachytherapy, and the radiation is delivered in one or more radont:radiation_beams.  Instances can be distinguished by the type and energy of the particle beam, the radiation positioning device, dose rate, the positioning of the patient.  [MP 8/10/20]</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#forward_planned_specification:radont_nnn -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#forward_planned_specification:radont_nnn">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000078"/>
+        <obo:IAO_0000115>In radiation therapy, this is a specification for creating a therapy plan by using heuristics, trial-and-error, and experience to specify the best plan. [MP 1/14/21]</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2603,20 +2371,11 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
     
 
 
-    <!-- http://purl.org/rto-draft#interstitial_brachytherapy:radont_nnnn -->
+    <!-- http://purl.org/rto-draft#inverse_planned_specification:radont_nnnn -->
 
-    <owl:Class rdf:about="http://purl.org/rto-draft#interstitial_brachytherapy:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#brachytherapy:radont_nnnn"/>
-        <rdfs:comment>Form of brachytherapy in which the sources, usually in the form of wires, seeds or needles, are placed directly in the tissue to be treated.  This type of brachytherapy can be delivered by sources that remain in the tissue (permanent implant) or by sources that are removed after the desired dose is delivered (temporary implant).  [MP 8/10/20]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rto-draft#intracavitary_brachytherapy:radont_nnnn -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#intracavitary_brachytherapy:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#brachytherapy:radont_nnnn"/>
-        <rdfs:comment>A form of brachytherapy in which the sources are placed into cavities in the body in order to treat adjacent tissue, e.g. cervical cancer, esophogeal cancer.  Typically an applicator (an instance of a radont:radiation_positioning_device) is placed in the cavity and the radiation source is inserted into the applicator.  Applicators can be thing catheters or more substantial devices such as a tandom and ovoids. [MP 8/10/20]</rdfs:comment>
+    <owl:Class rdf:about="http://purl.org/rto-draft#inverse_planned_specification:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000078"/>
+        <obo:IAO_0000115>This is a specification for radiation therapy that is obtained by means of optimization algorithms that seeks to produce a plan that meets the desired clinical goals, which serve as objectives and constraints. [MP 1/14/21]</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2638,11 +2397,49 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
     
 
 
+    <!-- http://purl.org/rto-draft#modality_specification:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#modality_specification:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#action_specification:IAO_0000007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000116"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36342"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/rto-draft#technique_specification:radont_nnnn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Part of the specification of a radiation therapy plan is the means for delivering it, of which there are many.  This class allows for the specification for the type of radiation and the radiation delivery technique that will meet the clinical goals. [MP 1/14/21]</obo:IAO_0000115>
+        <rdfs:comment>Need to define &quot;technique&quot; and include it as a part of the axioms.</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rto-draft#neutron:CHEBI_30222 -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#neutron:CHEBI_30222">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#hadron:CHEBI_36344"/>
         <obo:IAO_0000115>Nuclear particle of zero charge, spin 1/2 and rest mass of 1.008664904(14) u.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#object:BFO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#object:BFO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
     </owl:Class>
     
 
@@ -2714,18 +2511,16 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
     <!-- http://purl.org/rto-draft#radiation_absorbed_dose:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#radiation_absorbed_dose:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#scalar_measurement_datum:IAO_0000032"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#radiation_beam:radont_nnnn"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The amount of energy that is transferred from a collection of subatomic particles to some material object. [MP 8/4/20]</obo:IAO_0000115>
-        <rdfs:comment>Updated Rationale [MHP 12/9/20]
-Group discussion led to the conclusion that the overall structure of the ontology is simpler, yet still intellectually coherent, by moving this class from &quot;disposition&quot; to a measurement artifact.  We clarified that although radiation_absorbed_dose can be a direct measurement, e.g. calorimetry, we also consider that we measure the dose by measuring the linac monitor units or the brachy time.
-
-Rationale for this subclass (from Arp):  [MHP 10/28/20]
+        <obo:IAO_0000115>The amount of energy that is transferred from a collection of subatomic particles to some material object. [MP 8/4/20]
+[Note, I originally classified this as a &quot;quality&quot; but disposition seems a bit closer--up for debate. MP]</obo:IAO_0000115>
+        <rdfs:comment>Rationale for this subclass (from Arp):  [MHP 10/28/20]
 &quot;A realizable entity is thus defined as a specifically dependent continuant that has at least one independent continuant entity as its bearer, and whose instances canbe realized (...) in associated processes of specific correlated types in which the bearer participate.
    Examples of realizable entity include...., the disposition of a portion of blood to coagulate, the disposition of a portion of metal to conduct electricity...&quot;
 
@@ -2746,12 +2541,10 @@ In my thinking the independent continuant is the collection of fundamental parti
     
 
 
-    <!-- http://purl.org/rto-draft#radiation_delivery_specification:radonc_nnnn -->
+    <!-- http://purl.org/rto-draft#radiation_dose_measurement:radont_nnnn -->
 
-    <owl:Class rdf:about="http://purl.org/rto-draft#radiation_delivery_specification:radonc_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
-        <obo:IAO_0000115>The specification of the equpment and processes that will result in the delivery of radiation during radiation therapy. [MHP 11/24/20]</obo:IAO_0000115>
-        <rdfs:comment>Alternative term is &quot;technique&quot; [MHP 11/24/20]</rdfs:comment>
+    <owl:Class rdf:about="http://purl.org/rto-draft#radiation_dose_measurement:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#scalar_measurement_datum:IAO_0000032"/>
     </owl:Class>
     
 
@@ -2871,8 +2664,8 @@ Mark&apos;s proposed definition -- 1:n possible sessions of delivery of radiatio
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#radiation_beam:radont_nnnn"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36342"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Spectrum is the distribution of energies of the constituent subatomic particles that constitute a radont:radiation_beam.  
@@ -2881,11 +2674,51 @@ The spectrum can be a single energy as with gamma rays or particle beam as well 
     
 
 
-    <!-- http://purl.org/rto-draft#surface_brachytherapy:radont_nnnn -->
+    <!-- http://purl.org/rto-draft#technique_specification:radont_nnnn -->
 
-    <owl:Class rdf:about="http://purl.org/rto-draft#surface_brachytherapy:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#brachytherapy:radont_nnnn"/>
-        <rdfs:comment>A form of brachytherapy in which the sources are held in a mold that is shaped to fit the contours of the surface to be treated [instance of radont:radiation_positioning_device}. [MP 8/10/20]</rdfs:comment>
+    <owl:Class rdf:about="http://purl.org/rto-draft#technique_specification:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#action_specification:IAO_0000007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#collimator:radont_nnnn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000116"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/rto-draft#dose_rate:radont_nnnn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36342"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/rto-draft#RADONT_0000060"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/rto-draft#RADONT_0000078"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>This is a more specific concept in prescribing treatment and matches ASTRO&apos;s concept of a technique.  It is a part of &quot;modality_specification&quot;.  [MP 1/25/21]</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2894,15 +2727,6 @@ The spectrum can be a single energy as with gamma rays or particle beam as well 
 
     <owl:Class rdf:about="http://purl.org/rto-draft#temporal_region:OBO_0000008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rto-draft#tomotherapy:radont_nnnn -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#tomotherapy:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#external_beam_therapy:radont_nnnn"/>
-        <obo:IAO_0000115>A form of external beam therapy in which the radiation is delivered sequentially in thin slices along the axis of the body, similar to the way that a CT image is acquired. [MHP 9/1/20]</obo:IAO_0000115>
     </owl:Class>
     
 
