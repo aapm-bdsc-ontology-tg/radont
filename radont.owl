@@ -1979,14 +1979,13 @@ This is distinguished from radiation_absorbed_dose which is a an explicit physic
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#radiation_positioning_device:radont_nnnn"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#radiation_dosimeter:radont_nnnn"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.org/rto-draft#radiation_dosimeter:radont_nnnn"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#radiation_positioning_device:radont_nnnn"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2030,6 +2029,7 @@ Alternate definition:
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A device which has a function to emit radiation in the form of a type of subatomic particle.  It may be restricted to one type of particle, e.g. electrons or gamma rays, but may also be capable of emitting multiple types, e.g. electrons + x-rays or protons + heavy charged particles.  [MP 8/4/20]</obo:IAO_0000115>
+        <rdfs:comment>Radiation emission device refers to the device that actually produces the radiation independent of the application to radiation therapy.  For example, a linear accelerator operating in the megavoltage regime produces a beam of x-rays by accelerating electrons and using them to create bremmstrahlung.  Such a device can be attached to some sort of flexible armature for positioning and outfitted with dose monitors and electronic feedback circuits, etc to make a radiation therapy device.  Other examples are manufactured Co-60 pellets, proton cyclotrons, etc. [MP 3/2/21]</rdfs:comment>
         <rdfs:label xml:lang="en">radiation emission device</rdfs:label>
     </owl:Class>
     
@@ -2188,6 +2188,15 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
     
 
 
+    <!-- http://purl.org/rto-draft#external_beam_device -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#external_beam_device">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000060"/>
+        <obo:IAO_0000115>Radiation therapy device in which radiation is generated outside of the body and the radiation passes from the source through space and parts of the body in order to irradiate the desired target tissue.  [MP 3/1/21]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rto-draft#high_dose_rate_brachytherapy -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#high_dose_rate_brachytherapy">
@@ -2220,6 +2229,15 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
     <owl:Class rdf:about="http://purl.org/rto-draft#brachytherapy:radont_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000116"/>
         <rdfs:comment>The procedure by which a radiation treatment is delivered using one or more sealed radioactive isotopic sources that is inserted into the body. [MP 8/10/20]</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#brachytherapy_device:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#brachytherapy_device:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000060"/>
+        <obo:IAO_0000115>A radiation therapy device that generates radiation from some part of the device that is inserted into that part of a person&apos;s body at which the intended target tissue is located. [MP 3/1/21]</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2286,6 +2304,30 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Dose rate inheres in a beam of radiation and is a measure of the amount of dose delivered per time.  [MP 8/10/20]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#electron:CHEBI_10545 -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#electron:CHEBI_10545">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#lepton:CHEBI_36338"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#electron_beam_radiation_therapy:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#electron_beam_radiation_therapy:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#external_beam_therapy:radont_nnnn"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/rto-draft#electron:CHEBI_10545"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>External beam therapy that uses beams of electrons. [MP 3/1/21]</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2362,6 +2404,16 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
     
 
 
+    <!-- http://purl.org/rto-draft#imaging_process:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#imaging_process:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115>A process that is intended to produce images of the disease and related body tissues that can be used to diagnose and/or define a target volume for radiation therapy. [MP 3/2/21]</obo:IAO_0000115>
+        <rdfs:comment>Imaging is clearly an extensive concept, has many forms and many applications.  Other than NCIT, I could not find a suitable, already established ontological class, but am wary of defining this. [MP 3/2/21]</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rto-draft#intent:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#intent:radont_nnnn">
@@ -2371,11 +2423,46 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
     
 
 
+    <!-- http://purl.org/rto-draft#interstitial_bracytherapy_device:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#interstitial_bracytherapy_device:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#brachytherapy_device:radont_nnnn"/>
+        <obo:IAO_0000115>A brachytherapy device designed to place a radiation source within the target tissue by means of penetrating the body, most often with needle-like applicators. [MP 3/2/21]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#intracavitary_brachytherapy_device:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#intracavitary_brachytherapy_device:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#brachytherapy_device:radont_nnnn"/>
+        <obo:IAO_0000115>A brachytherapy device that is designed to place the radiation source within an existing body cavity, e.g. esophagus, vagina, in order to deliver radiation to a target within or adjacent to that body cavity. [MP 3/2/21]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#intravascular_brachytherapy_device:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#intravascular_brachytherapy_device:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#brachytherapy_device:radont_nnnn"/>
+        <obo:IAO_0000115>A brachytherapy device that is designed to be placed in the vasculature in order to deliver radiation to a target associated with/attached to/contained within part of the vaculature. [MP 3/2/21]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rto-draft#inverse_planned_specification:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#inverse_planned_specification:radont_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000078"/>
         <obo:IAO_0000115>This is a specification for radiation therapy that is obtained by means of optimization algorithms that seeks to produce a plan that meets the desired clinical goals, which serve as objectives and constraints. [MP 1/14/21]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#lepton:CHEBI_36338 -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#lepton:CHEBI_36338">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36342"/>
     </owl:Class>
     
 
@@ -2467,8 +2554,13 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.org/rto-draft#hadron:CHEBI_36344"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33252"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#hadron:CHEBI_36344"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A type of external beam therapy that uses beams of charged particles, e.g. protons and heavier ions.</obo:IAO_0000115>
@@ -2487,6 +2579,23 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A device that is part of a radiation therapy device that is used to support and position  the patient with respect to the radiation field used to treat the patient.  [MP 8/4/20]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#positron:CHEBI_30225 -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#positron:CHEBI_30225">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#lepton:CHEBI_36338"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#positron_emission_tomography:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#positron_emission_tomography:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000075"/>
+        <obo:IAO_0000115>An imaging device by which the distribution of positron-emitting molecules are imaged by a set of detectors placed around the body, and which uses a reconstruction algorithm to locate the position and intensity of the emitted radiation in the body. [MP 3/2/21]</obo:IAO_0000115>
     </owl:Class>
     
 
