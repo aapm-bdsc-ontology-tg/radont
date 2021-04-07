@@ -893,6 +893,12 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#proper_occurrent_part_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#proper_occurrent_part_of"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1575,12 +1581,6 @@ In the examples above, a reagent is an operational component of a device, but th
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000112"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#radiation_patient_positioning:radont_nnnn"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000078"/>
             </owl:Restriction>
@@ -1588,38 +1588,7 @@ In the examples above, a reagent is an operational component of a device, but th
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000080"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.org/rto-draft#begin_radiation_therapy_process:radont_nnnn"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.org/rto-draft#end_radiation_therapy_process:radont_nnnn"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.org/rto-draft#RADONT_0000075"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000075"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1634,6 +1603,20 @@ In the examples above, a reagent is an operational component of a device, but th
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
                 <owl:onClass rdf:resource="http://purl.org/rto-draft#radiation_therapy_prescription:radont_nnnn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#proper_occurrent_part_of"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/rto-draft#begin_radiation_therapy_process:radont_nnnn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#proper_occurrent_part_of"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/rto-draft#end_radiation_therapy_process:radont_nnnn"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A therapeutic procedure that uses radiation.</obo:IAO_0000115>
@@ -1679,6 +1662,16 @@ In the examples above, a reagent is an operational component of a device, but th
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#planar_imaging:radonc_nnnn"/>
         <obo:IAO_0000115>A planar_imaging device that uses kilovoltage x-rays as the source of radiation and a detector system that records the presence of x-rays that pass through the body.  [MP 2/23/21]</obo:IAO_0000115>
         <rdfs:comment>This is the traditional &apos;x-ray&apos; and provides a shadowgram of x-ray absorptivity.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#rt_process_date -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#rt_process_date">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#one-dimensional_temporal_region:BFO_0000038"/>
+        <obo:IAO_0000115>The day on which a radiation therapy process, e.g. session, planning simulation, occurred.  [MP 3/5/21]</obo:IAO_0000115>
+        <rdfs:comment>Associating a time with the radiation therapy procedures is essential for representing the domain.  How best to do it is tricky.  By using the 1d temporal region, we can use a date to represent the day on which it occurred. [MP 3/5/21]</rdfs:comment>
     </owl:Class>
     
 
@@ -1809,10 +1802,17 @@ In the examples above, a reagent is an operational component of a device, but th
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000019#patient_role:OBI_0000144 -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#patient_role:OBI_0000093 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#patient_role:OBI_0000144">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#patient_role:OBI_0000093">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#homo_sapients:NCBIT"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A role which inheres in a person and is realized by the process of being under the care of a physician or health care provider</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1973,6 +1973,7 @@ This is distinguished from radiation_absorbed_dose which is a an explicit physic
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#target_volume:radont_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#site"/>
         <obo:IAO_0000115>A region of the body that contains disease that is to be irradiated during a radiation therapy procedure [MHP 9/1/20]</obo:IAO_0000115>
+        <rdfs:comment>According to Arp et al, a site is relative to another body.  Examples given are the hold of a ship or the interior of a railcar.  They can move through space, as opposed to a spatial region which is immovable.  This seems appropriate for the region containing a tumor.</rdfs:comment>
     </owl:Class>
     
 
@@ -2188,33 +2189,6 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
     
 
 
-    <!-- http://purl.org/rto-draft#RADONT_0000079 -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#RADONT_0000079">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:label xml:lang="en">attending physician role</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rto-draft#RADONT_0000080 -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#RADONT_0000080">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:label xml:lang="en">radiation therapist role</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rto-draft#RADONT_0000081 -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#RADONT_0000081">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:label xml:lang="en">radiation therapy machine role</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/rto-draft#external_beam_device -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#external_beam_device">
@@ -2285,7 +2259,7 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#MV_planar_imaging"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Imaging process that is a uses megavoltage photons and a planar imaging device.</obo:IAO_0000115>
+        <obo:IAO_0000115>Imaging process that  uses megavoltage photons and a planar imaging device.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2310,6 +2284,12 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
 
     <owl:Class rdf:about="http://purl.org/rto-draft#begin_radiation_therapy_process:radont_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#process_boundary:OBO_0000035"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#zero-dimensional_temporal_region:BFO_0000148"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>&quot;For purposes of recording, the point in time that signifies the beginning of a radiation therapy treatment process.  For most purposes, merely the date is sufficient but strictly speaking there is a moment in time, denoted perhaps by the OIS time-date-stamp on treatment delivery, when it begins. [MHP 11/10/20]&quot;</obo:IAO_0000115>
     </owl:Class>
     
@@ -2384,6 +2364,15 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
     
 
 
+    <!-- http://purl.org/rto-draft#diagram:IAO_0000309 -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#diagram:IAO_0000309">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000308"/>
+        <obo:IAO_0000115>A figure that expresses one or more propositions</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rto-draft#dose_rate:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#dose_rate:radont_nnnn">
@@ -2395,6 +2384,15 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Dose rate inheres in a beam of radiation and is a measure of the amount of dose delivered per time.  [MP 8/10/20]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#dose_volume_histrogram:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#dose_volume_histrogram:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#histogram:IAO_0000179"/>
+        <obo:IAO_0000115>A histogram that plots the fractional volume (y-axis) of an irradiated tissue with the dose that has been delivered to that volume.  It can be plotted either as a differential or cumulative dose plot.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2478,6 +2476,15 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
     
 
 
+    <!-- http://purl.org/rto-draft#graph:IAO_0000038 -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#graph:IAO_0000038">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#diagram:IAO_0000309"/>
+        <obo:IAO_0000115>A diagram that presents one or more tuples of information by mapping those tuples in to a two dimensional space in a non arbitrary way.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rto-draft#hadron:CHEBI_36344 -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#hadron:CHEBI_36344">
@@ -2487,10 +2494,42 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
     
 
 
+    <!-- http://purl.org/rto-draft#healthcare_provider_role:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#healthcare_provider_role:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#homo_sapients:NCBIT"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Inheres in a homo sapiens performing the actions/tasks associated with providing healthcare to a patient.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#histogram:IAO_0000179 -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#histogram:IAO_0000179">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#graph:IAO_0000038"/>
+        <obo:IAO_0000115>A histogram is a report graph which is a statistical description of a distribution in terms of occurrence frequencies of different event classes.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rto-draft#history:BFO_0000182 -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#history:BFO_0000182">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#homo_sapients:NCBIT -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#homo_sapients:NCBIT">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
     </owl:Class>
     
 
@@ -2620,6 +2659,13 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/rto-draft#spectrum:radont_nnnn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
                 <owl:onClass rdf:resource="http://purl.org/rto-draft#technique_specification:radont_nnnn"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2694,6 +2740,21 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A device that is part of a radiation therapy device that is used to support and position  the patient with respect to the radiation field used to treat the patient.  [MP 8/4/20]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#physician_role:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#physician_role:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#healthcare_provider_role:radont_nnnn"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#homo_sapients:NCBIT"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The role that a homo sapiens can exhibit when performing the actions/tasks of a physician.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2858,6 +2919,13 @@ The measurement may be continuous or integrated.
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#occurent_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000116"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#proper_occurrent_part_of"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#rt_process_date"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A planned process that delivers radiation to some part of a patient&apos;s body that takes part during a constrained period of time and is part of the overall radiation therapy procedure (radont_nnnn).  For fractionated treatments, the overall treatment process contains multiple radiation treatment sessions.</obo:IAO_0000115>
