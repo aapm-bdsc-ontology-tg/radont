@@ -899,6 +899,18 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.org/rto-draft#physically_associated_with -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/rto-draft#physically_associated_with">
+        <obo:IAO_0000115>Describes a relationship between two continuants that are not parts, located within, nor derived from each other, but which have a spatial relationship that is integral to the class.</obo:IAO_0000115>
+        <rdfs:comment>Example use: a target volume (GTV, CTV, PTV) is associated with an organ that aids in the description of how and where radiation therapy is applied.  
+PTV physically associated with prostate (even if the prostate has been surgically removed), or the breast or the oral cavity, or the aortic lymph nodes.
+
+A  more thorough description of the relationship would involve the biology of the tumor and the cell type and location from which it originated.  However, that approach is complicated for radiation therapy because the tumor being treated may be secondary and the primary and its origin is unknown.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1809,7 +1821,7 @@ In the examples above, a reagent is an operational component of a device, but th
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#homo_sapients:NCBIT"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#homo_sapiens:NCBIT"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A role which inheres in a person and is realized by the process of being under the care of a physician or health care provider</obo:IAO_0000115>
@@ -1972,6 +1984,13 @@ This is distinguished from radiation_absorbed_dose which is a an explicit physic
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#target_volume:radont_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#site"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/rto-draft#physically_associated_with"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/rto-draft#body_structure:SCT_123037004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A region of the body that contains disease that is to be irradiated during a radiation therapy procedure [MHP 9/1/20]</obo:IAO_0000115>
         <rdfs:comment>According to Arp et al, a site is relative to another body.  Examples given are the hold of a ship or the interior of a railcar.  They can move through space, as opposed to a spatial region which is immovable.  This seems appropriate for the region containing a tumor.</rdfs:comment>
     </owl:Class>
@@ -2216,6 +2235,15 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
     
 
 
+    <!-- http://purl.org/rto-draft#radiation_therapy_protocol -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#radiation_therapy_protocol">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#protocol:OBI_0000272"/>
+        <obo:IAO_0000115>A plan specification for radiation therapy.  This is a general approach to achieve the therapeutic goal and there may be separate protocols for different cancers, different anatomical sites, different clinical hardware and different medical opinions.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rto-draft#CT_imaging_process:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#CT_imaging_process:radont_nnnn">
@@ -2295,6 +2323,25 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
     
 
 
+    <!-- http://purl.org/rto-draft#body_structure:SCT_123037004 -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#body_structure:SCT_123037004">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#object:BFO_0000030"/>
+        <obo:IAO_0000115>SNOMED CT: no definition</obo:IAO_0000115>
+        <rdfs:comment>In the SNOMED CT taxonomy, the individual organs, e.g. prostate, are classified as below:
+Body structure
+  - anatomical structure
+     - body system structure
+        - &apos;many classes describing regions of the body, and eventually organs&apos;
+     - physical anatomical entity
+        - group of anatomical entity, e.g. prostate + SV
+
+Further examples on FHIR website:
+http://hl7.org/fhir/us/mcode/ValueSet-mcode-radiation-target-body-site-vs.html</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rto-draft#brachytherapy:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#brachytherapy:radont_nnnn">
@@ -2351,6 +2398,34 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
     <owl:Class rdf:about="http://purl.org/rto-draft#data_item:IAO_0000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000115>An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#delivered_dose:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#delivered_dose:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/rto-draft#physically_associated_with"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#target_volume:radont_nnnn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/rto-draft#physically_associated_with"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#object:BFO_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#dose_specification:Jonathan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The physical dose that is delivered to a target volume and/or a body structure or any other material entitiy through which radiation passes when this dose was planned to be delivered as part of a radiation therapy-related protocol.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2450,7 +2525,28 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#fraction_delivery_plan_specification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#radiation_therapy_beam:radont_nnnn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/rto-draft#modality_specification:radont_nnnn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/rto-draft#technique_specification:radont_nnnn"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>This is a form of radiation therapy in which the radiation source is external to and some distance from the patient&apos;s body, cf. brachytherapy, and the radiation is delivered in one or more radont:radiation_beams.  Instances can be distinguished by the type and energy of the particle beam, the radiation positioning device, dose rate, the positioning of the patient.  [MP 8/10/20]</rdfs:comment>
@@ -2461,7 +2557,7 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
     <!-- http://purl.org/rto-draft#forward_planned_specification:radont_nnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#forward_planned_specification:radont_nnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000078"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#radiation_therapy_protocol"/>
         <obo:IAO_0000115>In radiation therapy, this is a specification for creating a therapy plan by using heuristics, trial-and-error, and experience to specify the best plan. [MP 1/14/21]</obo:IAO_0000115>
     </owl:Class>
     
@@ -2501,7 +2597,7 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#homo_sapients:NCBIT"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#homo_sapiens:NCBIT"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Inheres in a homo sapiens performing the actions/tasks associated with providing healthcare to a patient.</obo:IAO_0000115>
@@ -2526,9 +2622,9 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
     
 
 
-    <!-- http://purl.org/rto-draft#homo_sapients:NCBIT -->
+    <!-- http://purl.org/rto-draft#homo_sapiens:NCBIT -->
 
-    <owl:Class rdf:about="http://purl.org/rto-draft#homo_sapients:NCBIT">
+    <owl:Class rdf:about="http://purl.org/rto-draft#homo_sapiens:NCBIT">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
     </owl:Class>
     
@@ -2573,7 +2669,7 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
     <!-- http://purl.org/rto-draft#inverse_planned_specification:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#inverse_planned_specification:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000078"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#radiation_therapy_protocol"/>
         <obo:IAO_0000115>This is a specification for radiation therapy that is obtained by means of optimization algorithms that seeks to produce a plan that meets the desired clinical goals, which serve as objectives and constraints. [MP 1/14/21]</obo:IAO_0000115>
     </owl:Class>
     
@@ -2684,6 +2780,15 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
     
 
 
+    <!-- http://purl.org/rto-draft#number_of_fractions:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#number_of_fractions:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <obo:IAO_0000115>The realization of a fractionation plan in radiation therapy treatments. It can be realized by a numeral, the count of treatment sessions and/or the total dose/fractional dose.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rto-draft#object:BFO_0000030 -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#object:BFO_0000030">
@@ -2751,7 +2856,7 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#homo_sapients:NCBIT"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#homo_sapiens:NCBIT"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The role that a homo sapiens can exhibit when performing the actions/tasks of a physician.</obo:IAO_0000115>
@@ -2780,6 +2885,17 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
 
     <owl:Class rdf:about="http://purl.org/rto-draft#process_boundary:OBO_0000035">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#protocol:OBI_0000272 -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#protocol:OBI_0000272">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <obo:IAO_0000115>A plan specification which has sufficient level of detail and quantitative information to communicate it between investigation agents, so that different investigation agents will reliably be able to independently reproduce the process.</obo:IAO_0000115>
+        <rdfs:comment>example of usage:
+PCR protocol, has objective specification, amplify DNA fragment of interest, and has action specification describes the amounts of experimental reagents used (e..g. buffers, dNTPS, enzyme), and the temperature and cycle time settings for running the PCR.</rdfs:comment>
     </owl:Class>
     
 
@@ -2850,7 +2966,7 @@ The measurement may be continuous or integrated.
     <!-- http://purl.org/rto-draft#radiation_fractionation_plan:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#radiation_fractionation_plan:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#protocol:OBI_0000272"/>
         <obo:IAO_0000115>The planned distribution of the total radiation dose over time as realized in a series of radiation therapy sessions.  This includes both the fractional amount of radiation per session as well as the temporal arrangement of the sessions. [MHP 10/13/20]</obo:IAO_0000115>
         <rdfs:comment>Fractionation plan can be complex, e.g. 60 fractions of 120 cGy twice daily to the PTV and 25 fractions of 200 cGy once daily to lymph nodes.  In this case, it might be best to consider these as two different fractionation plans since it deals with two different target volumes.  Fractionation schedules that include a boost is more complicated (and simultaneous integrated boost even more so), since the boost target volume is usually contained within the original target volume. [MHP 10/13/20]</rdfs:comment>
     </owl:Class>
@@ -2888,10 +3004,26 @@ The measurement may be continuous or integrated.
     
 
 
+    <!-- http://purl.org/rto-draft#radiation_therapy_plan:radont_nnnn -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#radiation_therapy_plan:radont_nnnn">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#radiation_therapy_protocol"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The realization of the radiation therapy treatment planning protocol.  It can exist in many forms (electronic, paper).</obo:IAO_0000115>
+        <rdfs:comment>More commonly called a \&quot;radiation therapy plan\&quot;.  Such an entity consists of a list of actualizable elements, e.g. radiation beam angle, particle energy, etc.  It also consists of a computed distribution of radiation doses in a particular human body.  That is, it uses the values of the list of elements and the physics of radiation transport to produce a planned set of doses at points throughout the body of a particular patient.  [MHP 9/1/20]&quot;</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rto-draft#radiation_therapy_prescription:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#radiation_therapy_prescription:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#protocol:OBI_0000272"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
