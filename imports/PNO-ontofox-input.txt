@@ -1,0 +1,21 @@
+[URI of the OWL(RDF/XML) output file]
+
+
+[Source ontology]
+PNO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/IAO_0020016
+http://purl.obolibrary.org/obo/IAO_0020017
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000031
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115
+
+[Source annotation URIs to be excluded]

@@ -1184,6 +1184,7 @@ A  more thorough description of the relationship would involve the biology of th
         <obo:IAO_0000115 xml:lang="en">b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/pno.owl"/>
         <obo:IAO_0000602>(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] </obo:IAO_0000602>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">generically dependent continuant</rdfs:label>
@@ -1392,6 +1393,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000119 xml:lang="en">OBI_0000142</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/pno.owl"/>
         <rdfs:comment>In Ontobee, &quot;information content entity&quot; is listed as IAO_0000030 [MHP 10/28/20]</rdfs:comment>
         <rdfs:label xml:lang="en">information content entity</rdfs:label>
     </owl:Class>
@@ -1480,6 +1482,50 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">figure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An identifier is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/pno.owl"/>
+        <rdfs:label xml:lang="en">identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <obo:IAO_0000115 xml:lang="en">A personal name is a proper name identifying an individual person.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/pno.owl"/>
+        <rdfs:label xml:lang="en">personal name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020015"/>
+        <obo:IAO_0000115 xml:lang="en">A given name, in Western contexts often referred to as a first name, is a personal name that specifies and differentiates between members of a group of individuals, especially in a family, all of whose members usually share the same family name (surname). A given name is purposefully given, usually by a child&apos;s parents at or near birth, in contrast to an inherited one such as a family name</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/pno.owl"/>
+        <rdfs:label xml:lang="en">given name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020015"/>
+        <obo:IAO_0000115 xml:lang="en">A family name (in Western contexts often referred to as a surname or last name) is typically a part of a person&apos;s name which has been passed, according to law or custom, from one or both parents to their children.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/pno.owl"/>
+        <rdfs:label xml:lang="en">family name</rdfs:label>
     </owl:Class>
     
 
