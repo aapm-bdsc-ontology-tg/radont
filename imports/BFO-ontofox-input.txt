@@ -4,7 +4,13 @@
 BFO
 
 [Low level source term URIs]
-http://purl.obolibrary.org/obo/BFO_0000051
+http://purl.obolibrary.org/obo/BFO_0000030
+http://purl.obolibrary.org/obo/BFO_0000027
+http://purl.obolibrary.org/obo/BFO_0000038
+http://purl.obolibrary.org/obo/BFO_0000148
+http://purl.obolibrary.org/obo/BFO_0000008
+http://purl.obolibrary.org/obo/BFO_0000182
+http://purl.obolibrary.org/obo/BFO_0000035
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000001
