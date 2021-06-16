@@ -13,6 +13,7 @@ http://purl.obolibrary.org/obo/OBI_0000272
 http://purl.obolibrary.org/obo/NCBITaxon_9606
 http://purl.obolibrary.org/obo/OBI_0000047
 http://purl.obolibrary.org/obo/OBI_0000968
+http://purl.obolibrary.org/obo/OBI_0002815
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000023

@@ -8,6 +8,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:data="http://www.cancerdata.org/radont/data/"
+     xmlns:obda="https://w3id.org/obda/vocabulary#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
@@ -932,6 +933,27 @@ PTV physically associated with prostate (even if the prostate has been surgicall
 
 A  more thorough description of the relationship would involve the biology of the tumor and the cell type and location from which it originated.  However, that approach is complicated for radiation therapy because the tumor being treated may be secondary and the primary and its origin is unknown.</rdfs:comment>
     </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002815 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0002815">
+        <obo:IAO_0000115 xml:lang="en">&apos;has representation&apos; is a data property that attaches between an information content entity and a value that contains linguistically or computationally coded text.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">has representation</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 

@@ -1,0 +1,32 @@
+[PrefixDeclaration]
+:		http://purl.org/rto-draft#
+dc:		http://purl.org/dc/elements/1.1/
+obo:		http://purl.obolibrary.org/obo/
+owl:		http://www.w3.org/2002/07/owl#
+rdf:		http://www.w3.org/1999/02/22-rdf-syntax-ns#
+xml:		http://www.w3.org/XML/1998/namespace
+xsd:		http://www.w3.org/2001/XMLSchema#
+data:		http://www.cancerdata.org/radont/data/
+obda:		https://w3id.org/obda/vocabulary#
+rdfs:		http://www.w3.org/2000/01/rdf-schema#
+chebi:		http://purl.obolibrary.org/obo/chebi/
+oboInOwl:	http://www.geneontology.org/formats/oboInOwl#
+
+[MappingDeclaration] @collection [[
+mappingId	patient
+target		data:patient/{patientid} a obo:NCBITaxon_9606 ; obo:RO_0000087 data:patient/{patientid}/patientrole ; rdfs:label {firstname} . 
+source		SELECT * FROM patient
+
+mappingId	patient_role
+target		data:patient/{patientid}/patientrole a obo:OBI_0000093 . 
+source		SELECT * FROM patient
+
+mappingId	given_name
+target		data:patient/{patientid}/given_name a obo:IAO_0020016 ; obo:IAO_0000219 data:patient/{patientid} ; obo:OBI_0002815 {firstname} . 
+source		SELECT * FROM patient
+
+mappingId	family_name
+target		data:patient/{patientid}/family_name a obo:IAO_0020017 ; obo:IAO_0000219 data:patient/{patientid} ; obo:OBI_0002815 {lastname} . 
+source		SELECT * FROM patient
+]]
+

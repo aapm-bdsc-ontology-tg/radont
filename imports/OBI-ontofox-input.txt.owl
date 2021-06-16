@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://ontofox.hegroup.org/6oe20zxn.owl#"
-     xml:base="http://ontofox.hegroup.org/6oe20zxn.owl"
+<rdf:RDF xmlns="http://ontofox.hegroup.org/xnkbsmh9.owl#"
+     xml:base="http://ontofox.hegroup.org/xnkbsmh9.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/">
-    <owl:Ontology rdf:about="http://ontofox.hegroup.org/6oe20zxn.owl"/>
+    <owl:Ontology rdf:about="http://ontofox.hegroup.org/xnkbsmh9.owl"/>
     
 
 
@@ -42,6 +42,27 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002815 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0002815">
+        <rdfs:label xml:lang="en">has representation</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">&#39;has representation&#39; is a data property that attaches between an information content entity and a value that contains linguistically or computationally coded text.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:DatatypeProperty>
     
 
 
