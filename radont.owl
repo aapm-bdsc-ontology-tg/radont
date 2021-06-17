@@ -1716,6 +1716,61 @@ A  more thorough description of the relationship would involve the biology of th
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000009"/>
+        <obo:IAO_0000115 xml:lang="en">A measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">measurement unit label</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">objective specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity that describes an action the bearer will take.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">action specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">A label is a symbol that is part of some other datum and is used to either partially define  the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">datum label</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">data item</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
@@ -1739,6 +1794,17 @@ Previous. An information content entity is a non-realizable information entity t
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115 xml:lang="en">A scalar measurement datum is a measurement datum that is composed of two parts, numerals and a unit label.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">scalar measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000033 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000033">
@@ -1754,6 +1820,17 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <rdfs:label xml:lang="en">directive information entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000309"/>
+        <obo:IAO_0000115 xml:lang="en">A diagram that presents one or more tuples of information by mapping those tuples in to a two dimensional space in a non arbitrary way.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">graph</rdfs:label>
     </owl:Class>
     
 
@@ -1810,6 +1887,29 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000179 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000179">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
+        <obo:IAO_0000115 xml:lang="en">A histogram is a report graph which is a statistical description of a
+distribution in terms of occurrence frequencies of different event classes.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">histogram</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000308 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000308">
@@ -1821,6 +1921,17 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">figure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000309 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000309">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000308"/>
+        <obo:IAO_0000115 xml:lang="en">A figure that expresses one or more propositions</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">diagram</rdfs:label>
     </owl:Class>
     
 
@@ -2200,7 +2311,7 @@ In the examples above, a reagent is an operational component of a device, but th
     <!-- http://purl.obolibrary.org/obo/BFO_0000019#fraction_delivery_plan_specification -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#fraction_delivery_plan_specification">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#action_specification:IAO_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
     </owl:Class>
     
 
@@ -2262,15 +2373,6 @@ In the examples above, a reagent is an operational component of a device, but th
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000019#action_specification:IAO_0000007 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#action_specification:IAO_0000007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-        <obo:IAO_0000115>A directive information entity that describes an action the bearer will take.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000019#clinical_target_volume:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#clinical_target_volume:radont_nnnn">
@@ -2289,19 +2391,10 @@ In the examples above, a reagent is an operational component of a device, but th
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000019#datum_label:IAO00000009 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#datum_label:IAO00000009">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115>A label is a symbol that is part of some other datum and is used to either partially define the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000019#dose_specification:Jonathan -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#dose_specification:Jonathan">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#action_specification:IAO_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
     </owl:Class>
     
 
@@ -2329,24 +2422,6 @@ In the examples above, a reagent is an operational component of a device, but th
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#magnetic_resonance_imaging:radonc_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000075"/>
         <obo:IAO_0000115>A device capable of producing an image of the body by applying magnetic fields and measuring the position-specific magnetic susceptibility. Commonly known as MRI. [MP 2/23/21]</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000019#measurement_unit_label:IAO_0000003 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#measurement_unit_label:IAO_0000003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#datum_label:IAO00000009"/>
-        <obo:IAO_0000115>A measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000019#objective_specification:IAO_0000005 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#objective_specification:IAO_0000005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-        <obo:IAO_0000115>A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2388,7 +2463,7 @@ In the examples above, a reagent is an operational component of a device, but th
     <!-- http://purl.obolibrary.org/obo/BFO_0000019#radiation_dose_unit:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#radiation_dose_unit:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#measurement_unit_label:IAO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
         <obo:IAO_0000115>Unit of ionizing energy deposited per mass.  Typical values are 1 Gray [Gy] = 1 Joule/kilogram and 1 centiGray [cGy] = 1/100 of 1 Gy. [MHP 10/12/20]</obo:IAO_0000115>
     </owl:Class>
     
@@ -2446,7 +2521,7 @@ Some examples of radiation therapy beam:
     <!-- http://purl.obolibrary.org/obo/BFO_0000019#radiation_therapy_dose_objective:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#radiation_therapy_dose_objective:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#objective_specification:IAO_0000005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
@@ -2888,7 +2963,7 @@ http://hl7.org/fhir/us/mcode/ValueSet-mcode-radiation-target-body-site-vs.html</
     <!-- http://purl.org/rto-draft#clinical_data_item:OGMS_0000123 -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#clinical_data_item:OGMS_0000123">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#data_item:IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000115>A data item that is about a patient and is the specified output of a health care process assay or diagnostic process</obo:IAO_0000115>
     </owl:Class>
     
@@ -2905,15 +2980,6 @@ http://hl7.org/fhir/us/mcode/ValueSet-mcode-radiation-target-body-site-vs.html</
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A device used by a radiation therapy device to limit the 2D spatial extent of a collection of subatomic particles produced by a radiation emission device. [MP 8/4/20]</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rto-draft#data_item:IAO_0000027 -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#data_item:IAO_0000027">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115>An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2949,15 +3015,6 @@ http://hl7.org/fhir/us/mcode/ValueSet-mcode-radiation-target-body-site-vs.html</
     
 
 
-    <!-- http://purl.org/rto-draft#diagram:IAO_0000309 -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#diagram:IAO_0000309">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000308"/>
-        <obo:IAO_0000115>A figure that expresses one or more propositions</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/rto-draft#dose_rate:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#dose_rate:radont_nnnn">
@@ -2976,7 +3033,7 @@ http://hl7.org/fhir/us/mcode/ValueSet-mcode-radiation-target-body-site-vs.html</
     <!-- http://purl.org/rto-draft#dose_volume_histrogram:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#dose_volume_histrogram:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#histogram:IAO_0000179"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000179"/>
         <obo:IAO_0000115>A histogram that plots the fractional volume (y-axis) of an irradiated tissue with the dose that has been delivered to that volume.  It can be plotted either as a differential or cumulative dose plot.</obo:IAO_0000115>
     </owl:Class>
     
@@ -3067,15 +3124,6 @@ http://hl7.org/fhir/us/mcode/ValueSet-mcode-radiation-target-body-site-vs.html</
     
 
 
-    <!-- http://purl.org/rto-draft#graph:IAO_0000038 -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#graph:IAO_0000038">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#diagram:IAO_0000309"/>
-        <obo:IAO_0000115>A diagram that presents one or more tuples of information by mapping those tuples in to a two dimensional space in a non arbitrary way.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/rto-draft#healthcare_provider_role:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#healthcare_provider_role:radont_nnnn">
@@ -3085,19 +3133,10 @@ http://hl7.org/fhir/us/mcode/ValueSet-mcode-radiation-target-body-site-vs.html</
     
 
 
-    <!-- http://purl.org/rto-draft#histogram:IAO_0000179 -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#histogram:IAO_0000179">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#graph:IAO_0000038"/>
-        <obo:IAO_0000115>A histogram is a report graph which is a statistical description of a distribution in terms of occurrence frequencies of different event classes.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/rto-draft#intent:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#intent:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#objective_specification:IAO_0000005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
         <obo:IAO_0000115>The overall goal of the radiation therapy process, e.g. curative, palliative.</obo:IAO_0000115>
     </owl:Class>
     
@@ -3155,15 +3194,6 @@ http://hl7.org/fhir/us/mcode/ValueSet-mcode-radiation-target-body-site-vs.html</
     
 
 
-    <!-- http://purl.org/rto-draft#measurement_datum:IAO_0000109 -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#measurement_datum:IAO_0000109">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#data_item:IAO_0000027"/>
-        <obo:IAO_0000115>A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/rto-draft#medical_imaging_process:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#medical_imaging_process:radont_nnnn">
@@ -3184,7 +3214,7 @@ http://hl7.org/fhir/us/mcode/ValueSet-mcode-radiation-target-body-site-vs.html</
     <!-- http://purl.org/rto-draft#modality_specification:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#modality_specification:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#action_specification:IAO_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
@@ -3311,7 +3341,7 @@ In my thinking the independent continuant is the collection of fundamental parti
     <!-- http://purl.org/rto-draft#radiation_dose_measurement:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#radiation_dose_measurement:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#scalar_measurement_datum:IAO_0000032"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
         <obo:IAO_0000115>A scalar measurement of the radiation dose is the mean energy imparted by ionizing radiation to material of mass (energy/mass).   Units are 1 Joules/kilogram = 1 Gray (1 Gy).</obo:IAO_0000115>
     </owl:Class>
     
@@ -3436,15 +3466,6 @@ Mark&apos;s proposed definition -- 1:n possible sessions of delivery of radiatio
     
 
 
-    <!-- http://purl.org/rto-draft#scalar_measurement_datum:IAO_0000032 -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#scalar_measurement_datum:IAO_0000032">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#measurement_datum:IAO_0000109"/>
-        <obo:IAO_0000115>A scalar measurement datum is a measurement datum that is composed of two parts, numerals and a unit label.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/rto-draft#spectrum:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#spectrum:radont_nnnn">
@@ -3464,7 +3485,7 @@ The spectrum can be a single energy as with gamma rays or particle beam as well 
     <!-- http://purl.org/rto-draft#technique_specification:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#technique_specification:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#action_specification:IAO_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
