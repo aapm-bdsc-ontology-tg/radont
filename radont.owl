@@ -1456,10 +1456,69 @@ A  more thorough description of the relationship would involve the biology of th
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_10545 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_10545">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36338"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elementary particle not affected by the strong force having a spin 1/2, a negative elementary charge and a rest mass of 0.000548579903(13) u, or 0.51099906(15) MeV.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <chebi:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1</chebi:charge>
+        <chebi:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.000548579903</chebi:mass>
+        <chebi:monoisotopicmass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.0</chebi:monoisotopicmass>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KEGG:C05359</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:21614077</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Electron</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electron</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elektron</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta(-)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta-particle</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e(-)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e-</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">negatron</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:10545</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electron</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_24636 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24636">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36344"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nuclear particle of charge number +1, spin 1/2 and rest mass of 1.007276470(12) u.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <chebi:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+1</chebi:charge>
+        <chebi:formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[1H]</chebi:formula>
+        <chebi:inchi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InChI=1S/p+1/i/hH</chebi:inchi>
+        <chebi:inchikey rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPRLSGONYQIRFK-FTGQXOHASA-N</chebi:inchikey>
+        <chebi:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.007</chebi:mass>
+        <chebi:monoisotopicmass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.00728</chebi:monoisotopicmass>
+        <chebi:smiles rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[1H+]</chebi:smiles>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAS:12408-02-5</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KEGG:C00080</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protium(1+)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proton</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(1)1H(+)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(1)H(+)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p(+)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:24636</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proton</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_30212 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30212">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36341"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36342"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Particle of zero charge, zero rest mass, spin quantum number 1, energy hnu and momentum hnu/c (h is the Planck constant, nu the frequency of radiation and c the speed of light), carrier of electromagnetic force.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
         <chebi:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</chebi:charge>
@@ -1480,6 +1539,72 @@ A  more thorough description of the relationship would involve the biology of th
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:30212</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_30216 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30216">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36342"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleus of the (4)He atom.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <chebi:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+2</chebi:charge>
+        <chebi:formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[4He]</chebi:formula>
+        <chebi:inchi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InChI=1S/He/q+2/i1+0</chebi:inchi>
+        <chebi:inchikey rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBDSXVIYZYSRII-IGMARMGPSA-N</chebi:inchikey>
+        <chebi:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.002</chebi:mass>
+        <chebi:monoisotopicmass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.00151</chebi:monoisotopicmass>
+        <chebi:smiles rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[4He++]</chebi:smiles>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gmelin:53474</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha-particle</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">helium-4(2+)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(4)He(2+)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:30216</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha-particle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_30222 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30222">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36344"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nuclear particle of zero charge, spin 1/2 and rest mass of 1.008664904(14) u.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <chebi:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</chebi:charge>
+        <chebi:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.008664904</chebi:mass>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neutron</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(1)0n</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:30222</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neutron</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_30225 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30225">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36338"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elementary particle not affected by the strong force having a spin 1/2, a positive elementary charge and a rest mass of 0.000548579903(13) u, or 0.51099906(15) MeV.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <chebi:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+1</chebi:charge>
+        <chebi:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.0</chebi:mass>
+        <chebi:monoisotopicmass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.0</chebi:monoisotopicmass>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positron</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta(+)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e(+)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:30225</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positron</rdfs:label>
     </owl:Class>
     
 
@@ -1523,18 +1648,17 @@ A  more thorough description of the relationship would involve the biology of th
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CHEBI_36341 -->
+    <!-- http://purl.obolibrary.org/obo/CHEBI_36338 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36341">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36338">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36342"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Particle of integer spin quantum number following Bose-Einstein statistics. Bosons are named after Satyendra Nath Bose.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lepton is a fermion that does not experience the strong force (strong interaction). The term is derived from the Greek lambdaepsilonpitauomicronsigma (small, thin).</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">boson</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bosons</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:36341</oboInOwl:id>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leptons</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:36338</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">boson</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lepton</rdfs:label>
     </owl:Class>
     
 
@@ -1558,6 +1682,21 @@ A  more thorough description of the relationship would involve the biology of th
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:36342</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subatomic particle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_36344 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36344">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36342"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hadron is a subatomic particle which experiences the strong force.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hadrons</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:36344</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hadron</rdfs:label>
     </owl:Class>
     
 
@@ -2843,25 +2982,10 @@ http://hl7.org/fhir/us/mcode/ValueSet-mcode-radiation-target-body-site-vs.html</
     
 
 
-    <!-- http://purl.org/rto-draft#electron:CHEBI_10545 -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#electron:CHEBI_10545">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#lepton:CHEBI_36338"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/rto-draft#electron_beam_radiation_therapy:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#electron_beam_radiation_therapy:radont_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#external_beam_therapy:radont_nnnn"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.org/rto-draft#electron:CHEBI_10545"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>External beam therapy that uses beams of electrons. [MP 3/1/21]</obo:IAO_0000115>
     </owl:Class>
     
@@ -2952,15 +3076,6 @@ http://hl7.org/fhir/us/mcode/ValueSet-mcode-radiation-target-body-site-vs.html</
     
 
 
-    <!-- http://purl.org/rto-draft#hadron:CHEBI_36344 -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#hadron:CHEBI_36344">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36342"/>
-        <obo:IAO_0000115>a subatomic particle which experiences the strong force.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/rto-draft#healthcare_provider_role:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#healthcare_provider_role:radont_nnnn">
@@ -3040,14 +3155,6 @@ http://hl7.org/fhir/us/mcode/ValueSet-mcode-radiation-target-body-site-vs.html</
     
 
 
-    <!-- http://purl.org/rto-draft#lepton:CHEBI_36338 -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#lepton:CHEBI_36338">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36342"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/rto-draft#measurement_datum:IAO_0000109 -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#measurement_datum:IAO_0000109">
@@ -3111,15 +3218,6 @@ http://hl7.org/fhir/us/mcode/ValueSet-mcode-radiation-target-body-site-vs.html</
     
 
 
-    <!-- http://purl.org/rto-draft#neutron:CHEBI_30222 -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#neutron:CHEBI_30222">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#hadron:CHEBI_36344"/>
-        <obo:IAO_0000115>Nuclear particle of zero charge, spin 1/2 and rest mass of 1.008664904(14) u.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/rto-draft#number_of_fractions:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#number_of_fractions:radont_nnnn">
@@ -3137,12 +3235,6 @@ http://hl7.org/fhir/us/mcode/ValueSet-mcode-radiation-target-body-site-vs.html</
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33252"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#hadron:CHEBI_36344"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A type of external beam therapy that uses beams of charged particles, e.g. protons and heavier ions.</obo:IAO_0000115>
@@ -3174,28 +3266,11 @@ http://hl7.org/fhir/us/mcode/ValueSet-mcode-radiation-target-body-site-vs.html</
     
 
 
-    <!-- http://purl.org/rto-draft#positron:CHEBI_30225 -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#positron:CHEBI_30225">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#lepton:CHEBI_36338"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/rto-draft#positron_emission_tomography:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#positron_emission_tomography:radont_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000075"/>
         <obo:IAO_0000115>An imaging device by which the distribution of positron-emitting molecules are imaged by a set of detectors placed around the body, and which uses a reconstruction algorithm to locate the position and intensity of the emitted radiation in the body. [MP 3/2/21]</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rto-draft#proton:CHEBI_24636 -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#proton:CHEBI_24636">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#hadron:CHEBI_36344"/>
-        <obo:IAO_0000115>Nuclear particle of charge number +1, spin 1/2 and rest mass of 1.007276470(12) u.</obo:IAO_0000115>
     </owl:Class>
     
 

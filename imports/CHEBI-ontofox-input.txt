@@ -8,12 +8,18 @@ http://purl.obolibrary.org/obo/CHEBI_30216
 http://purl.obolibrary.org/obo/CHEBI_30225
 http://purl.obolibrary.org/obo/CHEBI_10545
 http://purl.obolibrary.org/obo/CHEBI_30212
+http://purl.obolibrary.org/obo/CHEBI_36344
+http://purl.obolibrary.org/obo/CHEBI_30222
+http://purl.obolibrary.org/obo/CHEBI_36338
+http://purl.obolibrary.org/obo/CHEBI_24636
+http://purl.obolibrary.org/obo/CHEBI_36342
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000001
+http://purl.obolibrary.org/obo/CHEBI_36342
+http://purl.obolibrary.org/obo/BFO_0000040
 
 [Source term retrieval setting]
-includeAllIntermediates
+includeNoIntermediates
 
 [Source annotation URIs]
 includeAllAnnotationProperties
