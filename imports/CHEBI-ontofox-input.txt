@@ -10,13 +10,13 @@ http://purl.obolibrary.org/obo/CHEBI_10545
 http://purl.obolibrary.org/obo/CHEBI_30212
 http://purl.obolibrary.org/obo/CHEBI_36344
 http://purl.obolibrary.org/obo/CHEBI_30222
-http://purl.obolibrary.org/obo/CHEBI_36338
 http://purl.obolibrary.org/obo/CHEBI_24636
-http://purl.obolibrary.org/obo/CHEBI_36342
+http://purl.obolibrary.org/obo/CHEBI_149692
+http://purl.obolibrary.org/obo/CHEBI_149675
+http://purl.obolibrary.org/obo/CHEBI_149691
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/CHEBI_36342
-http://purl.obolibrary.org/obo/BFO_0000040
+http://purl.obolibrary.org/obo/CHEBI_24870
 
 [Source term retrieval setting]
 includeNoIntermediates
