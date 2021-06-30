@@ -14,19 +14,27 @@ oboInOwl:	http://www.geneontology.org/formats/oboInOwl#
 
 [MappingDeclaration] @collection [[
 mappingId	patient
-target		data:patient/{patientid} a obo:NCBITaxon_9606 ; obo:RO_0000087 data:patient/{patientid}/patientrole ; rdfs:label {firstname} . 
+target		data:patient/{patientser} a obo:NCBITaxon_9606 ; obo:RO_0000087 data:patient/{patientser}/patientrole ; rdfs:label {firstname} . 
 source		SELECT * FROM patient
 
 mappingId	patient_role
-target		data:patient/{patientid}/patientrole a obo:OBI_0000093 . 
+target		data:patient/{patientser}/patientrole a obo:OBI_0000093 . 
 source		SELECT * FROM patient
 
 mappingId	given_name
-target		data:patient/{patientid}/given_name a obo:IAO_0020016 ; obo:IAO_0000219 data:patient/{patientid} ; obo:OBI_0002815 {firstname} . 
+target		data:patient/{patientser}/given_name a obo:IAO_0020016 ; obo:IAO_0000219 data:patient/{patientser} ; obo:OBI_0002815 {firstname} . 
 source		SELECT * FROM patient
 
 mappingId	family_name
-target		data:patient/{patientid}/family_name a obo:IAO_0020017 ; obo:IAO_0000219 data:patient/{patientid} ; obo:OBI_0002815 {lastname} . 
+target		data:patient/{patientser}/family_name a obo:IAO_0020017 ; obo:IAO_0000219 data:patient/{patientser} ; obo:OBI_0002815 {lastname} . 
 source		SELECT * FROM patient
+
+mappingId	disposition
+target		data:patient/{patientser} obo:RO_0000091 data:patient/{patientser}/diagnosis/{diagnosisid} . 
+source		SELECT * FROM diagnosis
+
+mappingId	prostate_cancer
+target		data:patient/{patientser}/diagnosis/{diagnosisid} a obo:DOID_10283 . 
+source		SELECT * FROM diagnosis WHERE description='maligne neoplasma van prostaat'
 ]]
 
