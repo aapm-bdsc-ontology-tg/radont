@@ -1,0 +1,788 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ontofox.hegroup.org/c9oxmird.owl#"
+     xml:base="http://ontofox.hegroup.org/c9oxmird.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/">
+    <owl:Ontology rdf:about="http://ontofox.hegroup.org/c9oxmird.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:label xml:lang="en">label</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A human readable name for this class.</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_0050161 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0050161">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lower respiratory tract disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_1579"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A respiratory system disease which involves the lower respiratory tract.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_0050615 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0050615">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">respiratory system cancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050686"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_1579"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organ system cancer located_in the respiratory system that is characterized by uncontrolled cellular proliferation in the respiratory tract.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_0050686 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0050686">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organ system cancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_162"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cancer that is classified based on the organ it starts in.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_0050687 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0050687">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell type cancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_162"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cancer that is classified by the type of cell from which it is derived.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_0060100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0060100">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musculoskeletal system cancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050686"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_17"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organ system cancer located_in the muscular and skeletal organs and characterized by uncontrolled cellular proliferation of the musculoskeletal organs.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_0060118 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0060118">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thoracic disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_7"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease of anatomical entity that is located_in the thoracic cavity.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_0060119 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0060119">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pharynx cancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_3119"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A gastrointestinal system cancer that is located_in the pharynx.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_0060564 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0060564">
+        <rdfs:label xml:lang="en">spinal disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0080001"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bone disease that is located_in the spine.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_0080001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0080001">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bone disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_65"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A connective tissue disease that affects the structure or development of bone or causes an impairment of normal bone function.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_10155 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_10155">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intestinal cancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_3119"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_5295"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A gastrointestinal system cancer that is located_in the intestine.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_10283 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_10283">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prostate cancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_3856"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_47"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A male reproductive organ cancer that is located_in the prostate.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_11054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_11054">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urinary bladder cancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_365"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_3996"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An urinary system cancer that results_in malignant growth located_in the urinary bladder.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_120 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_120">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">female reproductive organ cancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_193"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_229"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A reproductive organ cancer that is manifested in the female genitals. This includes organs such as the ovaries, fallopian tubes, uterus, cervix, vagina and vulva.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_1319 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_1319">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">brain cancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_3620"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_936"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A central nervous system cancer that is characterized by the growth of abnormal cells in the tissues of the brain.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_1324 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_1324">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lung cancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050615"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_850"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A respiratory system cancer that is located_in the lung.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_1380 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_1380">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endometrial cancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_289"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_363"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A uterine cancer that is located_in tissues lining the uterus.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_14566 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_14566">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease of cellular proliferation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease that is characterized by abnormally rapid cell division.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_15 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_15">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reproductive system disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_7"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease of anatomical entity that is located_in reproductive system organs.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_1579 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_1579">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">respiratory system disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_7"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease of anatomical entity that located_in the respiratory system which extends from the nasal sinuses to the diaphragm.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_1612 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_1612">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">breast cancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_3463"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_5093"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thoracic cancer that originates in the mammary gland.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_162 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_162">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_14566"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease of cellular proliferation that is malignant and primary, characterized by uncontrolled cellular proliferation, local cell invasion and metastasis.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_17 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_17">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musculoskeletal system disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_7"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease of anatomical entity that occurs in the muscular and/or skeletal system.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_18 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_18">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urinary system disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_7"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease of anatomical entity that is located_in kidney, ureter, bladder and urethra.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_184 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_184">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bone cancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0080001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_201"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A connective tissue cancer that is located_in bone and is characterized by uncontrolled cellular proliferation that destroys normal bone tissue.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_193 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_193">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reproductive organ cancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050686"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_15"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organ system cancer that is manifested in the reproductive organs.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_1993 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_1993">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rectum cancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_9256"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A colorectal cancer that is located_in the rectum.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_201 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_201">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">connective tissue cancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0060100"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_65"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A musculoskeletal system cancer that is located_in connective tissue.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_229 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_229">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">female reproductive system disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_15"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A reproductive system disease that impairs the ability to reproduce and is located in the uterus, vagina, cervix, ovaries or fallopian tubes.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_2596 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_2596">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">larynx cancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050615"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_786"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A respiratory system cancer that is located_in the larynx.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_263 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_263">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kidney cancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_3996"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_557"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A urinary system cancer that is located_in the kidney.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_289 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_289">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endometriosis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_229"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A female reproductive system disease characterized by the growth of endometrial tissue outside the uterine body.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_3068 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_3068">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glioblastoma</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_3069"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A malignant astrocytoma characterized by the presence of small areas of necrotizing tissue that is surrounded by anaplastic cells as well as the presence of hyperplastic blood vessels, and that has_material_basis_in abnormally proliferating cells derives_from multiple cell types including astrocytes and oligondroctyes.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_3069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_3069">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">malignant astrocytoma</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_3070"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A malignant glioma that is has_material_basis_in astrocyte cells, a type of star-shaped glial cell, located in the brain and spinal cord.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_3070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_3070">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high grade glioma</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050687"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0060564"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_1319"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_184"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell type cancer that has_material_basis_in glial cells and is located in brain or located in spine.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_3093 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_3093">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nervous system cancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050686"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_863"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organ system cancer located_in the nervous system that affects the central or peripheral nervous system.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_3119 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_3119">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrointestinal system cancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050686"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_77"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organ system cancer located_in gastrointestinal tract that is manifested in organs of the gastrointestinal system.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_331 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_331">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">central nervous system disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_863"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A nervous system disease that affects either the spinal cord (myelopathy) or brain (encephalopathy) of the central nervous system.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_345 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_345">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uterine disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_229"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A female reproductive system disease that is located_in the uterus.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_3463 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_3463">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">breast disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0060118"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thoracic disease that is located_in the breast.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_3565 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_3565">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">meningioma</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_3620"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A central nervous system cancer that are manifested in the central nervous system and arise from the arachnoid cap cells of the arachnoid villi in the meninges.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_3620 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_3620">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">central nervous system cancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_3093"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_331"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A nervous system cancer that is located_in the central nervous system.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_363 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_363">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uterine cancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_120"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_345"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A female reproductive organ cancer that is located_in the uterus.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_365 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_365">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bladder disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_18"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A urinary system disease that is located_in the bladder.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_3856 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_3856">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">male reproductive organ cancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_193"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_48"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A reproductive organ cancer that is manifested in the male genital system. This includes organs such as the penis and scrotum.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_3996 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_3996">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urinary system cancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050686"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_18"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organ system cancer that is located_in the kidneys, ureteres, bladder or urethra.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_4 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_4">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease is a disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_47 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_47">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prostate disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_48"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_48 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_48">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">male reproductive system disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_15"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A reproductive system disease that affects male reproductive organs.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_5041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_5041">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">esophageal cancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_3119"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_6050"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A gastrointestinal system cancer that is located_in the esophagus.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_5093 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_5093">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thoracic cancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050686"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0060118"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organ system cancer located_in the thoracic cavity that develops in the different types of cells within the lungs, as well as less common cancers of the esophagus, the trachea, or the chest wall.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_5295 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_5295">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intestinal disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_77"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A gastrointestinal system disease that is located_in the intestine.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_557 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_557">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kidney disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_18"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A urinary system disease that is located_in the kidney.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_5672 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_5672">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">large intestine cancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_10155"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intestinal cancer that effects the long, tube-like organ that is connected to the small intestine at one end and the anus at the other.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_6050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_6050">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">esophageal disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_77"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A gastrointestinal system disease that is located_in the esophagus.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_65 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_65">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">connective tissue disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_17"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A musculoskeletal system disease that affects tissues such as skin, tendons, and cartilage.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_7 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_7">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease of anatomical entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease that manifests in a defined anatomical structure.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_77 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_77">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrointestinal system disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_7"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease of anatomical entity that is located_in the gastrointestinal tract.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_786 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_786">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laryngeal disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_974"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_850 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_850">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lung disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050161"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lower respiratory tract disease in which the function of the lungs is adversely affected by narrowing or blockage of the airways resulting in poor air flow, a loss of elasticity in the lungs that produces a decrease in the total volume of air that the lungs are able to hold, and clotting, scarring, or inflammation of the blood vessels that affect the ability of the lungs to take up oxygen and to release carbon dioxide.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_8557 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_8557">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oropharynx cancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0060119"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A pharynx cancer that is located_in the  oropharynx.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_863 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_863">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nervous system disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_7"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease of anatomical entity that is located_in the central nervous system or located_in the peripheral nervous system.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_9256 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_9256">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">colorectal cancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_5672"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A large intestine cancer that is located_in the colon and/or located_in the rectum.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_936 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_936">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">brain disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_331"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A central nervous system disease that is located_in the brain.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_974 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_974">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upper respiratory tract disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_1579"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A respiratory system disease which involves the upper respiratory tract.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 1.3.5.1016) http://owlapi.sourceforge.net -->
+
