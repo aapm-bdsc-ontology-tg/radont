@@ -1686,8 +1686,9 @@ In the examples above, a reagent is an operational component of a device, but th
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#rt_process_date">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#one-dimensional_temporal_region:BFO_0000038"/>
-        <obo:IAO_0000115>The day on which a radiation therapy process, e.g. session, planning simulation, occurred.  [MP 3/5/21]</obo:IAO_0000115>
+        <obo:IAO_0000115>The day on which a radiation therapy process, e.g. session, planning simulation, occurred.</obo:IAO_0000115>
         <rdfs:comment>Associating a time with the radiation therapy procedures is essential for representing the domain.  How best to do it is tricky.  By using the 1d temporal region, we can use a date to represent the day on which it occurred. [MP 3/5/21]</rdfs:comment>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -1751,7 +1752,8 @@ In the examples above, a reagent is an operational component of a device, but th
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#computed_tomography:radont_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000075"/>
-        <obo:IAO_0000119>A device capable of imaging a tomographic slice of a human body using kilovoltage x-rays.  Commonly known as a CT or CAT scan. [MHP 2/23/21]</obo:IAO_0000119>
+        <obo:IAO_0000119>A device capable of imaging a tomographic slice of a human body using kilovoltage x-rays.  Commonly known as a CT or CAT scan.</obo:IAO_0000119>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -1795,7 +1797,8 @@ In the examples above, a reagent is an operational component of a device, but th
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#magnetic_resonance_imaging:radonc_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000075"/>
-        <obo:IAO_0000115>A device capable of producing an image of the body by applying magnetic fields and measuring the position-specific magnetic susceptibility. Commonly known as MRI. [MP 2/23/21]</obo:IAO_0000115>
+        <obo:IAO_0000115>A device capable of producing an image of the body by applying magnetic fields and measuring the position-specific magnetic susceptibility. Commonly known as MRI.</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -1844,7 +1847,8 @@ In the examples above, a reagent is an operational component of a device, but th
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30212"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A form of external beam radiation therapy that utilizes a beam of photons (x-rays).  [MHP 2/12/21]</obo:IAO_0000115>
+        <obo:IAO_0000115>A form of external beam radiation therapy that utilizes a beam of photons (x-rays).</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -1853,7 +1857,8 @@ In the examples above, a reagent is an operational component of a device, but th
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#planar_imaging:radonc_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000075"/>
-        <obo:IAO_0000115>A device capable of producing a planar image of the body by passing some type of radiation through the body and recording the differential transmission/scattering/absorption of the radiation on the other side. [MP 2/23/21]</obo:IAO_0000115>
+        <obo:IAO_0000115>A device capable of producing a planar image of the body by passing some type of radiation through the body and recording the differential transmission/scattering/absorption of the radiation on the other side.</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -1887,7 +1892,8 @@ In the examples above, a reagent is an operational component of a device, but th
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#radiation_dose_unit:radont_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#measurement_unit_label:IAO_0000003"/>
-        <obo:IAO_0000115>Unit of ionizing energy deposited per mass.  Typical values are 1 Gray [Gy] = 1 Joule/kilogram and 1 centiGray [cGy] = 1/100 of 1 Gy. [MHP 10/12/20]</obo:IAO_0000115>
+        <obo:IAO_0000115>Unit of ionizing energy deposited per mass.  Typical values are 1 Gray [Gy] = 1 Joule/kilogram and 1 centiGray [cGy] = 1/100 of 1 Gy.</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -1930,13 +1936,14 @@ In the examples above, a reagent is an operational component of a device, but th
                 <owl:onClass rdf:resource="http://purl.org/rto-draft#spectrum:radont_nnnn"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A configuration of the elements that comprise a radiation therapy device whose function is to deliver a planned amount of radiation to a particular patient. [MHP 9/1/20]</obo:IAO_0000115>
+        <obo:IAO_0000115>A configuration of the elements that comprise a radiation therapy device whose function is to deliver a planned amount of radiation to a particular patient.</obo:IAO_0000115>
         <rdfs:comment>Meeting of 9/2/20: General discussion led to conclusion that this is a bad class.  Should probably be deleted.
 
 Some examples of radiation therapy beam:
      - a 6 MV x-ray beam modulated by a 30 degree wedge with the gantry angle of 90 degrees, collimator rotation of 0 degrees, and planned dose to the isocenter of 100 cGy.
      - a 10 MV x-ray beam collimated using a mulitleaf collimator in a set of steps (segments) of a given shape and monitor units with a gantry angle of 15 degrees, collimator angle of 20 degrees on a given linear accelerator.
 [MHP 9/1/20]</rdfs:comment>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -1955,7 +1962,8 @@ Some examples of radiation therapy beam:
 
 This is distinguished from radiation_absorbed_dose which is a an explicit physics measurement of the energy absorbed in a small volume.  
 
-[MHP 10/12/20]</obo:IAO_0000115>
+[</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -1964,8 +1972,9 @@ This is distinguished from radiation_absorbed_dose which is a an explicit physic
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#radiation_therapy_fraction_dose:radont_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#radiation_absorbed_dose:radont_nnnn"/>
-        <obo:IAO_0000115>The absorbed dose that is delivered in a single radiation therapy session.  The number of sessions for a given radiation therapy treatment can vary from 1 to n.  Therefore, the fraction_dose equalst the total_dose divided by the number of sessions. [MHP 10/29/20]</obo:IAO_0000115>
+        <obo:IAO_0000115>The absorbed dose that is delivered in a single radiation therapy session.  The number of sessions for a given radiation therapy treatment can vary from 1 to n.  Therefore, the fraction_dose equalst the total_dose divided by the number of sessions.</obo:IAO_0000115>
         <rdfs:comment>This is the value that is referred to in the prescription and treatment plan.  However, it is conceptually different since it is the actualization of the planned  fractional dose.  Also, by having both the fractional_dose_objective and fraction_dose allows one to account for changes in prescription or situations where the intended dose was not actually delivered. [MHP 10/29/20]</rdfs:comment>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -1974,8 +1983,9 @@ This is distinguished from radiation_absorbed_dose which is a an explicit physic
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#radiation_therapy_total_dose:radont_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#radiation_absorbed_dose:radont_nnnn"/>
-        <obo:IAO_0000115>The absorbed dose that is the total amount of dose that was delivered as part of a radiation therapy process. [MHP 10/29/20]</obo:IAO_0000115>
+        <obo:IAO_0000115>The absorbed dose that is the total amount of dose that was delivered as part of a radiation therapy process.</obo:IAO_0000115>
         <rdfs:comment>This is the value that is referred to in the prescription and treatment plan.  However, it is conceptually different since it is the actualization of the planned dose.  Also, by having both the total_dose_objective and total_dose allows one to account for changes in prescription or situations where the intended dose was not actually delivered. [MHP 10/29/20]</rdfs:comment>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -1984,8 +1994,8 @@ This is distinguished from radiation_absorbed_dose which is a an explicit physic
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#rt_end_date:radont_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#zero-dimensional_temporal_region:BFO_0000148"/>
-        <obo:IAO_0000115>The calendar date of the end of a radiation therapy procedure.
-[MHP 10/12/20]</obo:IAO_0000115>
+        <obo:IAO_0000115>The calendar date of the end of a radiation therapy procedure.</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -1994,8 +2004,8 @@ This is distinguished from radiation_absorbed_dose which is a an explicit physic
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#rt_start_date:radont_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#zero-dimensional_temporal_region:BFO_0000148"/>
-        <obo:IAO_0000115>The calendar date of the beginning of a radiation therapy procedure.
-[MHP 10/12/20]</obo:IAO_0000115>
+        <obo:IAO_0000115>The calendar date of the beginning of a radiation therapy procedure.</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -2049,10 +2059,10 @@ This is distinguished from radiation_absorbed_dose which is a an explicit physic
                 <owl:onClass rdf:resource="http://purl.org/rto-draft#RADONT_0000061"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A device that is used in the process of delivering radiation therapy to a patient.  It consists of multiple parts, the minimum being a radiation emission device.  Other possible parts are radiation monitors, radiation collimators, patient positioning and immobilization devices.  [MP 8/4/20]
-
-Alternate definition:
-&quot;In radiation therapy, this is an object that is designed to produce therapeutic radiation and deliver it to the appropriate region of the body in order to treat disease.  It contains the necessary parts to measure the radiation delivered, to obtain input for setting treatment parameters, and for collimating and/or moving the radiation source relative to the patient&apos;s body. [MP 1/14/21]&quot;</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A device that is used in the process of delivering radiation therapy to a patient.  It consists of multiple parts, the minimum being a radiation emission device.  Other possible parts are radiation monitors, radiation collimators, patient positioning and immobilization devices.</obo:IAO_0000115>
+        <rdfs:comment>Possible alternative:
+In radiation therapy, this is an object that is designed to produuce therapeutic radiation and deliver it to the appropriate region of the body in order to treat disease.  It contains the necessary parts to measure the radiation to delivered, to obtain input for setting treatment parameters, and for collimating and/or moving the radiation source realtive to the patient&apos;s body [MP 1/14/21]</rdfs:comment>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">radiation therapy device</rdfs:label>
     </owl:Class>
     
@@ -2082,8 +2092,9 @@ Alternate definition:
                 <owl:onClass rdf:resource="http://purl.org/rto-draft#RADONT_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A device that has a function to emit radiation in the form of a type of subatomic particle.  It may be restricted to one type of particle, e.g. electrons or gamma rays, but may also be capable of emitting multiple types, e.g. electrons + x-rays or protons + heavy charged particles.  [MP 8/4/20]</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A device that has a function to emit radiation in the form of a type of subatomic particle.  It may be restricted to one type of particle, e.g. electrons or gamma rays, but may also be capable of emitting multiple types, e.g. electrons + x-rays or protons + heavy charged particles.</obo:IAO_0000115>
         <rdfs:comment>Radiation emission device refers to the device that actually produces the radiation independent of the application to radiation therapy.  For example, a linear accelerator operating in the megavoltage regime produces a beam of x-rays by accelerating electrons and using them to create bremmstrahlung.  Such a device can be attached to some sort of flexible armature for positioning and outfitted with dose monitors and electronic feedback circuits, etc to make a radiation therapy device.  Other examples are manufactured Co-60 pellets, proton cyclotrons, etc. [MP 3/2/21]</rdfs:comment>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">radiation emission device</rdfs:label>
     </owl:Class>
     
@@ -2172,8 +2183,8 @@ Alternate definition:
                 <owl:onClass rdf:resource="http://purl.org/rto-draft#medical_imaging_process:radont_nnnn"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The process of determining the model of the patient&apos;s body that is to be used.  The devices and measurements necessary for the radiation patient positioning (radont_nnnn) process are determined and constructed.
-[MHP 9/2/20]</obo:IAO_0000115>
+        <obo:IAO_0000115>The process of determining the model of the patient&apos;s body that is to be used.  The devices and measurements necessary for the radiation patient positioning (radont_nnnn) process are determined and constructed.</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">radiation therapy simulation</rdfs:label>
     </owl:Class>
     
@@ -2183,7 +2194,7 @@ Alternate definition:
 
     <owl:Class rdf:about="http://purl.org/rto-draft#RADONT_0000069">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115>The process of deciding the means of treating the patient and using software to calculate critical parameters.  The calculations are carried out using a model of radiation transport and a model of the patient&apos;s body and disease. [MHP 9/2/20]</obo:IAO_0000115>
+        <obo:IAO_0000115>The process of deciding the means of treating the patient and using software to calculate critical parameters.  The calculations are carried out using a model of radiation transport and a model of the patient&apos;s body and disease.</obo:IAO_0000115>
         <rdfs:comment>Examples:
     - the choice of 3d conformal RT, the use of a commercial radiation treatment planning system (RTPS) to determine the  machine parameters such as gantry angle, collimator configuration, etc.  Once the parameters are set, a model of radiation transport is used to calculate the dose throughout a model of the patient&apos;s body.
 
@@ -2192,6 +2203,7 @@ Alternate definition:
 The model of the patient&apos;s body can be crude, such as representing the tissues as a single material and using one axial outline to represent all other planes of the body.  It can also be very sophisticated using merged images from multiple imaging sources with tissue inhomogeneities adequately represented.
 
 [MHP 9/2/20]</rdfs:comment>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">radiation therapy planning</rdfs:label>
     </owl:Class>
     
@@ -2216,8 +2228,9 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
                 <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#radiation_therapy_prescription:radont_nnnn"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>More commonly called a &quot;radiation therapy plan&quot;.  Such an entity consists of a list of actualizable elements, e.g. radiation beam angle, particle energy, etc.  It also consists of a computed distribution of radiation doses in a particular human body.  That is, it uses the values of the list of elements and the physics of radiation transport to produce a planned set of doses at points throughout the body of a particular patient.  It also has a part radiation_therapy_dose_objective.  [MHP 9/1/20]</obo:IAO_0000115>
+        <obo:IAO_0000115>More commonly called a &quot;radiation therapy plan&quot;.  Such an entity consists of a list of actualizable elements, e.g. radiation beam angle, particle energy, etc.  It also consists of a computed distribution of radiation doses in a particular human body.  That is, it uses the values of the list of elements and the physics of radiation transport to produce a planned set of doses at points throughout the body of a particular patient.  It also has a part radiation_therapy_dose_objective.</obo:IAO_0000115>
         <rdfs:comment>Typically, this would be the treatment plan in the sense of what is produced by a radiation therapy planning system.  It can be actualized as a printout or as pixels on a screen.  It contains the dose distributions and dose values as well as the objectives and machine parameters.</rdfs:comment>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">radiation therapy plan specification</rdfs:label>
     </owl:Class>
     
@@ -2227,8 +2240,9 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
 
     <owl:Class rdf:about="http://purl.org/rto-draft#external_beam_device">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000060"/>
-        <obo:IAO_0000115>Radiation therapy device in which radiation is generated outside of the body and the radiation passes from the source through space and parts of the body in order to irradiate the desired target tissue.  [MP 3/1/21]</obo:IAO_0000115>
+        <obo:IAO_0000115>Radiation therapy device in which radiation is generated outside of the body and the radiation passes from the source through space and parts of the body in order to irradiate the desired target tissue.</obo:IAO_0000115>
         <rdfs:comment>Although the term &quot;external beam device&quot; sounds generic and might also be applied to any number of simple beam producing devices, note that as a sublcass of radiation therapy device it inherits that class&apos;s definition as being devoted to radiation therapy and includes other components beside the radiation source that are required for medical uses.</rdfs:comment>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -2237,7 +2251,8 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
 
     <owl:Class rdf:about="http://purl.org/rto-draft#high_dose_rate_brachytherapy">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#brachytherapy:radont_nnnn"/>
-        <obo:IAO_0000115>Brachytherapy process in which the radiation is delivered in very short (on the order of minutes) time frame.  This may be repeated in mulitple sessions (fractions).  [MHP 11/24/20]</obo:IAO_0000115>
+        <obo:IAO_0000115>Brachytherapy process in which the radiation is delivered in very short (on the order of minutes) time frame.  This may be repeated in mulitple sessions (fractions).</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -2246,7 +2261,8 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
 
     <owl:Class rdf:about="http://purl.org/rto-draft#low_dose_rate_brachytherapy">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#brachytherapy:radont_nnnn"/>
-        <obo:IAO_0000115>Brachytherapy process in which the radiation is delivered slowly (over the course of many hours or several days). [MHP 11/24/20]</obo:IAO_0000115>
+        <obo:IAO_0000115>Brachytherapy process in which the radiation is delivered slowly (over the course of many hours or several days).</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -2343,7 +2359,8 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
                 <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#zero-dimensional_temporal_region:BFO_0000148"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>&quot;For purposes of recording, the point in time that signifies the beginning of a radiation therapy treatment process.  For most purposes, merely the date is sufficient but strictly speaking there is a moment in time, denoted perhaps by the OIS time-date-stamp on treatment delivery, when it begins. [MHP 11/10/20]&quot;</obo:IAO_0000115>
+        <obo:IAO_0000115>&quot;For purposes of recording, the point in time that signifies the beginning of a radiation therapy treatment process.  For most purposes, merely the date is sufficient but strictly speaking there is a moment in time, denoted perhaps by the OIS time-date-stamp on treatment delivery, when it begins. &quot;</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -2371,7 +2388,8 @@ http://hl7.org/fhir/us/mcode/ValueSet-mcode-radiation-target-body-site-vs.html</
 
     <owl:Class rdf:about="http://purl.org/rto-draft#brachytherapy:radont_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000116"/>
-        <rdfs:comment>The procedure by which a radiation treatment is delivered using one or more sealed radioactive isotopic sources that is inserted into the body. [MP 8/10/20]</rdfs:comment>
+        <rdfs:comment>The procedure by which a radiation treatment is delivered using a radiation emission device that is inserted into the target tissue.  Most often the radiaton source is a radioisotope.</rdfs:comment>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -2380,7 +2398,8 @@ http://hl7.org/fhir/us/mcode/ValueSet-mcode-radiation-target-body-site-vs.html</
 
     <owl:Class rdf:about="http://purl.org/rto-draft#brachytherapy_device:radont_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000060"/>
-        <obo:IAO_0000115>A radiation therapy device that generates radiation from some part of the device that is inserted into that part of a person&apos;s body at which the intended target tissue is located. [MP 3/1/21]</obo:IAO_0000115>
+        <obo:IAO_0000115>A radiation therapy device that generates radiation from some part of the device that is inserted into that part of a person&apos;s body at which the intended target tissue is located.</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -2425,7 +2444,8 @@ A diaphragm or system of diaphragms made of an absorbing material, designed to d
 
     <owl:Class rdf:about="http://purl.org/rto-draft#control_point:rto_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#data_item:IAO_0000027"/>
-        <obo:IAO_0000115>A set of measurements that represent the physical state of a radiation therapy device at a given  moment.  A temporally-ordered set of control points can be used to document changes in the state, e.g. movement of a gantry, change in monitor units.  The exact set of measurements  needed may depend on the radiation therapy device and the intended use of them.  [MP 12/12/21]</obo:IAO_0000115>
+        <obo:IAO_0000115>A set of measurements that represent the physical state of a radiation therapy device at a given  moment.  A temporally-ordered set of control points can be used to document changes in the state, e.g. movement of a gantry, change in monitor units.  The exact set of measurements  needed may depend on the radiation therapy device and the intended use of them.</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -2503,7 +2523,8 @@ A diaphragm or system of diaphragms made of an absorbing material, designed to d
                 <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#radiation_beam:radont_nnnn"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Dose rate inheres in a beam of radiation and is a measure of the amount of dose delivered per time.  [MP 8/10/20]</obo:IAO_0000115>
+        <obo:IAO_0000115>Dose rate inheres in a beam of radiation and is a measure of the amount of dose delivered per time.</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -2536,7 +2557,8 @@ A diaphragm or system of diaphragms made of an absorbing material, designed to d
                 <owl:onClass rdf:resource="http://purl.org/rto-draft#electron:CHEBI_10545"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>External beam therapy that uses beams of electrons. [MP 3/1/21]</obo:IAO_0000115>
+        <obo:IAO_0000115>External beam therapy that uses beams of electrons.</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -2545,7 +2567,8 @@ A diaphragm or system of diaphragms made of an absorbing material, designed to d
 
     <owl:Class rdf:about="http://purl.org/rto-draft#end_radiation_therapy_process:radont_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#process_boundary:OBO_0000035"/>
-        <obo:IAO_0000115>&quot;For purposes of recording, the point in time that signifies the end of a radiation therapy treatment process.  For most purposes, merely the date is sufficient but strictly speaking there is a moment in time, denoted perhaps by the OIS time-date-stamp on treatment delivery, when it ends. [MHP 11/10/20]&quot;&quot;</obo:IAO_0000115>
+        <obo:IAO_0000115>&quot;For purposes of recording, the point in time that signifies the end of a radiation therapy treatment process.  For most purposes, merely the date is sufficient but strictly speaking there is a moment in time, denoted perhaps by the OIS time-date-stamp on treatment delivery, when it ends.</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -2594,7 +2617,8 @@ A diaphragm or system of diaphragms made of an absorbing material, designed to d
                 <owl:onClass rdf:resource="http://purl.org/rto-draft#technique_action_specification:radont_nnnn"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>This is a form of radiation therapy in which the radiation source is external to and some distance from the patient&apos;s body, cf. brachytherapy, and the radiation is delivered in one or more radont:radiation_beams.  Instances can be distinguished by the type and energy of the particle beam, the radiation positioning device, dose rate, the positioning of the patient.  [MP 8/10/20]</rdfs:comment>
+        <obo:IAO_0000115>This is a form of radiation therapy in which the radiation source is external to and some distance from the patient&apos;s body, cf. brachytherapy, and the radiation is delivered in one or more radont:radiation_beams.  Instances can be distinguished by the type and energy of the particle beam, the radiation positioning device, dose rate, the positioning of the patient.</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -2612,7 +2636,8 @@ A diaphragm or system of diaphragms made of an absorbing material, designed to d
 
     <owl:Class rdf:about="http://purl.org/rto-draft#frame_of_reference:rto_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115>An information content entity that establishes a geometric system for precisely locating a point in space and motion with that space.  Common 3-dimensional reference frames are Cartesion and spherical.  [MP 12/12/21]</obo:IAO_0000115>
+        <obo:IAO_0000115>An information content entity that establishes a geometric system for precisely locating a point in space and motion with that space.  Common 3-dimensional reference frames are Cartesion and spherical.</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -2733,7 +2758,8 @@ A diaphragm or system of diaphragms made of an absorbing material, designed to d
 
     <owl:Class rdf:about="http://purl.org/rto-draft#ionization_chamber:rto_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#measurement_device:OBI_0000832"/>
-        <obo:IAO_0000115>A measuring device designed to detect the ionization caused by energetic particles that pass through a gas-filled chamber.  By suitable calibrations and the application of measurement protocols, ionization chambers are a common secondary standard for the measurement of absolute dose. [MP 12/13/21]</obo:IAO_0000115>
+        <obo:IAO_0000115>A measuring device designed to detect the ionization caused by energetic particles that pass through a gas-filled chamber.  By suitable calibrations and the application of measurement protocols, ionization chambers are a common secondary standard for the measurement of absolute dose.</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -2800,8 +2826,9 @@ A diaphragm or system of diaphragms made of an absorbing material, designed to d
                 <owl:onClass rdf:resource="http://purl.org/rto-draft#RADONT_0000075"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A process that is intended to produce images of the disease and related body tissues that can be used to diagnose and/or define a target volume for radiation therapy. [MP 3/2/21]</obo:IAO_0000115>
+        <obo:IAO_0000115>A process that is intended to produce images of the disease and related body tissues that can be used to diagnose and/or define a target volume for radiation therapy.</obo:IAO_0000115>
         <rdfs:comment>Imaging is clearly an extensive concept, has many forms and many applications.  Other than NCIT, I could not find a suitable, already established ontological class, but am wary of defining this. [MP 3/2/21]</rdfs:comment>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -2837,8 +2864,9 @@ A diaphragm or system of diaphragms made of an absorbing material, designed to d
                 <owl:onClass rdf:resource="http://purl.org/rto-draft#technique_action_specification:radont_nnnn"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Part of the specification of a radiation therapy plan is the means for delivering it, of which there are many.  This class allows for the specification for the type of radiation and the radiation delivery technique that will meet the clinical goals. [MP 1/14/21]</obo:IAO_0000115>
+        <obo:IAO_0000115>Part of the specification of a radiation therapy plan is the means for delivering it, of which there are many.  This class allows for the specification for the type of radiation and the radiation delivery technique that will meet the clinical goals.</obo:IAO_0000115>
         <rdfs:comment>Need to define &quot;technique&quot; and include it as a part of the axioms.</rdfs:comment>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -2847,7 +2875,8 @@ A diaphragm or system of diaphragms made of an absorbing material, designed to d
 
     <owl:Class rdf:about="http://purl.org/rto-draft#monitor_unit:rto_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#scalar_measurement_datum:IAO_0000032"/>
-        <obo:IAO_0000115>A measurement of the radiation output of a radiation therapy device that is particular to each device and which is unitless.  This measurement is the fundamental way in which the therapy device is controlled so as to deliver the prescribed dose to the patient.  This measurement is related to the dose by means of calibration protocols.  [MP 12/12/21]</obo:IAO_0000115>
+        <obo:IAO_0000115>A measurement of the radiation output of a radiation therapy device that is particular to each device and which is unitless.  This measurement is the fundamental way in which the therapy device is controlled so as to deliver the prescribed dose to the patient.  This measurement is related to the dose by means of calibration protocols.</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -2856,7 +2885,9 @@ A diaphragm or system of diaphragms made of an absorbing material, designed to d
 
     <owl:Class rdf:about="http://purl.org/rto-draft#multileaf_collimator:rto_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#collimator:radont_nnnn"/>
-        <obo:IAO_0000115>A collimator with opposing banks of metal &quot;leaves&quot;--individual metal elements that present a long narrow profile to the direction of the incident radiation and whose thickness is sufficient to attenuate a clinically significant fraction of the radiation.  Each leaf can be moved individually, thereby providing the ability to make an arbitrarily-shaped aperture, limited by the width of the individual leaves.  There are no standard dimensions of the leaves, nor any design standards for the supporting mechanisms. [MP 12/14/21]</obo:IAO_0000115>
+        <obo:IAO_0000115>A collimator with opposing banks of metal &quot;leaves&quot;--individual metal elements that present a long narrow profile to the direction of the incident radiation and whose thickness is sufficient to attenuate a clinically significant fraction of the radiation.  Each leaf can be moved individually, thereby providing the ability to make an arbitrarily-shaped aperture, limited by the width of the individual leaves.  There are no standard dimensions of the leaves, nor any design standards for the supporting mechanisms.</obo:IAO_0000115>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -2920,6 +2951,7 @@ A diaphragm or system of diaphragms made of an absorbing material, designed to d
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A type of external beam therapy that uses beams of charged particles, e.g. protons and heavier ions.</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -2934,7 +2966,8 @@ A diaphragm or system of diaphragms made of an absorbing material, designed to d
                 <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000060"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A device that is part of a radiation therapy device that is used to support and position  the patient with respect to the radiation field used to treat the patient.  [MP 8/4/20]</obo:IAO_0000115>
+        <obo:IAO_0000115>A device that is part of a radiation therapy device that is used to support and position  the patient with respect to the radiation field used to treat the patient.</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -2966,7 +2999,8 @@ A diaphragm or system of diaphragms made of an absorbing material, designed to d
 
     <owl:Class rdf:about="http://purl.org/rto-draft#positron_emission_tomography:radont_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000075"/>
-        <obo:IAO_0000115>An imaging device by which the distribution of positron-emitting molecules are imaged by a set of detectors placed around the body, and which uses a reconstruction algorithm to locate the position and intensity of the emitted radiation in the body. [MP 3/2/21]</obo:IAO_0000115>
+        <obo:IAO_0000115>An imaging device by which the distribution of positron-emitting molecules are imaged by a set of detectors placed around the body, and which uses a reconstruction algorithm to locate the position and intensity of the emitted radiation in the body.</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -3047,8 +3081,8 @@ In my thinking the independent continuant is the collection of fundamental parti
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#measurement_device:OBI_0000832"/>
         <obo:IAO_0000115>A device that measures an amount of ionizing radiation in units of dose (https://www.nrc.gov/reading-rm/basic-ref/glossary/dose.html) Different physical properties may be measured, e.g. amount of charged collected, but the measurement value must be capable of being calibrated to the basic unit of dose, i.e. Joule/kg.  
 
-The measurement may be continuous or integrated.  
-[MP 8/4/20]</obo:IAO_0000115>
+The measurement may be continuous or integrated.</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -3073,8 +3107,8 @@ The measurement may be continuous or integrated.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000116"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The process of using appopriate devices and imaging procedures as part of the process of carrying out the radiation therapy plan by aligning the patient&apos;s anatomy with the therapy device.
-[MHP 9/2/20]</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The process of using appopriate devices and imaging procedures as part of the process of carrying out the radiation therapy plan by aligning the patient&apos;s anatomy with the therapy device.</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -3089,7 +3123,8 @@ The measurement may be continuous or integrated.
                 <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000060"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A device that is part of a radont:radiation _therapy_device that places the radont:radiation_emission_device relative to the patient in order to deliver the radiation as described by the radiation therapy plan.  Examples are gantries, robotic arms, brachytherapy applicators.  There is no requirement that the radiatioin emission device can move, e.g. Gamma Knife.  [MP 8/10/20]</obo:IAO_0000115>
+        <obo:IAO_0000115>A device that is part of a radont:radiation _therapy_device that places the radont:radiation_emission_device relative to the patient in order to deliver the radiation as described by the radiation therapy plan.  Examples are gantries, robotic arms, brachytherapy applicators.  There is no requirement that the radiatioin emission device can move, e.g. Gamma Knife.</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -3113,7 +3148,7 @@ The measurement may be continuous or integrated.
     <!-- http://purl.org/rto-draft#radiation_therapy_prescription:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#radiation_therapy_prescription:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#protocol:OBI_0000272"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#objective_specification:IAO_0000005"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -3174,7 +3209,8 @@ Mark&apos;s proposed definition -- 1:n possible sessions of delivery of radiatio
 
     <owl:Class rdf:about="http://purl.org/rto-draft#rectangular_collimator:rto_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#collimator:radont_nnnn"/>
-        <obo:IAO_0000115>A collimator with that can form a rectangular aperture by the positioning of four metal blocks.  Typiically, the motion of the blocks is designed so that the face of each block is parallel to the divergence of the radiation beam.  [MP 12/14/21]</obo:IAO_0000115>
+        <obo:IAO_0000115>A collimator with that can form a rectangular aperture by the positioning of four metal blocks.  Typiically, the motion of the blocks is designed so that the face of each block is parallel to the divergence of the radiation beam.</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -3208,7 +3244,8 @@ Mark&apos;s proposed definition -- 1:n possible sessions of delivery of radiatio
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Spectrum is the distribution of energies of the constituent subatomic particles that constitute a radont:radiation_beam.  
-The spectrum can be a single energy as with gamma rays or particle beam as well as a broad distribution of a range of energies. [MP 8/10/20]</obo:IAO_0000115>
+The spectrum can be a single energy as with gamma rays or particle beam as well as a broad distribution of a range of energies.</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -3265,7 +3302,8 @@ The spectrum can be a single energy as with gamma rays or particle beam as well 
                 <owl:onClass rdf:resource="http://purl.org/rto-draft#RADONT_0000078"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>This is a more specific concept in prescribing treatment and matches ASTRO&apos;s concept of a technique.  It is a part of &quot;modality_specification&quot;.  [MP 1/25/21]</obo:IAO_0000115>
+        <obo:IAO_0000115>This is a more specific concept in prescribing treatment and matches ASTRO&apos;s concept of a technique.  It is a part of &quot;modality_specification&quot;.</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
 
