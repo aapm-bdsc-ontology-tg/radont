@@ -1427,6 +1427,30 @@ A  more thorough description of the relationship would involve the biology of th
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000005"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000007"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
@@ -1445,6 +1469,12 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:comment>In Ontobee, &quot;information content entity&quot; is listed as IAO_0000030 [MHP 10/28/20]</rdfs:comment>
         <rdfs:label xml:lang="en">information content entity</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000032"/>
     
 
 
@@ -1526,6 +1556,12 @@ Question whether all plan specifications have objective specifications.
 Request that IAO either clarify these or change definitions not to use them</rdfs:comment>
         <rdfs:label xml:lang="en">plan specification</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000179 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000179"/>
     
 
 
