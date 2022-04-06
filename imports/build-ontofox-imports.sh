@@ -5,7 +5,7 @@
 #  and then generates a request to Ontofox, downloading an OWL file
 #
 # Here is an example of what the input file's contents might look like:
-#     
+#
 #     http://purl.obolibrary.org/obo/OGMS_0000116
 #     http://purl.obolibrary.org/obo/OBI_0000968
 #     http://purl.obolibrary.org/obo/OBI_0000011
@@ -17,8 +17,8 @@
 # 1) Three Ontofox files, one each for OGMS, OBI, and CHEBI
 # 2) Three OWL files, each the result of posting its corresponding file to Ontofox
 
-
-if $1
+echo $1
+if [ ! -z $1 ];
 then
     terms=$1
 else
@@ -54,18 +54,17 @@ function generate_ontofox(){
 }
 
 
-
-
 # get, loop through ontology abbreviations. E.g. CHEBI, OGMS, etc.
-for o in $(sed 's/http:\/\/purl.obolibrary.org\/obo\///' $terms | sed 's/\_.*//' | sort | uniq);	 
+for o in $(sed 's/http:\/\/purl.obolibrary.org\/obo\///' $terms | sed 's/\_.*//' | sort | uniq);
 do
     # build the ontofox request files
     generate_ontofox $o
 
     # generate the web request and save to an OWL file
     printf "Requesting OWL file from Ontofox for ontology $o, saving as $fname.owl\n"
-    curl -s -F file=@"$fname" -o $fname.owl http://ontofox.hegroup.org/service.php
-done; 
+    curl -s -F file=@"$fname" -o $fname.owl https://ontofox.hegroup.org/service.php
+done;
 
 
-
+# one of the things you may want to do after this is merge these import files, e.g. using ROBOT:
+# java -jar robot.jar merge --input IAO-ontofox-input.txt.owl --input OGMS-ontofox-input.txt.owl --input OAE-ontofox-input.txt.owl --input OBI-ontofox-input.txt.owl annotate --ontology-iri http://purl.org/rto-imports --output merged-imports.owl 
