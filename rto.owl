@@ -10,7 +10,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.org/rto-draft"/>
+    <owl:Ontology rdf:about="http://purl.org/rto-draft">
+        <owl:imports rdf:resource="http://purl.org/rto-imports"/>
+    </owl:Ontology>
     
 
 
@@ -362,6 +364,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in_subset</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#type -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
     
 
 
@@ -1536,6 +1544,12 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OAE_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000001"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
@@ -1581,6 +1595,12 @@ objectives is a planned process.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000272 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000272"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000374 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000374">
@@ -1595,6 +1615,12 @@ objectives is a planned process.</obo:IAO_0000116>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <rdfs:label xml:lang="en">excitation function</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000832 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000832"/>
     
 
 
@@ -1713,6 +1739,12 @@ In the examples above, a reagent is an operational component of a device, but th
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000123 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000123"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000019#MV_planar_imaging -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#MV_planar_imaging">
@@ -1795,7 +1827,7 @@ In the examples above, a reagent is an operational component of a device, but th
     <!-- http://purl.obolibrary.org/obo/BFO_0000019#action_specification:IAO_0000007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#action_specification:IAO_0000007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RTO_0000019"/>
         <obo:IAO_0000115>A directive information entity that describes an action the bearer will take.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1823,16 +1855,8 @@ In the examples above, a reagent is an operational component of a device, but th
     <!-- http://purl.obolibrary.org/obo/BFO_0000019#datum_label:IAO00000009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#datum_label:IAO00000009">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RTO_0000019"/>
         <obo:IAO_0000115>A label is a symbol that is part of some other datum and is used to either partially define the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000019#dose_specification:Jonathan -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#dose_specification:Jonathan">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#action_specification:IAO_0000007"/>
     </owl:Class>
     
 
@@ -1878,7 +1902,7 @@ In the examples above, a reagent is an operational component of a device, but th
     <!-- http://purl.obolibrary.org/obo/BFO_0000019#objective_specification:IAO_0000005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#objective_specification:IAO_0000005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RTO_0000019"/>
         <obo:IAO_0000115>A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1887,7 +1911,7 @@ In the examples above, a reagent is an operational component of a device, but th
     <!-- http://purl.obolibrary.org/obo/BFO_0000019#patient_role:OBI_0000093 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#patient_role:OBI_0000093">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RTO_0000019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
@@ -1939,7 +1963,7 @@ In the examples above, a reagent is an operational component of a device, but th
     <!-- http://purl.obolibrary.org/obo/BFO_0000019#radiation_delivery_action:rto_nnnn -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#radiation_delivery_action:rto_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#action_specification:IAO_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -1955,7 +1979,7 @@ In the examples above, a reagent is an operational component of a device, but th
     <!-- http://purl.obolibrary.org/obo/BFO_0000019#radiation_dose_unit:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#radiation_dose_unit:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#measurement_unit_label:IAO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
         <obo:IAO_0000115>Unit of ionizing energy deposited per mass.  Typical values are 1 Gray [Gy] = 1 Joule/kilogram and 1 centiGray [cGy] = 1/100 of 1 Gy.</obo:IAO_0000115>
         <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
@@ -2015,7 +2039,7 @@ Some examples of radiation therapy beam:
     <!-- http://purl.obolibrary.org/obo/BFO_0000019#radiation_therapy_dose_objective:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#radiation_therapy_dose_objective:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#objective_specification:IAO_0000005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
@@ -2282,6 +2306,14 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
     
 
 
+    <!-- http://purl.org/rto-draft#RTO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#RTO_0000019">
+        <rdfs:label xml:lang="en">_deprecate</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rto-draft#external_beam_device -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#external_beam_device">
@@ -2326,7 +2358,7 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
     <!-- http://purl.org/rto-draft#radiation_therapy_protocol -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#radiation_therapy_protocol">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#protocol:OBI_0000272"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
         <obo:IAO_0000115>A plan specification for radiation therapy.  This is a general approach to achieve the therapeutic goal and there may be separate protocols for different cancers, different anatomical sites, different clinical hardware and different medical opinions.</obo:IAO_0000115>
     </owl:Class>
     
@@ -2465,7 +2497,7 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
     <!-- http://purl.org/rto-draft#bodily_process:OGMS_0000060 -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#bodily_process:OGMS_0000060">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RTO_0000019"/>
     </owl:Class>
     
 
@@ -2521,7 +2553,7 @@ http://hl7.org/fhir/us/mcode/ValueSet-mcode-radiation-target-body-site-vs.html</
     <!-- http://purl.org/rto-draft#cancer_stage:rto_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#cancer_stage:rto_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#clinical_data_item:OGMS_0000123"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000123"/>
         <obo:IAO_0000115>Stage refers to the extent of your cancer, such as how large the tumor is and if it has spread.</obo:IAO_0000115>
         <obo:IAO_0000119>NCI Website</obo:IAO_0000119>
         <rdfs:comment>While stage refers to the cancer biology, this definition only describes the data that have been recorded and then grouped into a label.
@@ -2534,7 +2566,7 @@ Common methods of staging are TNM, Stage {0,IV}, {in situ, localized,...}</rdfs:
     <!-- http://purl.org/rto-draft#clinical_data_item:OGMS_0000123 -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#clinical_data_item:OGMS_0000123">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#data_item:IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RTO_0000019"/>
         <obo:IAO_0000115>A data item that is about a patient and is the specified output of a health care process assay or diagnostic process</obo:IAO_0000115>
     </owl:Class>
     
@@ -2571,7 +2603,7 @@ A diaphragm or system of diaphragms made of an absorbing material, designed to d
     <!-- http://purl.org/rto-draft#control_point:rto_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#control_point:rto_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#data_item:IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000115>A set of measurements that represent the physical state of a radiation therapy device at a given  moment.  A temporally-ordered set of control points can be used to document changes in the state, e.g. movement of a gantry, change in monitor units.  The exact set of measurements  needed may depend on the radiation therapy device and the intended use of them.</obo:IAO_0000115>
         <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
@@ -2589,7 +2621,7 @@ A diaphragm or system of diaphragms made of an absorbing material, designed to d
     <!-- http://purl.org/rto-draft#data_item:IAO_0000027 -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#data_item:IAO_0000027">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RTO_0000019"/>
         <obo:IAO_0000115>An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
     </owl:Class>
     
@@ -2617,13 +2649,6 @@ A diaphragm or system of diaphragms made of an absorbing material, designed to d
                 <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#object:BFO_0000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#dose_specification:Jonathan"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>The physical dose that is delivered to a target volume and/or a body structure or any other material entitiy through which radiation passes when this dose was planned to be delivered as part of a radiation therapy-related protocol.</obo:IAO_0000115>
     </owl:Class>
     
@@ -2641,7 +2666,7 @@ A diaphragm or system of diaphragms made of an absorbing material, designed to d
     <!-- http://purl.org/rto-draft#diagram:IAO_0000309 -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#diagram:IAO_0000309">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000308"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RTO_0000019"/>
         <obo:IAO_0000115>A figure that expresses one or more propositions</obo:IAO_0000115>
     </owl:Class>
     
@@ -2666,7 +2691,7 @@ A diaphragm or system of diaphragms made of an absorbing material, designed to d
     <!-- http://purl.org/rto-draft#dose_volume_histrogram:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#dose_volume_histrogram:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#histogram:IAO_0000179"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000179"/>
         <obo:IAO_0000115>A histogram that plots the fractional volume (y-axis) of an irradiated tissue with the dose that has been delivered to that volume.  It can be plotted either as a differential or cumulative dose plot.</obo:IAO_0000115>
     </owl:Class>
     
@@ -2860,7 +2885,7 @@ more straighforward for what we want.</rdfs:comment>
     <!-- http://purl.org/rto-draft#intent:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#intent:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#objective_specification:IAO_0000005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
         <obo:IAO_0000115>The overall goal of the radiation therapy process, e.g. curative, palliative.</obo:IAO_0000115>
     </owl:Class>
     
@@ -2906,7 +2931,7 @@ more straighforward for what we want.</rdfs:comment>
     <!-- http://purl.org/rto-draft#ionization_chamber:rto_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#ionization_chamber:rto_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#measurement_device:OBI_0000832"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000832"/>
         <obo:IAO_0000115>A measuring device designed to detect the ionization caused by energetic particles that pass through a gas-filled chamber.  By suitable calibrations and the application of measurement protocols, ionization chambers are a common secondary standard for the measurement of absolute dose.</obo:IAO_0000115>
         <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
@@ -2968,7 +2993,7 @@ more straighforward for what we want.</rdfs:comment>
     <!-- http://purl.org/rto-draft#measurement_device:OBI_0000832 -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#measurement_device:OBI_0000832">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RTO_0000019"/>
         <rdfs:comment>A device in which a measure function inheres.</rdfs:comment>
     </owl:Class>
     
@@ -2995,7 +3020,7 @@ more straighforward for what we want.</rdfs:comment>
     <!-- http://purl.org/rto-draft#modality_action_specification:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#modality_action_specification:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#action_specification:IAO_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
@@ -3033,7 +3058,7 @@ more straighforward for what we want.</rdfs:comment>
     <!-- http://purl.org/rto-draft#monitor_unit:rto_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#monitor_unit:rto_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#scalar_measurement_datum:IAO_0000032"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
         <obo:IAO_0000115>A measurement of the radiation output of a radiation therapy device that is particular to each device and which is unitless.  This measurement is the fundamental way in which the therapy device is controlled so as to deliver the prescribed dose to the patient.  This measurement is related to the dose by means of calibration protocols.</obo:IAO_0000115>
         <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
@@ -3217,7 +3242,7 @@ more straighforward for what we want.</rdfs:comment>
     <!-- http://purl.org/rto-draft#protocol:OBI_0000272 -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#protocol:OBI_0000272">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RTO_0000019"/>
         <obo:IAO_0000115>A plan specification which has sufficient level of detail and quantitative information to communicate it between investigation agents, so that different investigation agents will reliably be able to independently reproduce the process.</obo:IAO_0000115>
         <rdfs:comment>example of usage:
 PCR protocol, has objective specification, amplify DNA fragment of interest, and has action specification describes the amounts of experimental reagents used (e..g. buffers, dNTPS, enzyme), and the temperature and cycle time settings for running the PCR.</rdfs:comment>
@@ -3290,7 +3315,7 @@ In my thinking the independent continuant is the collection of fundamental parti
     <!-- http://purl.org/rto-draft#radiation_dose_measurement:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#radiation_dose_measurement:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#scalar_measurement_datum:IAO_0000032"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
         <obo:IAO_0000115>A scalar measurement of the radiation dose is the mean energy imparted by ionizing radiation to material of mass (energy/mass).   Units are 1 Joules/kilogram = 1 Gray (1 Gy).</obo:IAO_0000115>
     </owl:Class>
     
@@ -3299,7 +3324,7 @@ In my thinking the independent continuant is the collection of fundamental parti
     <!-- http://purl.org/rto-draft#radiation_dosimeter:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#radiation_dosimeter:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#measurement_device:OBI_0000832"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000832"/>
         <obo:IAO_0000115>A device that measures an amount of ionizing radiation in units of dose (https://www.nrc.gov/reading-rm/basic-ref/glossary/dose.html) Different physical properties may be measured, e.g. amount of charged collected, but the measurement value must be capable of being calibrated to the basic unit of dose, i.e. Joule/kg.  
 
 The measurement may be continuous or integrated.</obo:IAO_0000115>
@@ -3311,7 +3336,7 @@ The measurement may be continuous or integrated.</obo:IAO_0000115>
     <!-- http://purl.org/rto-draft#radiation_fractionation_plan:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#radiation_fractionation_plan:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#protocol:OBI_0000272"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
         <obo:IAO_0000115>The planned distribution of the total radiation dose over time as realized in a series of radiation therapy sessions.  This includes both the fractional amount of radiation per session as well as the temporal arrangement of the sessions.</obo:IAO_0000115>
         <rdfs:comment>Fractionation plan can be complex, e.g. 60 fractions of 120 cGy twice daily to the PTV and 25 fractions of 200 cGy once daily to lymph nodes.  In this case, it might be best to consider these as two different fractionation plans since it deals with two different target volumes.  Fractionation schedules that include a boost is more complicated (and simultaneous integrated boost even more so), since the boost target volume is usually contained within the original target volume. [MHP 10/13/20]</rdfs:comment>
         <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
@@ -3322,7 +3347,7 @@ The measurement may be continuous or integrated.</obo:IAO_0000115>
     <!-- http://purl.org/rto-draft#radiation_induced_pathology:RTO_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#radiation_induced_pathology:RTO_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#adverse_event:OAE_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000001"/>
         <obo:IAO_0000115>A pathological bodily process that is induced by exposure to ionizing radiaiton.</obo:IAO_0000115>
         <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
@@ -3395,7 +3420,7 @@ The measurement may be continuous or integrated.</obo:IAO_0000115>
     <!-- http://purl.org/rto-draft#radiation_therapy_prescription:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#radiation_therapy_prescription:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#objective_specification:IAO_0000005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -3514,7 +3539,7 @@ The spectrum can be a single energy as with gamma rays or particle beam as well 
     <!-- http://purl.org/rto-draft#technique_action_specification:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#technique_action_specification:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#action_specification:IAO_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
