@@ -1511,24 +1511,6 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#radiation_delivery_action:rto_nnnn"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#radiation_therapy_dose_objective:radont_nnnn"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000116"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">plan specification</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">PMID: 18323827.Nat Med. 2008 Mar;14(3):226.New plan proposed to help resolve conflicting medical advice.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -2052,6 +2034,12 @@ Some examples of radiation therapy beam:
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#radiation_therapy_dose_objective:radont_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000078"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The planned dose to be delivered to the region of the body in which the cancer (or relevant benign disease) is located.  It is understood that this is a summary statistic and that not all parts of the target volume will receive this dose.  
 
 This is distinguished from radiation_absorbed_dose which is a an explicit physics measurement of the energy absorbed in a small volume.</obo:IAO_0000115>
@@ -2270,11 +2258,29 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
     <!-- http://purl.org/rto-draft#RADONT_0000078 -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#RADONT_0000078">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#radiation_delivery_action:rto_nnnn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#radiation_therapy_dose_objective:radont_nnnn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#radiation_therapy_prescription:radont_nnnn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000116"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>More commonly called a &quot;radiation therapy plan&quot;.  Such an entity consists of a list of actualizable elements, e.g. radiation beam angle, particle energy, etc.  It also consists of a computed distribution of radiation doses in a particular human body.  That is, it uses the values of the list of elements and the physics of radiation transport to produce a planned set of doses at points throughout the body of a particular patient.  It also has a part radiation_therapy_dose_objective.</obo:IAO_0000115>
@@ -2330,15 +2336,6 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#clinical_data_item:OGMS_0000123"/>
         <obo:IAO_0000115>A clinical data item that is used to describe radiation_induced pathology.</obo:IAO_0000115>
         <rdfs:comment>There are a range of different terms and value sets that are used such as CTCAE.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rto-draft#radiation_therapy_protocol -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#radiation_therapy_protocol">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
-        <obo:IAO_0000115>A plan specification for radiation therapy.  This is a general approach to achieve the therapeutic goal and there may be separate protocols for different cancers, different anatomical sites, different clinical hardware and different medical opinions.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2533,7 +2530,7 @@ http://hl7.org/fhir/us/mcode/ValueSet-mcode-radiation-target-body-site-vs.html</
 
     <owl:Class rdf:about="http://purl.org/rto-draft#cancer_stage:rto_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000123"/>
-        <obo:IAO_0000115>Stage refers to the extent of your cancer, such as how large the tumor is and if it has spread.</obo:IAO_0000115>
+        <obo:IAO_0000115>Stage refers to the extent of a cancer, such as how large the tumor is and if it has spread.</obo:IAO_0000115>
         <obo:IAO_0000119>NCI Website</obo:IAO_0000119>
         <rdfs:comment>While stage refers to the cancer biology, this definition only describes the data that have been recorded and then grouped into a label.
 
@@ -2583,7 +2580,7 @@ A diaphragm or system of diaphragms made of an absorbing material, designed to d
 
     <owl:Class rdf:about="http://purl.org/rto-draft#control_point:rto_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <obo:IAO_0000115>A set of measurements that represent the physical state of a radiation therapy device at a given  moment.  A temporally-ordered set of control points can be used to document changes in the state, e.g. movement of a gantry, change in monitor units.  The exact set of measurements  needed may depend on the radiation therapy device and the intended use of them.</obo:IAO_0000115>
+        <obo:IAO_0000115>A set of values that of relevant machine parameters that represent the physical state of a radiation therapy device at a given  moment.  A temporally-ordered set of control points can be used to document changes in the state, e.g. movement of a gantry, change in monitor units.  The exact set of measurements  needed may depend on the radiation therapy device and the intended use of them.</obo:IAO_0000115>
         <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -2667,9 +2664,9 @@ A diaphragm or system of diaphragms made of an absorbing material, designed to d
     
 
 
-    <!-- http://purl.org/rto-draft#dose_volume_histrogram:radont_nnnn -->
+    <!-- http://purl.org/rto-draft#dose_volume_histogram:radont_nnnn -->
 
-    <owl:Class rdf:about="http://purl.org/rto-draft#dose_volume_histrogram:radont_nnnn">
+    <owl:Class rdf:about="http://purl.org/rto-draft#dose_volume_histogram:radont_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000179"/>
         <obo:IAO_0000115>A histogram that plots the fractional volume (y-axis) of an irradiated tissue with the dose that has been delivered to that volume.  It can be plotted either as a differential or cumulative dose plot.</obo:IAO_0000115>
     </owl:Class>
@@ -2774,7 +2771,7 @@ A diaphragm or system of diaphragms made of an absorbing material, designed to d
     <!-- http://purl.org/rto-draft#forward_planned_specification:radont_nnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#forward_planned_specification:radont_nnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#radiation_therapy_protocol"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000078"/>
         <obo:IAO_0000115>In radiation therapy, this is a specification for creating a therapy plan by using heuristics, trial-and-error, and experience to specify the best plan.</obo:IAO_0000115>
         <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
@@ -2900,7 +2897,7 @@ more straighforward for what we want.</rdfs:comment>
     <!-- http://purl.org/rto-draft#inverse_planned_specification:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#inverse_planned_specification:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#radiation_therapy_protocol"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000078"/>
         <obo:IAO_0000115>This is a specification for radiation therapy that is obtained by means of optimization algorithms that seeks to produce a plan that meets the desired clinical goals, which serve as objectives and constraints.</obo:IAO_0000115>
         <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
@@ -3008,22 +3005,20 @@ more straighforward for what we want.</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#spectrum:radont_nnnn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#technique_action_specification:radont_nnnn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000116"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.org/rto-draft#spectrum:radont_nnnn"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.org/rto-draft#technique_action_specification:radont_nnnn"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Part of the specification of a radiation therapy plan is the means for delivering it, of which there are many.  This class allows for the specification for the type of radiation and the radiation delivery technique that will meet the clinical goals.</obo:IAO_0000115>
@@ -3150,9 +3145,9 @@ more straighforward for what we want.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/rto-draft#pathological_staging:rto_nnnn -->
+    <!-- http://purl.org/rto-draft#pathological_stage:rto_nnnn -->
 
-    <owl:Class rdf:about="http://purl.org/rto-draft#pathological_staging:rto_nnnn">
+    <owl:Class rdf:about="http://purl.org/rto-draft#pathological_stage:rto_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#cancer_stage:rto_nnnn"/>
         <obo:IAO_0000115>Cancer stage in which pathology studies following tumor excision is used to augment clinical staging in order to obtain a more precise stage.</obo:IAO_0000115>
         <obo:IAO_0000119>NCI website</obo:IAO_0000119>
@@ -3314,7 +3309,7 @@ The measurement may be continuous or integrated.</obo:IAO_0000115>
     <!-- http://purl.org/rto-draft#radiation_fractionation_plan:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#radiation_fractionation_plan:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000078"/>
         <obo:IAO_0000115>The planned distribution of the total radiation dose over time as realized in a series of radiation therapy sessions.  This includes both the fractional amount of radiation per session as well as the temporal arrangement of the sessions.</obo:IAO_0000115>
         <rdfs:comment>Fractionation plan can be complex, e.g. 60 fractions of 120 cGy twice daily to the PTV and 25 fractions of 200 cGy once daily to lymph nodes.  In this case, it might be best to consider these as two different fractionation plans since it deals with two different target volumes.  Fractionation schedules that include a boost is more complicated (and simultaneous integrated boost even more so), since the boost target volume is usually contained within the original target volume. [MHP 10/13/20]</rdfs:comment>
         <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
@@ -3547,7 +3542,7 @@ The spectrum can be a single energy as with gamma rays or particle beam as well 
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000116"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>This is a more specific concept in prescribing treatment and matches ASTRO&apos;s concept of a technique.  It is a part of &quot;modality_specification&quot;.</obo:IAO_0000115>
+        <obo:IAO_0000115>This is a more specific concept in prescribing treatment and matches ASTRO&apos;s concept of a technique.</obo:IAO_0000115>
         <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
     </owl:Class>
     
