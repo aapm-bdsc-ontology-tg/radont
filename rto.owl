@@ -2146,9 +2146,8 @@ This is distinguished from radiation_absorbed_dose which is a an explicit physic
 
     <owl:Class rdf:about="http://purl.org/rto-draft#RADONT_0000060">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
-        <obo:IAO_0000115 xml:lang="en">A device that is used in the process of delivering radiation therapy to a patient.  It consists of multiple parts, the minimum being a radiation emission device.  Other possible parts are radiation monitors, radiation collimators, patient positioning and immobilization devices.</obo:IAO_0000115>
-        <rdfs:comment>Possible alternative:
-In radiation therapy, this is an object that is designed to produuce therapeutic radiation and deliver it to the appropriate region of the body in order to treat disease.  It contains the necessary parts to measure the radiation to delivered, to obtain input for setting treatment parameters, and for collimating and/or moving the radiation source realtive to the patient&apos;s body [MP 1/14/21]</rdfs:comment>
+        <obo:IAO_0000115 xml:lang="en">A device that is used in the process of delivering radiation therapy to a patient.  It consists of multiple parts, the minimum being a radiation emission device.</obo:IAO_0000115>
+        <rdfs:comment>Discussed 10/26/22.</rdfs:comment>
         <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">radiation therapy device</rdfs:label>
     </owl:Class>
@@ -2159,12 +2158,6 @@ In radiation therapy, this is an object that is designed to produuce therapeutic
 
     <owl:Class rdf:about="http://purl.org/rto-draft#RADONT_0000061">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000065"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000085"/>
@@ -2185,41 +2178,6 @@ In radiation therapy, this is an object that is designed to produuce therapeutic
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000374"/>
         <obo:IAO_0000115 xml:lang="en">An excitation function to excite material to a specific excitation state such that it emits radiation.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">radiation emission function</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rto-draft#RADONT_0000065 -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#RADONT_0000065">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000061"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000075"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#collimator:radont_nnnn"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.org/rto-draft#radiation_dosimeter:radont_nnnn"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">TODO: verify this should be distinct from &apos;radiation emission device&apos;</rdfs:comment>
-        <rdfs:label xml:lang="en">radiation source</rdfs:label>
     </owl:Class>
     
 
@@ -2364,6 +2322,17 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#clinical_data_item:OGMS_0000123"/>
         <obo:IAO_0000115>A clinical data item that is used to describe radiation_induced pathology.</obo:IAO_0000115>
         <rdfs:comment>There are a range of different terms and value sets that are used such as CTCAE.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#variable_rectangular_collimator -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#variable_rectangular_collimator">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#collimator:radont_nnnn"/>
+        <obo:IAO_0000115>A collimator with that can form a rectangular aperture by the positioning of four attenuating blocks.</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
+        <rdfs:label>variable rectangular collimator</rdfs:label>
     </owl:Class>
     
 
@@ -2614,6 +2583,7 @@ http://purl.obolibrary.org/obo/NCIT_C49881
 A diaphragm or system of diaphragms made of an absorbing material, designed to define and restrict the dimensions and direction of a beam of radiation. [Definition Source: NCI]
 
 The definition that Mark has defined is more Aristotelean and adheres to OBO principles.</rdfs:comment>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
         <rdfs:label>collimator</rdfs:label>
     </owl:Class>
     
@@ -3106,7 +3076,7 @@ more straighforward for what we want.</rdfs:comment>
     <owl:Class rdf:about="http://purl.org/rto-draft#multileaf_collimator:rto_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#collimator:radont_nnnn"/>
         <obo:IAO_0000115>A collimator with opposing banks of metal &quot;leaves&quot;--individual metal elements that present a long narrow profile to the direction of the incident radiation and whose thickness is sufficient to attenuate a clinically significant fraction of the radiation.  Each leaf can be moved individually, thereby providing the ability to make an arbitrarily-shaped aperture, limited by the width of the individual leaves.  There are no standard dimensions of the leaves, nor any design standards for the supporting mechanisms.</obo:IAO_0000115>
-        <rdfs:comment></rdfs:comment>
+        <rdfs:comment>Reviewed 10/26/22</rdfs:comment>
         <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
         <rdfs:label>multileaf collimator</rdfs:label>
     </owl:Class>
@@ -3487,12 +3457,6 @@ The measurement may be continuous or integrated.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000065"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#occurent_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000116"/>
             </owl:Restriction>
@@ -3527,17 +3491,6 @@ Mark&apos;s proposed definition -- 1:n possible sessions of delivery of radiatio
         <obo:IAO_0000115>An  external beam radiation therapy device that produces therapeutic beams of ionizing  radiation in the form of radioactive decay products.  Typically these are gamma rays, but the radiation is not limited to them.</obo:IAO_0000115>
         <rdfs:comment>Historically, Co-60 is the isotope source that is most commonly used due to the energy of its gamma rays, its specific activity and relatively long halflife.</rdfs:comment>
         <rdfs:label>radioisotopic device</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rto-draft#rectangular_collimator:rto_nnnn -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#rectangular_collimator:rto_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#collimator:radont_nnnn"/>
-        <obo:IAO_0000115>A collimator with that can form a rectangular aperture by the positioning of four metal blocks. Typically, the motion of the blocks is designed so that the face of each block is parallel to the divergence of the radiation beam.</obo:IAO_0000115>
-        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
-        <rdfs:label>rectangular collimator</rdfs:label>
     </owl:Class>
     
 
