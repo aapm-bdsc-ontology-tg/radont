@@ -2294,6 +2294,16 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
     
 
 
+    <!-- http://purl.org/rto-draft#fluence -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#fluence">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115>The number of particles or photons per unit of cross-sectional area perpendicular to the direction of the particle (units of m^2 or cm^2) (i.e., particles-m^[-2] or particles-cm^[-2]).</obo:IAO_0000115>
+        <rdfs:comment>http://purl.obolibrary.org/obo/RBO_010010</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rto-draft#high_dose_rate_brachytherapy -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#high_dose_rate_brachytherapy">
