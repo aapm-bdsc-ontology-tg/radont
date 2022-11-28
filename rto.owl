@@ -2340,7 +2340,8 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
 
     <owl:Class rdf:about="http://purl.org/rto-draft#variable_rectangular_collimator">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#collimator:radont_nnnn"/>
-        <obo:IAO_0000115>A collimator with that can form a rectangular aperture by the positioning of four attenuating blocks.</obo:IAO_0000115>
+        <obo:IAO_0000115>A collimator that can form a rectangular aperture by the positioning of four attenuating blocks.</obo:IAO_0000115>
+        <dc:contributor>Andre Dekker</dc:contributor>
         <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
         <rdfs:label>variable rectangular collimator</rdfs:label>
     </owl:Class>
@@ -3086,6 +3087,7 @@ more straighforward for what we want.</rdfs:comment>
     <owl:Class rdf:about="http://purl.org/rto-draft#multileaf_collimator:rto_nnnn">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#collimator:radont_nnnn"/>
         <obo:IAO_0000115>A collimator with opposing banks of metal &quot;leaves&quot;--individual metal elements that present a long narrow profile to the direction of the incident radiation and whose thickness is sufficient to attenuate a clinically significant fraction of the radiation.  Each leaf can be moved individually, thereby providing the ability to make an arbitrarily-shaped aperture, limited by the width of the individual leaves.  There are no standard dimensions of the leaves, nor any design standards for the supporting mechanisms.</obo:IAO_0000115>
+        <dc:contributor>Andre Dekker</dc:contributor>
         <rdfs:comment>Reviewed 10/26/22</rdfs:comment>
         <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
         <rdfs:label>multileaf collimator</rdfs:label>
