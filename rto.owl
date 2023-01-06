@@ -2158,13 +2158,8 @@ This is distinguished from radiation_absorbed_dose which is a an explicit physic
 
     <owl:Class rdf:about="http://purl.org/rto-draft#RADONT_0000061">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000085"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000062"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A device that has a function to emit radiation in the form of a type of subatomic particle.  It may be restricted to one type of particle, e.g. electrons or gamma rays, but may also be capable of emitting multiple types, e.g. electrons + x-rays or protons + heavy charged particles.</obo:IAO_0000115>
+        <dc:contributor>Andre Dekker</dc:contributor>
         <rdfs:comment>Radiation emission device refers to the device that actually produces the radiation independent of the application to radiation therapy.  For example, a linear accelerator operating in the megavoltage regime produces a beam of x-rays by accelerating electrons and using them to create bremmstrahlung.  Such a device can be attached to some sort of flexible armature for positioning and outfitted with dose monitors and electronic feedback circuits, etc to make a radiation therapy device.  Other examples are manufactured Co-60 pellets, proton cyclotrons, etc. [MP 3/2/21]</rdfs:comment>
         <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">radiation emission device</rdfs:label>
