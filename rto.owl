@@ -3213,9 +3213,10 @@ more straighforward for what we want.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000060"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A device that is part of a radiation therapy device that is used to support and position  the patient with respect to the radiation field used to treat the patient.</obo:IAO_0000115>
+        <obo:IAO_0000115>A device that is used to position the patient to make sure that this position is consistent during radiotherapy simulation and treatment. This includes configurable devices that can be used for multiple patients and patient specific devices such as masks and vacuum cushions.</obo:IAO_0000115>
+        <dc:contributor>Andre Dekker</dc:contributor>
         <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
-        <rdfs:label>patient positioner</rdfs:label>
+        <rdfs:label>patient positioning and immobilization device</rdfs:label>
     </owl:Class>
     
 
