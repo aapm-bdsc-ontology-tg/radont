@@ -1315,6 +1315,12 @@ A  more thorough description of the relationship would involve the biology of th
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_10545 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_10545"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_30212 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30212">
@@ -1411,6 +1417,12 @@ A  more thorough description of the relationship would involve the biology of th
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subatomic particle</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_36344 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36344"/>
     
 
 
@@ -1543,6 +1555,12 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000179 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000179"/>
@@ -1560,6 +1578,49 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">figure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C19747 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C19747">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:label xml:lang="en">imaging device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C45844 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C45844">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19747"/>
+        <obo:IAO_0000119>A device capable of imaging a tomographic slice of a human body using kilovoltage x-rays.  Commonly known as a CT or CAT scan.</obo:IAO_0000119>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
+        <rdfs:label>CT scanner</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C49881 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C49881">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#radiation_therapy_device"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A device used by a radiation therapy device to limit the 2D spatial extent of a collection of subatomic particles produced by a radiation emission device.</obo:IAO_0000115>
+        <dc:contributor>Andre Dekker [reviewer]</dc:contributor>
+        <rdfs:comment>Perhaps this NCIT definition should be used:
+http://purl.obolibrary.org/obo/NCIT_C49881
+A diaphragm or system of diaphragms made of an absorbing material, designed to define and restrict the dimensions and direction of a beam of radiation. [Definition Source: NCI]
+
+The definition that Mark has defined is more Aristotelean and adheres to OBO principles.</rdfs:comment>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
+        <rdfs:label>collimator</rdfs:label>
     </owl:Class>
     
 
@@ -1608,6 +1669,12 @@ objectives is a planned process.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000185 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000185"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000272 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000272"/>
@@ -1637,6 +1704,18 @@ objectives is a planned process.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000933 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000933">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19747"/>
+        <obo:IAO_0000115>An imaging device by which the distribution of positron-emitting molecules are imaged by a set of detectors placed around the body, and which uses a reconstruction algorithm to locate the position and intensity of the emitted radiation in the body.</obo:IAO_0000115>
+        <obo:IAO_0000118>PET scanner</obo:IAO_0000118>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
+        <rdfs:label>positron emission tomography scanner</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000968 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000968">
@@ -1661,6 +1740,7 @@ In the examples above, a reagent is an operational component of a device, but th
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">instrument</obo:IAO_0000118>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI development call 2012-12-17.</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:comment>We are not happy with the fact that OBI has included &quot;for biomedical investigations&quot; in OBI&apos;s definition.  Correspondence with them has led them to re-think the issue.  They will either modify their definition or convert it to a reference to the Core Ontology for Biology and Biomedicine.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">device</rdfs:label>
     </owl:Class>
     
@@ -1699,13 +1779,13 @@ In the examples above, a reagent is an operational component of a device, but th
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#radiation_therapy_total_dose:radont_nnnn"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19747"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000075"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#radiation_therapy_total_dose:radont_nnnn"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1758,10 +1838,30 @@ In the examples above, a reagent is an operational component of a device, but th
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RBO_00005010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010016"/>
+        <obo:IAO_0000115>The amount of energy from any type of ionizing radiation deposited in a specified mass of any medium.</obo:IAO_0000115>
+        <obo:IAO_0000119>radiation biology ontology</obo:IAO_0000119>
+        <rdfs:label>absorbed radiation dose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_010016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_010016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <rdfs:label>radiation dose</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000019#MV_planar_imaging -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#MV_planar_imaging">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#planar_imaging:radonc_nnnn"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#planar_imaging"/>
         <obo:IAO_0000115>A planar_imaging device that uses megavoltage x-rays as the source of radiation and a detector system that records the presence of x-rays that pass through the body.  [MP 2/23/21]</obo:IAO_0000115>
         <rdfs:comment>MV imaging typically provides poorer image quality of the body than does kV imaging due to the lack of photoelectric scattering.  The main source of imaging contrast is due to differences in physical density.</rdfs:comment>
         <rdfs:label>megavoltage planar imaging device</rdfs:label>
@@ -1772,7 +1872,7 @@ In the examples above, a reagent is an operational component of a device, but th
     <!-- http://purl.obolibrary.org/obo/BFO_0000019#cone_beam_CT -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#cone_beam_CT">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#computed_tomography:radont_nnnn"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C45844"/>
         <obo:IAO_0000115>A CT device that images a volume of tissue rather than a slice.  The image is reconstructed into tomographic images after the imaging is completed.  [MHP 2/23/21]</obo:IAO_0000115>
         <rdfs:label>cone beam computed tomography scanner</rdfs:label>
     </owl:Class>
@@ -1782,10 +1882,32 @@ In the examples above, a reagent is an operational component of a device, but th
     <!-- http://purl.obolibrary.org/obo/BFO_0000019#kV_planar_imaging -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#kV_planar_imaging">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#planar_imaging:radonc_nnnn"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#planar_imaging"/>
         <obo:IAO_0000115>A planar_imaging device that uses kilovoltage x-rays as the source of radiation and a detector system that records the presence of x-rays that pass through the body.  [MP 2/23/21]</obo:IAO_0000115>
         <rdfs:comment>This is the traditional &apos;x-ray&apos; and provides a shadowgram of x-ray absorptivity.</rdfs:comment>
         <rdfs:label>kilovoltage planar imaging device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#magnetic_resonance_imaging_device -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#magnetic_resonance_imaging_device">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19747"/>
+        <obo:IAO_0000115>A device capable of producing an image of the body by applying magnetic fields and measuring the position-specific magnetic susceptibility. Commonly known as MRI.</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
+        <rdfs:label>magnetic resonance imaging device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019#planar_imaging -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#planar_imaging">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19747"/>
+        <obo:IAO_0000115>A device capable of producing a planar image of the body by passing some type of radiation through the body and recording the differential transmission/scattering/absorption of the radiation on the other side.</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
+        <rdfs:label>planar imaging device</rdfs:label>
     </owl:Class>
     
 
@@ -1812,9 +1934,9 @@ In the examples above, a reagent is an operational component of a device, but th
     <!-- http://purl.obolibrary.org/obo/BFO_0000019#tomographic_CT -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#tomographic_CT">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#computed_tomography:radont_nnnn"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C45844"/>
         <obo:IAO_0000115>A CT device the sequentially images a slice of the body and builds up a volume image by concatenating the series of imaged slices. [MP 2/23/21]</obo:IAO_0000115>
-        <rdfs:label>tomographics computed tomography scanner</rdfs:label>
+        <rdfs:label>tomographic computed tomography scanner</rdfs:label>
     </owl:Class>
     
 
@@ -1860,17 +1982,6 @@ In the examples above, a reagent is an operational component of a device, but th
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000019#computed_tomography:radont_nnnn -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#computed_tomography:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000075"/>
-        <obo:IAO_0000119>A device capable of imaging a tomographic slice of a human body using kilovoltage x-rays.  Commonly known as a CT or CAT scan.</obo:IAO_0000119>
-        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
-        <rdfs:label>computed tomography scanner</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000019#datum_label:IAO00000009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#datum_label:IAO00000009">
@@ -1897,17 +2008,6 @@ In the examples above, a reagent is an operational component of a device, but th
         <obo:IAO_0000115>The region of the body containing disease that can be imaged using medical imaging procedures, and/or determined by physical examination and/or determined by surgical exploration.</obo:IAO_0000115>
         <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
         <rdfs:label>gross tumor volume</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000019#magnetic_resonance_imaging:radonc_nnnn -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#magnetic_resonance_imaging:radonc_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000075"/>
-        <obo:IAO_0000115>A device capable of producing an image of the body by applying magnetic fields and measuring the position-specific magnetic susceptibility. Commonly known as MRI.</obo:IAO_0000115>
-        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
-        <rdfs:label>magnetic resonance imaging device</rdfs:label>
     </owl:Class>
     
 
@@ -1962,17 +2062,6 @@ In the examples above, a reagent is an operational component of a device, but th
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000019#planar_imaging:radonc_nnnn -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#planar_imaging:radonc_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000075"/>
-        <obo:IAO_0000115>A device capable of producing a planar image of the body by passing some type of radiation through the body and recording the differential transmission/scattering/absorption of the radiation on the other side.</obo:IAO_0000115>
-        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
-        <rdfs:label>planar imaging device</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000019#planning_target_volume:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#planning_target_volume:radont_nnnn">
@@ -2019,13 +2108,13 @@ In the examples above, a reagent is an operational component of a device, but th
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000060"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49881"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#collimator:radont_nnnn"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#radiation_therapy_device"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2116,7 +2205,7 @@ This is distinguished from radiation_absorbed_dose which is a an explicit physic
     <!-- http://purl.obolibrary.org/obo/BFO_0000019#target_volume:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019#target_volume:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#site"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000028"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/rto-draft#physically_associated_with"/>
@@ -2125,7 +2214,7 @@ This is distinguished from radiation_absorbed_dose which is a an explicit physic
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A region of the body that contains disease that is to be irradiated during a radiation therapy procedure</obo:IAO_0000115>
-        <rdfs:comment>According to Arp et al, a site is relative to another body.  Examples given are the hold of a ship or the interior of a railcar.  They can move through space, as opposed to a spatial region which is immovable.  This seems appropriate for the region containing a tumor.</rdfs:comment>
+        <rdfs:comment>After extensive discussion, conclusion was that target volume more closely fits into this class rather than class:site.  There is uncertainty regarding BFO&apos;s approach to frame of reference.  In this case, one can consider the target volume&apos;s 3D spatial region is relative to the body&apos;s frame of reference.</rdfs:comment>
         <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
         <rdfs:label>target volume</rdfs:label>
     </owl:Class>
@@ -2138,31 +2227,6 @@ This is distinguished from radiation_absorbed_dose which is a an explicit physic
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#radiation_therapy_dose_objective:radont_nnnn"/>
         <obo:IAO_0000115>The total radiation dose to a particular target volume that is to be delivered in a radiation therapy procedure.  It should be the sum of the fractional_radiation dose.</obo:IAO_0000115>
         <rdfs:label>total radiation therapy dose objective specification</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rto-draft#RADONT_0000060 -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#RADONT_0000060">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
-        <obo:IAO_0000115 xml:lang="en">A device that is used in the process of delivering radiation therapy to a patient.  It consists of multiple parts, the minimum being a radiation emission device.</obo:IAO_0000115>
-        <rdfs:comment>Discussed 10/26/22.</rdfs:comment>
-        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">radiation therapy device</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rto-draft#RADONT_0000061 -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#RADONT_0000061">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
-        <obo:IAO_0000115 xml:lang="en">A device that has a function to emit radiation in the form of a type of subatomic particle.  It may be restricted to one type of particle, e.g. electrons or gamma rays, but may also be capable of emitting multiple types, e.g. electrons + x-rays or protons + heavy charged particles.</obo:IAO_0000115>
-        <dc:contributor>Andre Dekker</dc:contributor>
-        <rdfs:comment>Radiation emission device refers to the device that actually produces the radiation independent of the application to radiation therapy.  For example, a linear accelerator operating in the megavoltage regime produces a beam of x-rays by accelerating electrons and using them to create bremmstrahlung.  Such a device can be attached to some sort of flexible armature for positioning and outfitted with dose monitors and electronic feedback circuits, etc to make a radiation therapy device.  Other examples are manufactured Co-60 pellets, proton cyclotrons, etc. [MP 3/2/21]</rdfs:comment>
-        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">radiation emission device</rdfs:label>
     </owl:Class>
     
 
@@ -2224,15 +2288,6 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
     
 
 
-    <!-- http://purl.org/rto-draft#RADONT_0000075 -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#RADONT_0000075">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
-        <rdfs:label xml:lang="en">imaging device</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/rto-draft#RADONT_0000078 -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#RADONT_0000078">
@@ -2277,10 +2332,21 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
     
 
 
+    <!-- http://purl.org/rto-draft#cyclotron -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#cyclotron">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#external_beam_device"/>
+        <obo:IAO_0000115>An external beam device that accelerates charged particles outwards from the center of a flat cylindrical vacuum chamber along a spiral path.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Cyclotron</obo:IAO_0000119>
+        <rdfs:label>cyclotron</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rto-draft#external_beam_device -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#external_beam_device">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000060"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#radiation_therapy_device"/>
         <obo:IAO_0000115>Radiation therapy device in which radiation is generated outside of the body and the radiation passes from the source through space and parts of the body in order to irradiate the desired target tissue.</obo:IAO_0000115>
         <rdfs:comment>Although the term &quot;external beam device&quot; sounds generic and might also be applied to any number of simple beam producing devices, note that as a sublcass of radiation therapy device it inherits that class&apos;s definition as being devoted to radiation therapy and includes other components beside the radiation source that are required for medical uses.</rdfs:comment>
         <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
@@ -2289,12 +2355,14 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
     
 
 
-    <!-- http://purl.org/rto-draft#fluence -->
+    <!-- http://purl.org/rto-draft#fixed_collimator -->
 
-    <owl:Class rdf:about="http://purl.org/rto-draft#fluence">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
-        <obo:IAO_0000115>The number of particles or photons per unit of cross-sectional area perpendicular to the direction of the particle (units of m^2 or cm^2) (i.e., particles-m^[-2] or particles-cm^[-2]).</obo:IAO_0000115>
-        <rdfs:comment>http://purl.obolibrary.org/obo/RBO_010010</rdfs:comment>
+    <owl:Class rdf:about="http://purl.org/rto-draft#fixed_collimator">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49881"/>
+        <obo:IAO_0000115>A collimator that has a fixed shape that cannot be adjusted.</obo:IAO_0000115>
+        <dc:contributor>Andre Dekker [reviewer]</dc:contributor>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
+        <rdfs:label>fixed collimator</rdfs:label>
     </owl:Class>
     
 
@@ -2310,6 +2378,27 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
     
 
 
+    <!-- http://purl.org/rto-draft#ionization_chamber -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#ionization_chamber">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000832"/>
+        <obo:IAO_0000115>A measuring device designed to detect the ionization caused by energetic particles that pass through a gas-filled chamber.  By suitable calibrations and the application of measurement protocols, ionization chambers are a common secondary standard for the measurement of absolute dose.</obo:IAO_0000115>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
+        <rdfs:label>ionization chamber</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#linear_accelerator -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#linear_accelerator">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#external_beam_device"/>
+        <obo:IAO_0000115>An external beam radiation therapy device that accelerates a beam of electrons in a linear wave guide to energies greater than 1 MeV.  The electron  beam can be used to treat patients, or it can be steered onto a target in which the fast electrons convert part of their energy to x-rays through the bremsstrahlung process.  [MP 12/12/21]</obo:IAO_0000115>
+        <rdfs:label>linear accelerator</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rto-draft#low_dose_rate_brachytherapy -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#low_dose_rate_brachytherapy">
@@ -2317,6 +2406,19 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
         <obo:IAO_0000115>Brachytherapy process in which the radiation is delivered slowly (over the course of many hours or several days).</obo:IAO_0000115>
         <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
         <rdfs:label>low dose brachytherapy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#multileaf_collimator -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#multileaf_collimator">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49881"/>
+        <obo:IAO_0000115>A collimator with opposing banks of metal &quot;leaves&quot;--individual attenuating elements that present a long narrow profile to the direction of the incident radiation and whose thickness is sufficient to attenuate a clinically significant fraction of the radiation.  Each leaf can be moved individually, thereby providing the ability to make an arbitrarily-shaped aperture, limited by the width of the individual leaves.  There are no standard dimensions of the leaves, nor any design standards for the supporting mechanisms.</obo:IAO_0000115>
+        <dc:contributor>Andre Dekker</dc:contributor>
+        <rdfs:comment>Reviewed 10/26/22</rdfs:comment>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
+        <rdfs:label>multileaf collimator</rdfs:label>
     </owl:Class>
     
 
@@ -2331,10 +2433,46 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
     
 
 
+    <!-- http://purl.org/rto-draft#radiation_emission_device -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#radiation_emission_device">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <obo:IAO_0000115 xml:lang="en">A device that has a function to emit radiation in the form of a type of subatomic particle.  It may be restricted to one type of particle, e.g. electrons or gamma rays, but may also be capable of emitting multiple types, e.g. electrons + x-rays or protons + heavy charged particles.</obo:IAO_0000115>
+        <dc:contributor>Andre Dekker</dc:contributor>
+        <rdfs:comment>Radiation emission device refers to the device that actually produces the radiation independent of the application to radiation therapy.  For example, a linear accelerator operating in the megavoltage regime produces a beam of x-rays by accelerating electrons and using them to create bremmstrahlung.  Such a device can be attached to some sort of flexible armature for positioning and outfitted with dose monitors and electronic feedback circuits, etc to make a radiation therapy device.  Other examples are manufactured Co-60 pellets, proton cyclotrons, etc. [MP 3/2/21]</rdfs:comment>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">radiation emission device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#radiation_therapy_device -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#radiation_therapy_device">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <obo:IAO_0000115 xml:lang="en">A device that is used in the process of delivering radiation therapy to a patient.  It consists of multiple parts, the minimum being a radiation emission device.</obo:IAO_0000115>
+        <rdfs:comment>Discussed 10/26/22.</rdfs:comment>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">radiation therapy device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#synchrocyclotron -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#synchrocyclotron">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#cyclotron"/>
+        <obo:IAO_0000115>A cyclotron in which the frequency of the driving RF electric field is varied to compensate for relativistic effects as the particles&apos; velocity begins to approach the speed of light.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Synchrocyclotron</obo:IAO_0000119>
+        <rdfs:label>synchronocyclotron</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rto-draft#variable_rectangular_collimator -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#variable_rectangular_collimator">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#collimator:radont_nnnn"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49881"/>
         <obo:IAO_0000115>A collimator that can form a rectangular aperture by the positioning of four attenuating blocks.</obo:IAO_0000115>
         <dc:contributor>Andre Dekker</dc:contributor>
         <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
@@ -2357,7 +2495,7 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
     <!-- http://purl.org/rto-draft#C-arm:rto_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#C-arm:rto_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#linear_accelerator:rto_nnnn"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#linear_accelerator"/>
         <obo:IAO_0000115>A linear accelerator radiation therapy device that is attached to a gantry that can rotate around an axis so that the radiation can enter the patient at any angle in the plane of rotation. [MP 12/12/21]</obo:IAO_0000115>
         <rdfs:label>c-arm linear accelerator</rdfs:label>
     </owl:Class>
@@ -2372,7 +2510,7 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#computed_tomography:radont_nnnn"/>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C45844"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Imaging process that uses x-ray computed tomography to obtain images.</obo:IAO_0000115>
@@ -2399,7 +2537,7 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#magnetic_resonance_imaging:radonc_nnnn"/>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019#magnetic_resonance_imaging_device"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An imaging process that uses magnetic resonance to obtain the imaging information. [MP 3/3/21]</obo:IAO_0000115>
@@ -2433,7 +2571,7 @@ The model of the patient&apos;s body can be crude, such as representing the tiss
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.org/rto-draft#positron_emission_tomography:radont_nnnn"/>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OBI_0000933"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Imaging process that uses positron emission tomography.</obo:IAO_0000115>
@@ -2520,7 +2658,7 @@ http://hl7.org/fhir/us/mcode/ValueSet-mcode-radiation-target-body-site-vs.html</
     <!-- http://purl.org/rto-draft#brachytherapy_device:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#brachytherapy_device:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000060"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#radiation_therapy_device"/>
         <obo:IAO_0000115>A radiation therapy device that generates radiation from some part of the device that is inserted into that part of a person&apos;s body at which the intended target tissue is located.</obo:IAO_0000115>
         <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
         <rdfs:label>brachytherapy device</rdfs:label>
@@ -2572,29 +2710,6 @@ Common methods of staging are TNM, Stage {0,IV}, {in situ, localized,...}</rdfs:
     
 
 
-    <!-- http://purl.org/rto-draft#collimator:radont_nnnn -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#collimator:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000060"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>A device used by a radiation therapy device to limit the 2D spatial extent of a collection of subatomic particles produced by a radiation emission device.</obo:IAO_0000115>
-        <dc:contributor>Andre Dekker [reviewer]</dc:contributor>
-        <rdfs:comment>Perhaps this NCIT definition should be used:
-http://purl.obolibrary.org/obo/NCIT_C49881
-A diaphragm or system of diaphragms made of an absorbing material, designed to define and restrict the dimensions and direction of a beam of radiation. [Definition Source: NCI]
-
-The definition that Mark has defined is more Aristotelean and adheres to OBO principles.</rdfs:comment>
-        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
-        <rdfs:label>collimator</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/rto-draft#control_point:rto_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#control_point:rto_nnnn">
@@ -2602,17 +2717,6 @@ The definition that Mark has defined is more Aristotelean and adheres to OBO pri
         <obo:IAO_0000115>A set of values that of relevant machine parameters that represent the physical state of a radiation therapy device at a given  moment.  A temporally-ordered set of control points can be used to document changes in the state, e.g. movement of a gantry, change in monitor units.  The exact set of measurements  needed may depend on the radiation therapy device and the intended use of them.</obo:IAO_0000115>
         <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
         <rdfs:label>control point</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rto-draft#cyclotron:rto_nnnn -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#cyclotron:rto_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#external_beam_device"/>
-        <obo:IAO_0000115>An external beam device that accelerates charged particles outwards from the center of a flat cylindrical vacuum chamber along a spiral path.</obo:IAO_0000115>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Cyclotron</obo:IAO_0000119>
-        <rdfs:label>cyclotron</rdfs:label>
     </owl:Class>
     
 
@@ -2739,7 +2843,7 @@ The definition that Mark has defined is more Aristotelean and adheres to OBO pri
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000075"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19747"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2779,18 +2883,6 @@ The definition that Mark has defined is more Aristotelean and adheres to OBO pri
         <obo:IAO_0000115>This is a form of radiation therapy in which the radiation source is external to and some distance from the patient&apos;s body, cf. brachytherapy, and the radiation is delivered in one or more radont:radiation_beams.  Instances can be distinguished by the type and energy of the particle beam, the radiation positioning device, dose rate, the positioning of the patient.</obo:IAO_0000115>
         <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
         <rdfs:label>exernal beam therapy</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rto-draft#fixed_collimator:rto_nnnn -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#fixed_collimator:rto_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#collimator:radont_nnnn"/>
-        <obo:IAO_0000115>A collimator that has a fixed shape that cannot be adjusted.</obo:IAO_0000115>
-        <dc:contributor>Andre Dekker [reviewer]</dc:contributor>
-        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
-        <rdfs:label>fixed collimator</rdfs:label>
     </owl:Class>
     
 
@@ -2886,6 +2978,30 @@ more straighforward for what we want.</rdfs:comment>
     
 
 
+    <!-- http://purl.org/rto-draft#http://purl.obolibrary.org/obo/NCIT_C150121 -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#http://purl.obolibrary.org/obo/NCIT_C150121">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000832"/>
+        <rdfs:comment>A device that measures an amount of ionizing radiation in units of dose (https://www.nrc.gov/reading-rm/basic-ref/glossary/dose.html) Different physical properties may be measured, e.g. amount of charged collected, but the measurement value must be capable of being calibrated to the basic unit of dose, i.e. Joule/kg.  
+
+The measurement may be continuous or integrated.</rdfs:comment>
+        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
+        <rdfs:label>radiation dosimeter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rto-draft#http://purl.obolibrary.org/obo/RBO_010010 -->
+
+    <owl:Class rdf:about="http://purl.org/rto-draft#http://purl.obolibrary.org/obo/RBO_010010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115>The number of particles or photons per unit of cross-sectional area perpendicular to the direction of the particle (units of m^2 or cm^2) (i.e., particles-m^[-2] or particles-cm^[-2]).</obo:IAO_0000115>
+        <rdfs:comment>http://purl.obolibrary.org/obo/RBO_010010</rdfs:comment>
+        <rdfs:label>fluence</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rto-draft#intent:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#intent:radont_nnnn">
@@ -2936,17 +3052,6 @@ more straighforward for what we want.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/rto-draft#ionization_chamber:rto_nnnn -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#ionization_chamber:rto_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000832"/>
-        <obo:IAO_0000115>A measuring device designed to detect the ionization caused by energetic particles that pass through a gas-filled chamber.  By suitable calibrations and the application of measurement protocols, ionization chambers are a common secondary standard for the measurement of absolute dose.</obo:IAO_0000115>
-        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
-        <rdfs:label>ionization chamber</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/rto-draft#kV_imaging_process:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#kV_imaging_process:radont_nnnn">
@@ -2983,16 +3088,6 @@ more straighforward for what we want.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/rto-draft#linear_accelerator:rto_nnnn -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#linear_accelerator:rto_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#external_beam_device"/>
-        <obo:IAO_0000115>An external beam radiation therapy device that accelerates a beam of electrons in a linear wave guide to energies greater than 1 MeV.  The electron  beam can be used to treat patients, or it can be steered onto a target in which the fast electrons convert part of their energy to x-rays through the bremsstrahlung process.  [MP 12/12/21]</obo:IAO_0000115>
-        <rdfs:label>linear accelerator</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/rto-draft#measurement_datum:IAO_0000109 -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#measurement_datum:IAO_0000109">
@@ -3019,7 +3114,7 @@ more straighforward for what we want.</rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.org/rto-draft#RADONT_0000075"/>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19747"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An imaging assay that is intended to produce images of the disease and related body tissues that can be used to diagnose and/or define a target volume for radiation therapy.</obo:IAO_0000115>
@@ -3073,19 +3168,6 @@ more straighforward for what we want.</rdfs:comment>
         <obo:IAO_0000115>A measurement of the radiation output of a radiation therapy device that is particular to each device and which is unitless.  This measurement is the fundamental way in which the therapy device is controlled so as to deliver the prescribed dose to the patient.  This measurement is related to the dose by means of calibration protocols.</obo:IAO_0000115>
         <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
         <rdfs:label>monitor unit</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rto-draft#multileaf_collimator:rto_nnnn -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#multileaf_collimator:rto_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#collimator:radont_nnnn"/>
-        <obo:IAO_0000115>A collimator with opposing banks of metal &quot;leaves&quot;--individual metal elements that present a long narrow profile to the direction of the incident radiation and whose thickness is sufficient to attenuate a clinically significant fraction of the radiation.  Each leaf can be moved individually, thereby providing the ability to make an arbitrarily-shaped aperture, limited by the width of the individual leaves.  There are no standard dimensions of the leaves, nor any design standards for the supporting mechanisms.</obo:IAO_0000115>
-        <dc:contributor>Andre Dekker</dc:contributor>
-        <rdfs:comment>Reviewed 10/26/22</rdfs:comment>
-        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
-        <rdfs:label>multileaf collimator</rdfs:label>
     </owl:Class>
     
 
@@ -3205,7 +3287,7 @@ more straighforward for what we want.</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000060"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#radiation_therapy_device"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A device that is used to position the patient to make sure that this position is consistent during radiotherapy simulation and treatment. This includes configurable devices that can be used for multiple patients and patient specific devices such as masks and vacuum cushions.</obo:IAO_0000115>
@@ -3235,18 +3317,6 @@ more straighforward for what we want.</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.org/rto-draft#positron:CHEBI_30225">
         <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#lepton:CHEBI_36338"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rto-draft#positron_emission_tomography:radont_nnnn -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#positron_emission_tomography:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#RADONT_0000075"/>
-        <obo:IAO_0000115>An imaging device by which the distribution of positron-emitting molecules are imaged by a set of detectors placed around the body, and which uses a reconstruction algorithm to locate the position and intensity of the emitted radiation in the body.</obo:IAO_0000115>
-        <obo:IAO_0000118>PET scanner</obo:IAO_0000118>
-        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
-        <rdfs:label>positron emission tomography device</rdfs:label>
     </owl:Class>
     
 
@@ -3333,29 +3403,6 @@ In my thinking the independent continuant is the collection of fundamental parti
     
 
 
-    <!-- http://purl.org/rto-draft#radiation_dose_measurement:radont_nnnn -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#radiation_dose_measurement:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
-        <obo:IAO_0000115>A scalar measurement of the radiation dose is the mean energy imparted by ionizing radiation to material of mass (energy/mass).   Units are 1 Joules/kilogram = 1 Gray (1 Gy).</obo:IAO_0000115>
-        <rdfs:label>radiation dose measurement</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rto-draft#radiation_dosimeter:radont_nnnn -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#radiation_dosimeter:radont_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000832"/>
-        <obo:IAO_0000115>A device that measures an amount of ionizing radiation in units of dose (https://www.nrc.gov/reading-rm/basic-ref/glossary/dose.html) Different physical properties may be measured, e.g. amount of charged collected, but the measurement value must be capable of being calibrated to the basic unit of dose, i.e. Joule/kg.  
-
-The measurement may be continuous or integrated.</obo:IAO_0000115>
-        <rdfs:isDefinedBy>Mark Phillips</rdfs:isDefinedBy>
-        <rdfs:label>radiation dosimeter</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/rto-draft#radiation_fractionation_plan:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#radiation_fractionation_plan:radont_nnnn">
@@ -3401,7 +3448,7 @@ The measurement may be continuous or integrated.</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000060"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#radiation_therapy_device"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A device that is part of a radont:radiation _therapy_device that places the radont:radiation_emission_device relative to the patient in order to deliver the radiation as described by the radiation therapy plan.  Examples are gantries, robotic arms, brachytherapy applicators.  There is no requirement that the radiatioin emission device can move, e.g. Gamma Knife.</obo:IAO_0000115>
@@ -3506,7 +3553,7 @@ Mark&apos;s proposed definition -- 1:n possible sessions of delivery of radiatio
     <!-- http://purl.org/rto-draft#robotic:rto_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#robotic:rto_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#linear_accelerator:rto_nnnn"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#linear_accelerator"/>
         <obo:IAO_0000115>A linear accelerator radiation therapy device that is attached to a robotic positioning mechanism. [MP 12/12/21]</obo:IAO_0000115>
         <rdfs:label>robotic linear accelerator</rdfs:label>
     </owl:Class>
@@ -3534,17 +3581,6 @@ The spectrum can be a single energy as with gamma rays or particle beam as well 
     
 
 
-    <!-- http://purl.org/rto-draft#synchrocyclotron:rto_nnnn -->
-
-    <owl:Class rdf:about="http://purl.org/rto-draft#synchrocyclotron:rto_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#cyclotron:rto_nnnn"/>
-        <obo:IAO_0000115>A cyclotron in which the frequency of the driving RF electric field is varied to compensate for relativistic effects as the particles&apos; velocity begins to approach the speed of light.</obo:IAO_0000115>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Synchrocyclotron</obo:IAO_0000119>
-        <rdfs:label>synchronocyclotron</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/rto-draft#technique_action_specification:radont_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#technique_action_specification:radont_nnnn">
@@ -3558,7 +3594,7 @@ The spectrum can be a single energy as with gamma rays or particle beam as well 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#RADONT_0000060"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49881"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -3570,7 +3606,7 @@ The spectrum can be a single energy as with gamma rays or particle beam as well 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#collimator:radont_nnnn"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/rto-draft#radiation_therapy_device"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -3618,7 +3654,7 @@ The spectrum can be a single energy as with gamma rays or particle beam as well 
     <!-- http://purl.org/rto-draft#tomotherapy:rto_nnnn -->
 
     <owl:Class rdf:about="http://purl.org/rto-draft#tomotherapy:rto_nnnn">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#linear_accelerator:rto_nnnn"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rto-draft#linear_accelerator"/>
         <obo:IAO_0000115>A linear accelerator radiation therapy device that is attached to a circular track that delivers radiation to a thin slice of the patient.  A larger region is treated by moving the patient so that total treatment is comprised of multiple slices of delivered dose. [MP 12/12/21]</obo:IAO_0000115>
         <rdfs:label>tomototherapy linear accelerator</rdfs:label>
     </owl:Class>
