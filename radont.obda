@@ -36,5 +36,9 @@ source		SELECT * FROM diagnosis
 mappingId	prostate_cancer
 target		data:patient/{patientser}/diagnosis/{diagnosisid} a obo:DOID_10283 . 
 source		SELECT * FROM diagnosis WHERE description='maligne neoplasma van prostaat'
+
+mappingId	brain_cancer
+target		data:patient/{patientser}/diagnosis/{diagnosisid} a obo:DOID_1319 . 
+source		SELECT * FROM diagnosis WHERE description='maligne neoplasma van hersenen'
 ]]
 
